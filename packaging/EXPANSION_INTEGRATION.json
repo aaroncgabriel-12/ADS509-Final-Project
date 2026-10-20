@@ -1,0 +1,605 @@
+{
+  "created_at_utc": "2026-10-20T00:39:53.054679+00:00",
+  "phase": "Prototype preserved; expanded evaluation appended",
+  "model_rerun": false,
+  "network_calls": false,
+  "published": false,
+  "existing_notebook_sha256": {
+    "notebooks/02_data_preparation_readable.ipynb": "298d771b44b837472d4f2e1bd68e3135eeebc983791119add63af626520e1705",
+    "notebooks/09_vader_sentiment_readable.ipynb": "1c197130f77a1835ca3fd87b701d551bf48a77266b510a801404ba54cdf7a9f4",
+    "notebooks/10_saved_results_review_readable.ipynb": "b580db01d17227a89452b8816f11fb92bb5f830179cc8f8177039afa738d6d6d",
+    "notebooks/training/06_music_review_lora_AI_AUDITED_COLAB.ipynb": "b6c17d371c97b2dc932118dc87ab091062f9bed6e8ea0aead2256c67258bf376",
+    "notebooks/training/07_music_review_VALIDATION_ONLY_AB_COLAB-2.ipynb": "4d1e3ad61862ab05dbbfa9d9e3bab8a079cc0c3071b11cafdad181e1a6dfff2f",
+    "notebooks/training/08_music_review_C_LOWER_LR_COLAB-5.ipynb": "f8c3096f72bb15a72d87471cbea73d8b5e9e1c3164b164595147cb7038023528"
+  },
+  "preintegration_payload_sha256": {
+    ".gitattributes": "3c5ba843514fb260269a07c1db43245da43dbca8d3597db25735dd1b80baaba1",
+    ".gitignore": "1deec58a1dab35907fa52df8b8c6ecae0c3f59b0b021aabd2232c007aa3b4dff",
+    "09_training_sentiment_EDA_VADER/analyze_training_vader.py": "8c1a89501c544be7ea332f3524b114b7121c3e22b84f45f59510d9b93ce27d7b",
+    "09_training_sentiment_EDA_VADER/results/INTERPRETATION_AND_REPRODUCTION.md": "f2b52e8944c873fbea05c05a7b7eafb9375da156dff2dbd9586ebacb4019c048",
+    "09_training_sentiment_EDA_VADER/results/sentiment_summary.json": "a66cfb435f92b9c9ccbc2101394a9b5ac0fc57afd76d47d575ca863a50693189",
+    "09_training_sentiment_EDA_VADER/results/training_vader_scores.csv": "211fbaf29667637d5b1a7babe5b85d03061ff360ab053755a7e758db4fcd41a9",
+    "09_training_sentiment_EDA_VADER/results/training_vader_sentiment.png": "b576796ea46b4f1c0c6a6ca03b9f4cd7dd5bd60e3b48e26119c59d0d5515f182",
+    "09_training_sentiment_EDA_VADER/results/training_vader_sentiment.svg": "0ec26aa9b69d463310b5069099b27821160a6f1d78a3a0318b00ab8401b6288f",
+    "LABELING_GUIDE.md": "ccea8d50be8e83b5fe52424434144beab4b01572de7bfb8990467f76d170827c",
+    "README.md": "0325c0a22e0e10f49c12e5b12c57be1e48c06fae76f67822bfd331704df91454",
+    "THIRD_PARTY_NOTICES.md": "02374cc0a2aa62abe4f80962bce0b0e6147eae0118683ae18e072b4925798d6b",
+    "data/ATTRIBUTION.csv": "7960a49536bb9eb23a7f6f86db3eac1748c66df35383fc309f1340ec7a655148",
+    "docs/LEGACY_REFERENCES.md": "9f4ad0d447f59f340989b24acd9b4118f7c072e0a81fb4fb17b7be33faa0517d",
+    "docs/PLANNING_STATUS.md": "04b1c552b8a9a1c1dd260e40cfdba3fa61497c149782c596c92ae8130e4bf5b6",
+    "docs/REPRODUCTION.md": "d26d8ba9ad839fb009154ed902dde665dcda05007a5d238666f59ce9e4b28405",
+    "docs/UPLOAD_GUIDE.md": "4365296416c0af474e8784af37f8f13aedc2b72437b05a1a58bc3a90c0cc009e",
+    "docs/presentation_outline_PLANNING_v1.docx": "d2872713ad247cec001a8b9bb6d601ab5c8fe81c181b52e0bd5408931ee02579",
+    "historical_preparation/init_assisted_session.py": "4842faca2f72987868edf8e2868e16fd63eeb31c9621c3ba7175c9a8ac66f818",
+    "historical_preparation/run06/music_review_audit.py": "47cb3594917fd29ca343166bdd49fe7ad9293ad8a9cc50f61eb44d2d4bfbbb39",
+    "historical_preparation/run06/music_review_pipeline.py": "fa96fea62b6a8109f07d1785061853dd1c2385e9f239526d3dfd0b28f5cfb94d",
+    "historical_preparation/run06/music_review_smoke.py": "570ad8c72a6ff8e6a310a67e743a32e9aee7cb1f7f68d58ea9b64d5ca71dda0c",
+    "historical_preparation/run06/music_review_training.py": "840f89155cb0527bd9a54824556a208d04670b4b81de07ec5bfcf693053589ce",
+    "historical_preparation/run06/requirements_colab_AI_AUDITED.txt": "1b09dfb51d15721c51659552a9c9f9b24bbe5568c0cf3419455655106a1ca893",
+    "historical_preparation/run07/requirements_colab_validation_only.txt": "96299a5068219dbe61388da3ba34ccdf631e855f5e91292f0877c3cca015e018",
+    "historical_preparation/run07/validation_contract.py": "e663fc148bee844f085cc5e644cf5a1f01ab3e6c66d208f19b2a96afa0ee76cb",
+    "historical_preparation/run07/validation_experiments.py": "1cc9590bd7145323653623aa5421eaf365511070e2311a4596290b6cb2cc0988",
+    "historical_preparation/run08/c_contract.py": "e663fc148bee844f085cc5e644cf5a1f01ab3e6c66d208f19b2a96afa0ee76cb",
+    "historical_preparation/run08/c_diagnostics.py": "b15fb3ff12726611bcd8f7ab8067cc354283a6b98dbe35039512b79960352a44",
+    "historical_preparation/run08/c_protocol.py": "484bd6562e63afed59bb98d3d3246e8419354598cb651cf47f9bc55c2d3c1db2",
+    "historical_preparation/run08/c_training.py": "b4c3ba63af0926ff337fa7acfdc21a5e7126f903b47d96c41bdf91e5dfb1d284",
+    "historical_preparation/run08/requirements_colab_validation_only.txt": "96299a5068219dbe61388da3ba34ccdf631e855f5e91292f0877c3cca015e018",
+    "historical_preparation/training_drafts.py": "55e604841fdb4c3b364d68afe73cffd8c2830a01115904cf0db1d83ca1476433",
+    "inputs/music_insight_AI_AUDITED_training_bundle.zip": "e036da628085c1bd1f262b06776f4e2f3f0666fa04cc3755e63799e11bf634c6",
+    "inputs/music_insight_TRAIN_VALIDATION_ONLY_AB_bundle.zip": "19309e7694de6b51027b6bbf03e1f8a8a50c66c1f5f533ea56db71f7290ac2b8",
+    "inputs/music_insight_TRAIN_VALIDATION_ONLY_C_lr1e4_bundle.zip": "b0b4805c88fd236a05529cc304fa4f2aa011bd18e2e3100f5702ff80a1718772",
+    "labeling_server_v1.py": "88ea59510516a00e03070a74603583b215521c3d93d83fc96c00c96dcd3cbd96",
+    "music_review_pipeline.py": "fa96fea62b6a8109f07d1785061853dd1c2385e9f239526d3dfd0b28f5cfb94d",
+    "music_review_runs/2026-10-15_music_insight_v1/cleaning_audit.json": "be66d4d171606334fa6cfc19fcb6e6ef9f45db27f8e602b72edb484e93f8e8f0",
+    "music_review_runs/2026-10-15_music_insight_v1/collection_audit.json": "5c4f09d73fb46cb979458cd1479056f3a86349d1c200f135806dbf3a511857f3",
+    "music_review_runs/2026-10-15_music_insight_v1/collection_config.json": "5ad1a5f3e3365b6706e6c2caa0f894be02a49412d6b7190a4fc4dc0292ad1fa2",
+    "music_review_runs/2026-10-15_music_insight_v1/passages.csv": "93af2239d141177edc1e9e319f448bdb374d7525a9357471860081cd213cdba5",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000000.json": "5976bba4778777879ee95a2ead64443082041489b4862c3be3bbd98c82bec785",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000050.json": "1e49e33cba052659665378b9360b1602a53c8c0bb79d0ef3fd8458f14617eb40",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000100.json": "0bd955e921d32cbfb26f2abb3a1d977b17c9631b6933f1ceeb88d68486f175fc",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000150.json": "5453e50e47501563f305fc40bcdd90a4a047f19187169e15fe0f4dff225ac208",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000200.json": "78e6681b849c0960b65345d028fd54fc6c6333da7b44daad5569d07a0292365d",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000250.json": "96aec1ebda39c781ad21f7f6ed81ead8b4b0848afb13ca4d1b4968088fcdde94",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000300.json": "dd5b84d3c33b137bc121674176c8bf51f7dc0a490230ef5121285c60e060c863",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000350.json": "5ef882da6d157b45ab3e0b8f51e6c487b2fd74c1325e78c5efe24ce95e684536",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000400.json": "9eef1d0229808568e1c30064307dcb4748646c224cf75175ba97d3d2e32f4ca6",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000450.json": "e7238d653457fb71ecaeec79760b3a251b919f0e06a29705c777e62aeb11d8e0",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000500.json": "24906b53eac5447b466630ddc0651910817c522feadff6947a1fe10430fc8c1c",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000550.json": "077830628fbeacf82e4eaf88b2959ecb3c59b396ead2928986ed437c92dc5564",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000600.json": "87024005a93bbe679f7230d63a757b0cb41b437230459cb1c177fade0b04862b",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000650.json": "06cd3e53f7298bc2ac9479971d0a2ee6452102f64513a2668441e3582cf4e587",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000700.json": "b38df0f6266b81a27d9810c74c671eae4e693c96b420ddacd80aa0bd9b97b6f3",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000750.json": "c2fbd5042c10526ecadc96edca5c113611ddb6ee3a0ddb870b2556f314d8cdc7",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000800.json": "981aa169f78a4f001c18d60033e1684781288789940f0e7a60adb691ce8d4cc1",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000850.json": "34293a4243d940e675a619b65806a5f5b1fb03716157866966fd250734bc9f01",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000900.json": "ae5397276fc65752e3533f167cf1836138b495a572b9d89237bfe0f99b9a77e1",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000950.json": "334ac2096b3193c76f101634548d027042895280db211ad9ec762da542ec9d2f",
+    "music_review_runs/2026-10-15_music_insight_v1/reviews.csv": "e875a1f0d7e9ee214949469357767b6541c15b648acae331baab24a839d3f65c",
+    "music_review_runs/2026-10-15_music_insight_v1/word_count_summary.json": "9aa1102228ac340db6e41eea89938fe329c93885b6b8fc3a27cf4304bacb20e6",
+    "music_review_runs/2026-10-16_music_insight_AI_audit_v1/audited_splits/ai_audited_train.csv": "3500dcd7e53b39a09fd5f78cd28eee94e9cb9ebc1d3e5e56d7fa69e784841096",
+    "music_review_runs/2026-10-16_music_insight_AI_audit_v1/audited_splits/ai_audited_validation.csv": "61b79776c0471b46039be0367998d71031c62c45eb25a7d93c0ca3adbd0ef088",
+    "music_review_training.py": "840f89155cb0527bd9a54824556a208d04670b4b81de07ec5bfcf693053589ce",
+    "notebooks/02_data_preparation_readable.ipynb": "298d771b44b837472d4f2e1bd68e3135eeebc983791119add63af626520e1705",
+    "notebooks/09_vader_sentiment_readable.ipynb": "1c197130f77a1835ca3fd87b701d551bf48a77266b510a801404ba54cdf7a9f4",
+    "notebooks/10_saved_results_review_readable.ipynb": "e239beb333de5791a8352a1671e75f3165a39d54e313c1e765b4f7c80accc4a2",
+    "notebooks/training/06_music_review_lora_AI_AUDITED_COLAB.ipynb": "d59e0d2d80da338be2f59e6a12c37079d79dc503b759ca7a395c4576ae8b39a6",
+    "notebooks/training/07_music_review_VALIDATION_ONLY_AB_COLAB-2.ipynb": "4d1e3ad61862ab05dbbfa9d9e3bab8a079cc0c3071b11cafdad181e1a6dfff2f",
+    "notebooks/training/08_music_review_C_LOWER_LR_COLAB-5.ipynb": "f8c3096f72bb15a72d87471cbea73d8b5e9e1c3164b164595147cb7038023528",
+    "packaging/AUTHORSHIP_AND_PROVENANCE.json": "9c27f088992b45f7b63009a266e6fe444a591591c53764a2bc2cd80f1a588517",
+    "packaging/FILE_SHA256.json": "17b7120a45df597957090a4f9a200d1fe3e6b156220bdd7be3084bd4a980cd39",
+    "packaging/INCLUDED_EXCLUDED.json": "2bdc96a59be5f432cacc1f7bc3e8eca29fc99deba4347c75349538b3f633a2af",
+    "packaging/PACKAGING_CHANGES.json": "f90b77aeda61213a1f56d88530ad01a5b3d72a35e7d0b3c66444e6a6c804ed57",
+    "packaging/PATH_RESOLUTION_CHECKS.json": "2ce5be12bc2c288fff0cdf421ab0f4752c73611e10a994411fba4f282dad7546",
+    "packaging/SECURITY_AND_PATH_REVIEW.json": "5d624b1bc8811636eef3ce93f5b4aca622b65923e8c0d8fdfb434b772db8d7a2",
+    "packaging/VALIDATION_REPORT.json": "f71553cc8aca3da4d56b0c6fb95bc1c3282a75d5236842e25528e9c9721bf417",
+    "presentation_evidence/01_EDA_7664_passages_lengths_and_term_frequencies.png": "438bc1e4a920473698857486c400f8c17e2f248cafd5700c666fb6702b10bbd1",
+    "presentation_evidence/02_VADER_140_training_passages_sentiment.png": "b576796ea46b4f1c0c6a6ca03b9f4cd7dd5bd60e3b48e26119c59d0d5515f182",
+    "presentation_evidence/03_A_to_D_33_validation_passages_accuracy_and_macroF1.png": "5ccdee3eb853938d09d090c3521ee1b703a39fad707084683b342d8d010e3b6e",
+    "presentation_evidence/04_B_33_validation_passages_confusion_matrix.png": "2bbd8e1649e74c661cecc6dccd522822f220a23d544ad0f837ed884dd39df381",
+    "presentation_evidence/05_B_saved_validation_errors_two_examples.png": "9a9f224e87b16b0559fe6f764e1038d92840c92470558f601b921adac887642a",
+    "presentation_evidence/ARTIFACT_SHA256.json": "946f3a11659a4e2c06eb5e7408da5405134bffcc5aabc478c901c0c91c8ec165",
+    "presentation_evidence/EVIDENCE_SOURCES_AND_CHECKS.json": "1d4ec534e481e63fddc11ae62e174d586486073307eae52131355d1d6bf7f855",
+    "presentation_evidence/README.md": "9a66a8d09091933c00a490543f35f91b6ae92aa1c37f6ed7dda0f4e6945fc074",
+    "presentation_evidence/SAVED_B_ERROR_EXAMPLES.json": "9316ba54d5f59771da75a459a69718bcdd854be281b3def68c4e235bd7066f3e",
+    "requirements-colab.txt": "faa0e18ef9443ab1022275e61745a17a23880e5eee878ec76708593242b0b849",
+    "requirements-local.txt": "222a33a28b23d4fe50cec04ecbd27437f4c401fc08e4afbc5d15bd1ea55a95db",
+    "results/B_selected_validation_predictions.csv": "bd1f247baadc0b052476ff025797a2108c3a5cb24f5691177075967edcb1ddd8",
+    "results/evidence/AB_comparison.json": "c4796f369f4bba712f0b59bb7d1e383c87bd2d007df8607732eb7e6c85962701",
+    "results/evidence/A_summary.json": "f118fac3fbf0bdcf8af641419869ec70b622debf593b47677c61314d8614ff16",
+    "results/evidence/B_summary.json": "78d97fc2d59c36b3c01262e84298c5f9076371221b2e103bd57667602f9ae9b2",
+    "results/evidence/C_summary.json": "68cf7839cabfadd21d4a9e738a3bd9c91e76fc777c96e5295f3daa5a3eca87cc",
+    "results/evidence/D_completion.json": "9b76c984307964698f0a3d3bb619412ef82765e51e5557647fdbc63bb474b023",
+    "results/evidence/D_summary.json": "cd0252ea315905aa604c240e68c6f0d1d9a06340f89ad4416bf042be68e7adc1",
+    "results/evidence/cleaning_audit.json": "be66d4d171606334fa6cfc19fcb6e6ef9f45db27f8e602b72edb484e93f8e8f0",
+    "results/evidence/sentiment_summary.json": "a66cfb435f92b9c9ccbc2101394a9b5ac0fc57afd76d47d575ca863a50693189",
+    "results/evidence/word_count_summary.json": "9aa1102228ac340db6e41eea89938fe329c93885b6b8fc3a27cf4304bacb20e6",
+    "results/model_details/AB/A_unweighted_ABC/selected_checkpoint.json": "681b127989d2105d7dcbdc12771a6f5009f98979f73c11774827051c5ba78399",
+    "results/model_details/AB/A_unweighted_ABC/settings.json": "b0e7d690209ffa9f72c13cf19bc7fb269446da45b874dd6bd764e68f836b9d17",
+    "results/model_details/AB/A_unweighted_ABC/training_history.json": "37623942819f42b632ae46d0b3e76e499250ae2f90b9d5c3585d1890c7e98523",
+    "results/model_details/AB/B_train_weighted_ABC/selected_checkpoint.json": "2b948a9da9e29bc5eed6bcec98c83be3f3167cff2b60275d6597a3e4b867d49d",
+    "results/model_details/AB/B_train_weighted_ABC/settings.json": "51b530ba67c9d735127ae1a06238dde5b1dee2219312f6b7287afcc005c82b28",
+    "results/model_details/AB/B_train_weighted_ABC/training_history.json": "a0795ac2d82cf8e8194a88f012e7c1d0e098025a11a276f553d6a1ae71e76a1c",
+    "results/model_details/AB/completion.json": "0011caab70f4d04d491180e528d7b9c673dfc656d8884ab3505ac346f3f2ea10",
+    "results/model_details/AB/protocol.json": "fd89184dc991a2c1b61fd5c15a3167c3bb115352ed0e418e72f7e4ebc71c24e2",
+    "results/model_details/C/C_train_weighted_ABC_lr1e4/post_training_diagnostics/diagnostic_summary.json": "3bbdb58d5977b1b300970e27c328a4324a5327de8cf8c87d5c24eed56f75ab59",
+    "results/model_details/C/C_train_weighted_ABC_lr1e4/selected_checkpoint.json": "5d124089ac92ed36ffdec538dc0b4a466c63fcad72152a0b7924e4d7cc11a0db",
+    "results/model_details/C/C_train_weighted_ABC_lr1e4/settings.json": "784fca656265b3186a66556f306a18c4acac7c3d7542f68b32b72d2c20f09285",
+    "results/model_details/C/C_train_weighted_ABC_lr1e4/training_history.json": "f9586b9f8f5f860a0bda80f83484f6c84e1c7e3f7848cea3162c6f9def962b63",
+    "results/model_details/C/completion.json": "2ed8a10d849a68f1486c2b1700fff28ef8c41e8c65d8aeeff08e5b55acb98295",
+    "results/model_details/C/protocol.json": "357e11656f1d54353d0e5d6446088f9be2b1e2caa701331a7c5be87291fab708",
+    "results/model_details/D/D3_repair.json": "f6ac3cbff1154e66894a6eb28fd59913c38209765d052935251cc3c137489ef4",
+    "results/model_details/D/D_protocol.json": "7a33f69dc68803287eb2c49621b94b5bde26f079da1546411df1f243f88fe3e1",
+    "results/model_details/D/D_train_weighted_ABC_lr1e4_5epochs/post_training_diagnostics/diagnostic_summary.json": "21550b7905a3506f33b69b9a0a9791b42c14ab987bf3d79c579459f1908c040a",
+    "results/model_details/D/D_train_weighted_ABC_lr1e4_5epochs/selected_checkpoint.json": "bc73955adc57533757cf38a14b31549bb0c548abf462e0bc4198b498f50905c3",
+    "results/model_details/D/D_train_weighted_ABC_lr1e4_5epochs/settings.json": "0687d04e957b73e5bcc64a78d90d86a13e00c66f1d7ee2b88ecf1cc2a3d51bd7",
+    "results/model_details/D/D_train_weighted_ABC_lr1e4_5epochs/training_history.json": "2225dc75976bf9f0fe51eb5802201239f69aa8d121cae47a662d62b981bd0e0f",
+    "results/model_details/D/completion.json": "9b76c984307964698f0a3d3bb619412ef82765e51e5557647fdbc63bb474b023",
+    "results/run06_saved_console_narrative.md": "2268b6bb1751fef5c5e8e4d8e4d1f5e3e62697813ae5d753899ab9b42733e3c1",
+    "scripts/render_saved_error_figure.py": "b802f837d25d6c4121c54f5d6772d7defc3709ea04601f2c572ce3b62b2f870a",
+    "scripts/verify_submission.py": "efbb69a3b754cdf260fc7d1c48a91cb1235004bc3305906f9d27faeaf3d9b9a9",
+    "tests/test_labeling_server_v1.py": "5c241c8c5b8728c36ea51e6372525e366cbc1f358996c1e6e48a03be340fdead",
+    "tests/test_music_review_pipeline.py": "7102049eb5f134a2f45d9bcf14080778bac0ba54b400d1c58f22d08de9eca495",
+    "tests/test_music_review_training.py": "6da0c246de59f905cf8439866dec3d3bc0f749b4aae67368bd063b836cd0a156"
+  },
+  "changed_existing_files": [
+    ".gitignore",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/PLANNING_STATUS.md",
+    "docs/REPRODUCTION.md",
+    "docs/UPLOAD_GUIDE.md",
+    "packaging/FILE_SHA256.json",
+    "packaging/INCLUDED_EXCLUDED.json",
+    "presentation_evidence/README.md",
+    "scripts/verify_submission.py"
+  ],
+  "added_files_before_final_reports": [
+    "expanded_evaluation/MARKDOWN_ONLY_VALIDATION.json",
+    "expanded_evaluation/README.md",
+    "expanded_evaluation/RESULTS_DELIVERY_SHA256.json",
+    "expanded_evaluation/RESULTS_README.txt",
+    "expanded_evaluation/VERIFIED_RESULTS_SUMMARY.json",
+    "expanded_evaluation/frozen_data/frozen_manifest.json",
+    "expanded_evaluation/frozen_data/human_review_state_at_freeze.json",
+    "expanded_evaluation/frozen_data/old_training_140_unchanged.csv",
+    "expanded_evaluation/frozen_data/skipped_decisions.json",
+    "expanded_evaluation/frozen_data/test.csv",
+    "expanded_evaluation/frozen_data/train.csv",
+    "expanded_evaluation/frozen_data/validation.csv",
+    "expanded_evaluation/helpers/expansion_contract.py",
+    "expanded_evaluation/helpers/expansion_final_eval.py",
+    "expanded_evaluation/helpers/expansion_preflight.py",
+    "expanded_evaluation/helpers/expansion_training.py",
+    "expanded_evaluation/helpers/requirements_colab_expansion.txt",
+    "expanded_evaluation/inputs/music_expansion_test_after_selection.zip",
+    "expanded_evaluation/inputs/music_expansion_train_validation.zip",
+    "expanded_evaluation/results/before_training_validation.json",
+    "expanded_evaluation/results/causal_checks.json",
+    "expanded_evaluation/results/epoch_1.json",
+    "expanded_evaluation/results/epoch_2.json",
+    "expanded_evaluation/results/epoch_3.json",
+    "expanded_evaluation/results/experiment_summary.json",
+    "expanded_evaluation/results/one_time_test_comparison/adapted_test_predictions.csv",
+    "expanded_evaluation/results/one_time_test_comparison/comparison.json",
+    "expanded_evaluation/results/one_time_test_comparison/unadapted_test_predictions.csv",
+    "expanded_evaluation/results/optimizer_steps.json",
+    "expanded_evaluation/results/preflight_20261020T001644132452Z/adapted_validation_predictions.csv",
+    "expanded_evaluation/results/preflight_20261020T001644132452Z/preflight.json",
+    "expanded_evaluation/results/preflight_20261020T001644132452Z/unadapted_validation_predictions.csv",
+    "expanded_evaluation/results/selected_checkpoint.json",
+    "expanded_evaluation/results/selection_receipt.json",
+    "expanded_evaluation/results/settings.json",
+    "expanded_evaluation/results/test_attempt_result.json",
+    "expanded_evaluation/results/test_attempt_started.json",
+    "expanded_evaluation/results/training_history.json",
+    "expanded_evaluation/results/validation_predictions_before_training.csv",
+    "expanded_evaluation/results/validation_predictions_epoch_1.csv",
+    "expanded_evaluation/results/validation_predictions_epoch_2.csv",
+    "expanded_evaluation/results/validation_predictions_epoch_3.csv",
+    "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+    "presentation_evidence/expanded_evaluation/01_same_test_accuracy_macro_f1.png",
+    "presentation_evidence/expanded_evaluation/01_same_test_accuracy_macro_f1.svg",
+    "presentation_evidence/expanded_evaluation/02_adapted_confusion_matrix_counts.png",
+    "presentation_evidence/expanded_evaluation/02_adapted_confusion_matrix_counts.svg",
+    "presentation_evidence/expanded_evaluation/03_adapted_class_metrics_prediction_counts.png",
+    "presentation_evidence/expanded_evaluation/03_adapted_class_metrics_prediction_counts.svg",
+    "presentation_evidence/expanded_evaluation/EVIDENCE_SHA256.json",
+    "presentation_evidence/expanded_evaluation/PROVENANCE_AND_CAPTIONS.txt",
+    "presentation_evidence/expanded_evaluation/VISUAL_QA.json",
+    "presentation_evidence/expanded_evaluation/adapted_confusion_matrix_counts.csv",
+    "presentation_evidence/expanded_evaluation/build_expansion_presentation_evidence.py",
+    "presentation_evidence/expanded_evaluation/per_class_metrics_and_prediction_counts.csv",
+    "presentation_evidence/expanded_evaluation/presentation_metrics_and_provenance.json",
+    "presentation_evidence/expanded_evaluation/same_test_comparison.csv",
+    "presentation_evidence/expanded_evaluation/unadapted_confusion_matrix_counts.csv",
+    "scripts/render_expanded_evidence.py"
+  ],
+  "expanded_package_sha256": {
+    "music_expansion_test_after_selection.zip": "177789cfabbc837a278e63957dc1fca087d7256793233f3e5165bd7516c3e0f1",
+    "music_expansion_train_validation.zip": "4235bc0f86dabfa950a10e9b4b1ebe868152005a5cb113baaf92d1ecb524d494"
+  },
+  "expanded_notebook_sha256": "63c0624a16275e9b6594a8a5d6fd9054edbb5c7ae3e1658e25e902d0bf44b5c2",
+  "expanded_original_executed_sha256": "baf8258edd6a6d4d25f3ea4a1d393f02915c78e64f3ff9b2f5b57bf0bf1866f8",
+  "expanded_notebook_code_outputs_ids_metadata_preserved": true,
+  "source_roots": {
+    "original_upload": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_GitHub_submission_2026-10-19/github_upload",
+    "expanded_results": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z",
+    "frozen_data": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z"
+  },
+  "evidence_copied_byte_identical": true,
+  "historical_manifests": "Original packaging records are retained; current file index is FILE_SHA256.json. Pre-update copies are stored in the sibling local archive.",
+  "source_copy_checks": [
+    {
+      "file": "expanded_evaluation/frozen_data/frozen_manifest.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z/frozen_manifest.json",
+      "sha256": "8332b6ad842b1608fe760af1aaf9f13beae9de9ed6ebddadd1cf9aadaff342a5"
+    },
+    {
+      "file": "expanded_evaluation/frozen_data/human_review_state_at_freeze.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z/human_review_state_at_freeze.json",
+      "sha256": "cd74e77ce39a78efea50e2b1708d325f84e82219e9fa383f7c2ce70ff7d50224"
+    },
+    {
+      "file": "expanded_evaluation/frozen_data/old_training_140_unchanged.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z/old_training_140_unchanged.csv",
+      "sha256": "3500dcd7e53b39a09fd5f78cd28eee94e9cb9ebc1d3e5e56d7fa69e784841096"
+    },
+    {
+      "file": "expanded_evaluation/frozen_data/skipped_decisions.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z/skipped_decisions.json",
+      "sha256": "4b4f9db61f1074279363729d8bfe961ddeb5468337fc2229da9b7c15e9572c63"
+    },
+    {
+      "file": "expanded_evaluation/frozen_data/test.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z/test.csv",
+      "sha256": "4dbe8630a603edea8de34cf019b7e9fc5ff777a3b949f492e956968588561564"
+    },
+    {
+      "file": "expanded_evaluation/frozen_data/train.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z/train.csv",
+      "sha256": "962e8256b669bf495a7eb1ec5ca1e395ee17f3c17d033642f2c7b9fbe8d65a46"
+    },
+    {
+      "file": "expanded_evaluation/frozen_data/validation.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z/validation.csv",
+      "sha256": "59b36271b750e08eb1a3a32419aa084c0694a3df49775a7928bfe862f7b2c9b0"
+    },
+    {
+      "file": "expanded_evaluation/results/before_training_validation.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/before_training_validation.json",
+      "sha256": "af4521a5e9846622a6735273beae9c852b3e644c4df45e8d8cad170eee4f01cf"
+    },
+    {
+      "file": "expanded_evaluation/results/causal_checks.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/causal_checks.json",
+      "sha256": "68cbd648bfc2b8e607e7a301e1f45ec779cae2bed31e07a05a8a170323d13679"
+    },
+    {
+      "file": "expanded_evaluation/results/epoch_1.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/epoch_1.json",
+      "sha256": "9bd141f294cc7e60c9fc9b3a08e456cbe2eb74b938b20f8a5b5b52d08635312f"
+    },
+    {
+      "file": "expanded_evaluation/results/epoch_2.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/epoch_2.json",
+      "sha256": "b5a3300f5ee9fbf95199ad47de067ab6f65dd8777ba345e3f1e2bae117a75c5c"
+    },
+    {
+      "file": "expanded_evaluation/results/epoch_3.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/epoch_3.json",
+      "sha256": "d0adc1b8a2cde8d7a2799693b7afafad711657e631916946a0e36167911a6bc7"
+    },
+    {
+      "file": "expanded_evaluation/results/experiment_summary.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/experiment_summary.json",
+      "sha256": "05685c1f0ac8db43d128505a3c0221d6a2bb14c7f93ab10e3930a0b51dec11b1"
+    },
+    {
+      "file": "expanded_evaluation/results/one_time_test_comparison/adapted_test_predictions.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/one_time_test_comparison/adapted_test_predictions.csv",
+      "sha256": "bea123ef3eb541aa177fbb61c7b03b79294ae0efc3b37397d85efb11ca83a9f6"
+    },
+    {
+      "file": "expanded_evaluation/results/one_time_test_comparison/comparison.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/one_time_test_comparison/comparison.json",
+      "sha256": "7fa6d0804fa53d99366a74292d07a300b1620d95eaef974e729f754699f0ec9f"
+    },
+    {
+      "file": "expanded_evaluation/results/one_time_test_comparison/unadapted_test_predictions.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/one_time_test_comparison/unadapted_test_predictions.csv",
+      "sha256": "a5ce35666daf1e61e2c8cb2d35ccb78c3fa7d376c20d5ed20ba9486bbe3df71d"
+    },
+    {
+      "file": "expanded_evaluation/results/optimizer_steps.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/optimizer_steps.json",
+      "sha256": "a5616a10f3d2fcf701e0291a533d3ca7c1eab8695456cedb7c47485bd8146f3b"
+    },
+    {
+      "file": "expanded_evaluation/results/preflight_20261020T001644132452Z/adapted_validation_predictions.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/preflight_20261020T001644132452Z/adapted_validation_predictions.csv",
+      "sha256": "c595aad38a0ee2a98ee77aef0bd8a6cda814cf7b0d14d46ccd889e1716404ed4"
+    },
+    {
+      "file": "expanded_evaluation/results/preflight_20261020T001644132452Z/preflight.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/preflight_20261020T001644132452Z/preflight.json",
+      "sha256": "5e0428c32a4c4d85aca6bd3bb6d7ddd65a7a3d7eaf83b6a47846c40f0637d569"
+    },
+    {
+      "file": "expanded_evaluation/results/preflight_20261020T001644132452Z/unadapted_validation_predictions.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/preflight_20261020T001644132452Z/unadapted_validation_predictions.csv",
+      "sha256": "ef8f7c05dc07e0905b44634e9db1f9b9515fe83fd57856e878db7ed46cda41ae"
+    },
+    {
+      "file": "expanded_evaluation/results/selected_checkpoint.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/selected_checkpoint.json",
+      "sha256": "d0adc1b8a2cde8d7a2799693b7afafad711657e631916946a0e36167911a6bc7"
+    },
+    {
+      "file": "expanded_evaluation/results/selection_receipt.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/selection_receipt.json",
+      "sha256": "f3c0e481b046de0c0263d185f3b4ac08d7a08455221cf62030a9b17c09a6354e"
+    },
+    {
+      "file": "expanded_evaluation/results/settings.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/settings.json",
+      "sha256": "65dba13192eb9c77074f68880d75d72a058455fc2169c396e6ed24c3e4636268"
+    },
+    {
+      "file": "expanded_evaluation/results/test_attempt_result.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/test_attempt_result.json",
+      "sha256": "baf057da6877fe35c5f78a3502cf9df825366f526913992aab22787aefb8fae2"
+    },
+    {
+      "file": "expanded_evaluation/results/test_attempt_started.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/test_attempt_started.json",
+      "sha256": "18e6fa0f05617e211209c0ae3df61bf9cf16d806037b8d8254084f587be913d4"
+    },
+    {
+      "file": "expanded_evaluation/results/training_history.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/training_history.json",
+      "sha256": "d17d5f60f110b4466871cd543b1eb07272e93609c2b22258a807c4d8288b9a9c"
+    },
+    {
+      "file": "expanded_evaluation/results/validation_predictions_before_training.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/validation_predictions_before_training.csv",
+      "sha256": "ef8f7c05dc07e0905b44634e9db1f9b9515fe83fd57856e878db7ed46cda41ae"
+    },
+    {
+      "file": "expanded_evaluation/results/validation_predictions_epoch_1.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/validation_predictions_epoch_1.csv",
+      "sha256": "7ffb7fd1acee1615b1822c057b1590d54d08bf5f6dfb06bc86bbc2614cad91a0"
+    },
+    {
+      "file": "expanded_evaluation/results/validation_predictions_epoch_2.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/validation_predictions_epoch_2.csv",
+      "sha256": "47c574cf0b78a98317381a1c45722bb29383a8f132152e8c4d6d350da996b201"
+    },
+    {
+      "file": "expanded_evaluation/results/validation_predictions_epoch_3.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/validation_predictions_epoch_3.csv",
+      "sha256": "c595aad38a0ee2a98ee77aef0bd8a6cda814cf7b0d14d46ccd889e1716404ed4"
+    },
+    {
+      "file": "expanded_evaluation/inputs/music_expansion_test_after_selection.zip",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_packages_20261019T234617178637Z/music_expansion_test_after_selection.zip",
+      "sha256": "177789cfabbc837a278e63957dc1fca087d7256793233f3e5165bd7516c3e0f1"
+    },
+    {
+      "file": "expanded_evaluation/inputs/music_expansion_train_validation.zip",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_packages_20261019T234617178637Z/music_expansion_train_validation.zip",
+      "sha256": "4235bc0f86dabfa950a10e9b4b1ebe868152005a5cb113baaf92d1ecb524d494"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/01_same_test_accuracy_macro_f1.png",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/01_same_test_accuracy_macro_f1.png",
+      "sha256": "822d66216718c4a726a374dc91d17f99370885234395208252784a0bbbb6bbaa"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/01_same_test_accuracy_macro_f1.svg",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/01_same_test_accuracy_macro_f1.svg",
+      "sha256": "877caf3b2181d765e7a67226a66f6b258531eeabae929fc18170475c087b1e77"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/02_adapted_confusion_matrix_counts.png",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/02_adapted_confusion_matrix_counts.png",
+      "sha256": "340cc0a011a242d840c15ff91b3914518860a3636ad883f870adf99e03244d78"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/02_adapted_confusion_matrix_counts.svg",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/02_adapted_confusion_matrix_counts.svg",
+      "sha256": "ff7044d0fa5778f74e7697770f7abdb76d747695aabc607b58bbc4ad6218b7bc"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/03_adapted_class_metrics_prediction_counts.png",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/03_adapted_class_metrics_prediction_counts.png",
+      "sha256": "d9a33332eb2eb706adfd65cced9961b2a6494420df6155f2c03fc126a3ee06d4"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/03_adapted_class_metrics_prediction_counts.svg",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/03_adapted_class_metrics_prediction_counts.svg",
+      "sha256": "a430616fced5ac94bbaa9741ebd1b295576b6c6272eeb5b10f6def1d6fde2f8a"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/EVIDENCE_SHA256.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/EVIDENCE_SHA256.json",
+      "sha256": "e189a37e06c97e491ab6c2c3e67ccedfa013a016f87b0be2c4c9018489e54b3a"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/PROVENANCE_AND_CAPTIONS.txt",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/PROVENANCE_AND_CAPTIONS.txt",
+      "sha256": "83a0f54efdd277dac05164c4a7b96810f1b33e0432cf1be87c9c99d79ad68ba0"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/VISUAL_QA.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/VISUAL_QA.json",
+      "sha256": "04353de463ec5e48d189c4c59daed49aa2758a902058205890fa9de3d517e690"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/adapted_confusion_matrix_counts.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/adapted_confusion_matrix_counts.csv",
+      "sha256": "5a34b9fd6acdfa2ec70cf493ddafdbd2cd5adc9366b1e2d057f4f5d6e53f3ae4"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/build_expansion_presentation_evidence.py",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/build_expansion_presentation_evidence.py",
+      "sha256": "e296c882daa62b6c7f82c1626da70dfcadb3fd717b194f7a8a4e824c3793eba6"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/per_class_metrics_and_prediction_counts.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/per_class_metrics_and_prediction_counts.csv",
+      "sha256": "e03064fd491999b66fc27433a137d06c88893232fd091f84e4b646139e1dc704"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/presentation_metrics_and_provenance.json",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/presentation_metrics_and_provenance.json",
+      "sha256": "9e48edacbd0f49efc02bffe6ae4984a743608fcda2e2d8c4e09c4177b10a9d41"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/same_test_comparison.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/same_test_comparison.csv",
+      "sha256": "2524c1182ca4889b3e625e09555201555d37d5d6c75c6444dcdf39c17557280d"
+    },
+    {
+      "file": "presentation_evidence/expanded_evaluation/unadapted_confusion_matrix_counts.csv",
+      "source": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/presentation_evidence/expanded_test_200_99groups_20261019/unadapted_confusion_matrix_counts.csv",
+      "sha256": "12e180b3fb702b9f2391596b788538a7a670d029224f232978c17e117870b4d8"
+    }
+  ],
+  "portable_renderer_verified": "Three regenerated PNGs byte-identical to approved evidence; original figures preserved.",
+  "all_relative_markdown_links_checked": 40,
+  "added_files": [
+    "expanded_evaluation/MARKDOWN_ONLY_VALIDATION.json",
+    "expanded_evaluation/README.md",
+    "expanded_evaluation/RESULTS_DELIVERY_SHA256.json",
+    "expanded_evaluation/RESULTS_README.txt",
+    "expanded_evaluation/VERIFIED_RESULTS_SUMMARY.json",
+    "expanded_evaluation/frozen_data/frozen_manifest.json",
+    "expanded_evaluation/frozen_data/human_review_state_at_freeze.json",
+    "expanded_evaluation/frozen_data/old_training_140_unchanged.csv",
+    "expanded_evaluation/frozen_data/skipped_decisions.json",
+    "expanded_evaluation/frozen_data/test.csv",
+    "expanded_evaluation/frozen_data/train.csv",
+    "expanded_evaluation/frozen_data/validation.csv",
+    "expanded_evaluation/helpers/expansion_contract.py",
+    "expanded_evaluation/helpers/expansion_final_eval.py",
+    "expanded_evaluation/helpers/expansion_preflight.py",
+    "expanded_evaluation/helpers/expansion_training.py",
+    "expanded_evaluation/helpers/requirements_colab_expansion.txt",
+    "expanded_evaluation/inputs/music_expansion_test_after_selection.zip",
+    "expanded_evaluation/inputs/music_expansion_train_validation.zip",
+    "expanded_evaluation/results/before_training_validation.json",
+    "expanded_evaluation/results/causal_checks.json",
+    "expanded_evaluation/results/epoch_1.json",
+    "expanded_evaluation/results/epoch_2.json",
+    "expanded_evaluation/results/epoch_3.json",
+    "expanded_evaluation/results/experiment_summary.json",
+    "expanded_evaluation/results/one_time_test_comparison/adapted_test_predictions.csv",
+    "expanded_evaluation/results/one_time_test_comparison/comparison.json",
+    "expanded_evaluation/results/one_time_test_comparison/unadapted_test_predictions.csv",
+    "expanded_evaluation/results/optimizer_steps.json",
+    "expanded_evaluation/results/preflight_20261020T001644132452Z/adapted_validation_predictions.csv",
+    "expanded_evaluation/results/preflight_20261020T001644132452Z/preflight.json",
+    "expanded_evaluation/results/preflight_20261020T001644132452Z/unadapted_validation_predictions.csv",
+    "expanded_evaluation/results/selected_checkpoint.json",
+    "expanded_evaluation/results/selection_receipt.json",
+    "expanded_evaluation/results/settings.json",
+    "expanded_evaluation/results/test_attempt_result.json",
+    "expanded_evaluation/results/test_attempt_started.json",
+    "expanded_evaluation/results/training_history.json",
+    "expanded_evaluation/results/validation_predictions_before_training.csv",
+    "expanded_evaluation/results/validation_predictions_epoch_1.csv",
+    "expanded_evaluation/results/validation_predictions_epoch_2.csv",
+    "expanded_evaluation/results/validation_predictions_epoch_3.csv",
+    "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+    "packaging/EXPANSION_INTEGRATION.json",
+    "presentation_evidence/expanded_evaluation/01_same_test_accuracy_macro_f1.png",
+    "presentation_evidence/expanded_evaluation/01_same_test_accuracy_macro_f1.svg",
+    "presentation_evidence/expanded_evaluation/02_adapted_confusion_matrix_counts.png",
+    "presentation_evidence/expanded_evaluation/02_adapted_confusion_matrix_counts.svg",
+    "presentation_evidence/expanded_evaluation/03_adapted_class_metrics_prediction_counts.png",
+    "presentation_evidence/expanded_evaluation/03_adapted_class_metrics_prediction_counts.svg",
+    "presentation_evidence/expanded_evaluation/EVIDENCE_SHA256.json",
+    "presentation_evidence/expanded_evaluation/PROVENANCE_AND_CAPTIONS.txt",
+    "presentation_evidence/expanded_evaluation/VISUAL_QA.json",
+    "presentation_evidence/expanded_evaluation/adapted_confusion_matrix_counts.csv",
+    "presentation_evidence/expanded_evaluation/build_expansion_presentation_evidence.py",
+    "presentation_evidence/expanded_evaluation/per_class_metrics_and_prediction_counts.csv",
+    "presentation_evidence/expanded_evaluation/presentation_metrics_and_provenance.json",
+    "presentation_evidence/expanded_evaluation/same_test_comparison.csv",
+    "presentation_evidence/expanded_evaluation/unadapted_confusion_matrix_counts.csv",
+    "scripts/render_expanded_evidence.py",
+    "scripts/verify_expanded_evaluation.py"
+  ],
+  "existing_notebooks_preserved_byte_for_byte": false,
+  "markdown_revisions": [
+    {
+      "scope": "Only six Markdown source fields changed in notebook 11; associated current integrity entries refreshed.",
+      "verified_at_utc": "2026-10-20T00:59:59.885274+00:00",
+      "notebook": "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+      "backup": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_GitHub_submission_2026-10-19/LOCAL_ARCHIVE_DO_NOT_UPLOAD/notebook11_academic_markdown_backup_20261020T005959Z",
+      "before_sha256": "9b2fb5a8a5a06074db9297f686c0b458a528bee00dc994ce2bebea36762ad29f",
+      "after_sha256": "5c6232955020cc6628baa91d2eeac19a5b461cd654dc6297e83e18aab16d2877",
+      "markdown_cells_changed": [
+        0,
+        1,
+        4,
+        6,
+        8,
+        11
+      ],
+      "code_cells_unchanged": 7,
+      "code_cell_objects_before_sha256": "ad70dad3e071f45b26a7d96f85b58278e74e5e6d407a3760d55f0fe0e3976a83",
+      "code_cell_objects_after_sha256": "ad70dad3e071f45b26a7d96f85b58278e74e5e6d407a3760d55f0fe0e3976a83",
+      "outputs_execution_counts_ids_metadata_unchanged": true,
+      "all_notebook_top_level_metadata_unchanged": true,
+      "no_unsaved_editor_changes": "VS Code tab had Close button; closing showed no save prompt.",
+      "model_or_code_execution": false
+    }
+  ],
+  "current_notebook11_integrity_note": "Aaron-saved Markdown preserved. Seven executable cells, outputs, execution counts and metadata match the archived executed original. Provenance wording requires user review.",
+  "existing_notebook_sha256_scope": "Current verified hashes for the six pre-existing notebooks, including explicitly recorded corrections. Original preintegration hashes remain unchanged in preintegration_payload_sha256.",
+  "prototype_notebooks_unchanged_since_preintegration": 4,
+  "notebook06_correction": {
+    "file": "notebooks/training/06_music_review_lora_AI_AUDITED_COLAB.ipynb",
+    "before_sha256": "d59e0d2d80da338be2f59e6a12c37079d79dc503b759ca7a395c4576ae8b39a6",
+    "after_sha256": "558e9f3e896d845769a09278860793b281602b1497031a63fb04593b5eecce65",
+    "downloaded_original_sha256": "bc5d2b40f428736bb556e5dcfcbad68509050f3b00666dce56538444b7219b86",
+    "original_baseline_preserved": true,
+    "restored_code_cell_zero_based": 23,
+    "restored_execution_count": 10,
+    "inserted_markdown_cell_zero_based": 24,
+    "all_13_code_cell_objects_match_executed_original": true,
+    "saved_outputs_metadata_match_original": true,
+    "unrelated_existing_cells_preserved": 27,
+    "revised_interpretation_preserved_verbatim": true,
+    "interpretation_sha256": "54a7224fe8000d2c2a9b5920e5f59ab7dba1d741e86cd82b5e9e2f4d094a4f4c",
+    "no_notebook_execution": true,
+    "figure_correction": "Decoded PNG bytes matched the original; earlier apparent figure difference was base64 formatting."
+  },
+  "notebook06_markdown_deduplication": {
+    "file": "notebooks/training/06_music_review_lora_AI_AUDITED_COLAB.ipynb",
+    "removed_one_based_cell": 25,
+    "removed_zero_based_index": 24,
+    "removed_cell_id": "b80b4de6",
+    "retained_formatted_cell_id": "adca1300",
+    "retained_formatted_cell_now_one_based": 25,
+    "before_sha256": "558e9f3e896d845769a09278860793b281602b1497031a63fb04593b5eecce65",
+    "after_sha256": "b6c17d371c97b2dc932118dc87ab091062f9bed6e8ea0aead2256c67258bf376",
+    "all_other_cells_exactly_preserved": true,
+    "all_13_code_cells_and_outputs_unchanged": true,
+    "notebook_metadata_unchanged": true,
+    "all_AI_assistance_text_unchanged": true,
+    "notebook_execution": false
+  },
+  "notebook10_disclosure_sentence_revision": {
+    "after": "Generative AI assisted with pipeline and notebook code.",
+    "file": "notebooks/10_saved_results_review_readable.ipynb",
+    "cell_one_based": 15,
+    "cell_id": "6325752a",
+    "before_sha256": "e239beb333de5791a8352a1671e75f3165a39d54e313c1e765b4f7c80accc4a2",
+    "after_sha256": "b580db01d17227a89452b8816f11fb92bb5f830179cc8f8177039afa738d6d6d",
+    "remaining_disclosure_text_and_final_position_unchanged": true,
+    "all_code_outputs_and_notebook_metadata_unchanged": true,
+    "change_description": "Authorized code-assistance wording normalization. Exact prior record retained in the recoverable local-only backup; remaining disclosure and its position were preserved."
+  }
+}

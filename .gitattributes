@@ -1,0 +1,6 @@
+# Preserve immutable ZIP and saved notebook bytes, including any input hashes.
+*.zip binary
+*.png binary
+*.docx binary
+*.ipynb -text
+music_review_runs/** -text

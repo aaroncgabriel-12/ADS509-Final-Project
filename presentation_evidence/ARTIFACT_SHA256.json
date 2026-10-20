@@ -1,0 +1,10 @@
+{
+  "01_EDA_7664_passages_lengths_and_term_frequencies.png": "438bc1e4a920473698857486c400f8c17e2f248cafd5700c666fb6702b10bbd1",
+  "02_VADER_140_training_passages_sentiment.png": "b576796ea46b4f1c0c6a6ca03b9f4cd7dd5bd60e3b48e26119c59d0d5515f182",
+  "03_A_to_D_33_validation_passages_accuracy_and_macroF1.png": "5ccdee3eb853938d09d090c3521ee1b703a39fad707084683b342d8d010e3b6e",
+  "04_B_33_validation_passages_confusion_matrix.png": "2bbd8e1649e74c661cecc6dccd522822f220a23d544ad0f837ed884dd39df381",
+  "05_B_saved_validation_errors_two_examples.png": "9a9f224e87b16b0559fe6f764e1038d92840c92470558f601b921adac887642a",
+  "EVIDENCE_SOURCES_AND_CHECKS.json": "1d4ec534e481e63fddc11ae62e174d586486073307eae52131355d1d6bf7f855",
+  "README.md": "9a66a8d09091933c00a490543f35f91b6ae92aa1c37f6ed7dda0f4e6945fc074",
+  "SAVED_B_ERROR_EXAMPLES.json": "9316ba54d5f59771da75a459a69718bcdd854be281b3def68c4e235bd7066f3e"
+}

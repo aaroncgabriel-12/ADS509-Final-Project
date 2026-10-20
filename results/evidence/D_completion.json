@@ -1,0 +1,9 @@
+{
+  "status": "D_completed_with_reload_checks",
+  "selected_epoch": 5,
+  "all_five_checkpoints_reloaded": true,
+  "saved_reloaded_selected_adapter_agreement": "PASS",
+  "training_budget_and_schedule_changed": true,
+  "independent_human_evaluation": false,
+  "confirmatory_final_comparison_performed": false
+}

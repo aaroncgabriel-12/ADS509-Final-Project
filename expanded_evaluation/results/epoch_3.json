@@ -1,0 +1,63 @@
+{
+  "epoch": 3,
+  "training_weighted_ce": 0.8736896863220487,
+  "training_unweighted_ce": 0.8723137176036835,
+  "validation_unweighted_ce": 0.7814640101790428,
+  "validation": {
+    "n": 200,
+    "accuracy": 0.645,
+    "macro_f1": 0.5629897528631705,
+    "per_class": {
+      "specific_musical_observation": {
+        "precision": 0.8070175438596491,
+        "recall": 0.7479674796747967,
+        "f1": 0.7763713080168776,
+        "support": 123
+      },
+      "general_opinion": {
+        "precision": 0.38095238095238093,
+        "recall": 0.38095238095238093,
+        "f1": 0.38095238095238093,
+        "support": 42
+      },
+      "background_other": {
+        "precision": 0.4772727272727273,
+        "recall": 0.6,
+        "f1": 0.5316455696202531,
+        "support": 35
+      }
+    },
+    "confusion_matrix": [
+      [
+        92,
+        19,
+        12
+      ],
+      [
+        15,
+        16,
+        11
+      ],
+      [
+        7,
+        7,
+        21
+      ]
+    ],
+    "label_order": [
+      "specific_musical_observation",
+      "general_opinion",
+      "background_other"
+    ],
+    "prediction_counts": {
+      "specific_musical_observation": 114,
+      "general_opinion": 42,
+      "background_other": 44
+    },
+    "exact_top_ties": 0
+  },
+  "successful_optimizer_steps": 50,
+  "skipped_optimizer_steps": 0,
+  "checkpoint": "adapter_epoch_3",
+  "adapter_sha256": "4d4224a479aa1caba53eb2514dd8c0a3a42b5bf729a840d618bfb04c6ecefcab"
+}

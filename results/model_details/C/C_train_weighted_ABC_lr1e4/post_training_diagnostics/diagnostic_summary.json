@@ -1,0 +1,523 @@
+{
+  "status": "PASS",
+  "all_three_checkpoints_reloaded": true,
+  "epochs": [
+    {
+      "epoch": 1,
+      "checkpoint": "adapter_epoch_1",
+      "base_sha256": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+      "adapter_sha256": "f96dbef274726d475dee68f7e5c5b5f763591acd7607584a627850bf37a3ed2a",
+      "scoring_stage": "after_all_training_updates",
+      "train": {
+        "n": 140,
+        "accuracy": 0.2571428571428571,
+        "macro_f1": 0.18119464454942533,
+        "per_class": {
+          "specific_musical_observation": {
+            "precision": 0.3333333333333333,
+            "recall": 0.012658227848101266,
+            "f1": 0.024390243902439025,
+            "support": 79
+          },
+          "general_opinion": {
+            "precision": 0.2682926829268293,
+            "recall": 0.825,
+            "f1": 0.4049079754601227,
+            "support": 40
+          },
+          "background_other": {
+            "precision": 0.14285714285714285,
+            "recall": 0.09523809523809523,
+            "f1": 0.11428571428571428,
+            "support": 21
+          }
+        },
+        "confusion_matrix": [
+          [
+            1,
+            73,
+            5
+          ],
+          [
+            0,
+            33,
+            7
+          ],
+          [
+            2,
+            17,
+            2
+          ]
+        ],
+        "label_order": [
+          "specific_musical_observation",
+          "general_opinion",
+          "background_other"
+        ],
+        "prediction_counts": {
+          "specific_musical_observation": 3,
+          "general_opinion": 123,
+          "background_other": 14
+        },
+        "exact_top_ties": 1,
+        "unweighted_ce": 1.1992234587669373,
+        "error_count": 104
+      },
+      "validation": {
+        "n": 33,
+        "accuracy": 0.18181818181818182,
+        "macro_f1": 0.15079365079365079,
+        "per_class": {
+          "specific_musical_observation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 18
+          },
+          "general_opinion": {
+            "precision": 0.17857142857142858,
+            "recall": 0.7142857142857143,
+            "f1": 0.2857142857142857,
+            "support": 7
+          },
+          "background_other": {
+            "precision": 0.25,
+            "recall": 0.125,
+            "f1": 0.16666666666666666,
+            "support": 8
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            17,
+            1
+          ],
+          [
+            0,
+            5,
+            2
+          ],
+          [
+            1,
+            6,
+            1
+          ]
+        ],
+        "label_order": [
+          "specific_musical_observation",
+          "general_opinion",
+          "background_other"
+        ],
+        "prediction_counts": {
+          "specific_musical_observation": 1,
+          "general_opinion": 28,
+          "background_other": 4
+        },
+        "exact_top_ties": 0,
+        "unweighted_ce": 1.2573337988419966,
+        "error_count": 27
+      },
+      "saved_reloaded_validation_agreement": {
+        "status": "PASS",
+        "rows": 33,
+        "all_predicted_labels_identical": true,
+        "largest_probability_difference": 0.0,
+        "probability_atol": 0.002
+      }
+    },
+    {
+      "epoch": 2,
+      "checkpoint": "adapter_epoch_2",
+      "base_sha256": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+      "adapter_sha256": "31ee00f7abb4c924498f8063d2e56159e07082210027cdcc4ca3663eb40cb5ed",
+      "scoring_stage": "after_all_training_updates",
+      "train": {
+        "n": 140,
+        "accuracy": 0.5642857142857143,
+        "macro_f1": 0.3688894207151944,
+        "per_class": {
+          "specific_musical_observation": {
+            "precision": 0.6016949152542372,
+            "recall": 0.8987341772151899,
+            "f1": 0.7208121827411168,
+            "support": 79
+          },
+          "general_opinion": {
+            "precision": 0.4166666666666667,
+            "recall": 0.125,
+            "f1": 0.19230769230769232,
+            "support": 40
+          },
+          "background_other": {
+            "precision": 0.3,
+            "recall": 0.14285714285714285,
+            "f1": 0.1935483870967742,
+            "support": 21
+          }
+        },
+        "confusion_matrix": [
+          [
+            71,
+            6,
+            2
+          ],
+          [
+            30,
+            5,
+            5
+          ],
+          [
+            17,
+            1,
+            3
+          ]
+        ],
+        "label_order": [
+          "specific_musical_observation",
+          "general_opinion",
+          "background_other"
+        ],
+        "prediction_counts": {
+          "specific_musical_observation": 118,
+          "general_opinion": 12,
+          "background_other": 10
+        },
+        "exact_top_ties": 2,
+        "unweighted_ce": 1.0117549223559243,
+        "error_count": 61
+      },
+      "validation": {
+        "n": 33,
+        "accuracy": 0.48484848484848486,
+        "macro_f1": 0.3122923588039867,
+        "per_class": {
+          "specific_musical_observation": {
+            "precision": 0.56,
+            "recall": 0.7777777777777778,
+            "f1": 0.6511627906976745,
+            "support": 18
+          },
+          "general_opinion": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 7
+          },
+          "background_other": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857,
+            "support": 8
+          }
+        },
+        "confusion_matrix": [
+          [
+            14,
+            2,
+            2
+          ],
+          [
+            5,
+            0,
+            2
+          ],
+          [
+            6,
+            0,
+            2
+          ]
+        ],
+        "label_order": [
+          "specific_musical_observation",
+          "general_opinion",
+          "background_other"
+        ],
+        "prediction_counts": {
+          "specific_musical_observation": 25,
+          "general_opinion": 2,
+          "background_other": 6
+        },
+        "exact_top_ties": 1,
+        "unweighted_ce": 1.0322196953224414,
+        "error_count": 17
+      },
+      "saved_reloaded_validation_agreement": {
+        "status": "PASS",
+        "rows": 33,
+        "all_predicted_labels_identical": true,
+        "largest_probability_difference": 0.0,
+        "probability_atol": 0.002
+      }
+    },
+    {
+      "epoch": 3,
+      "checkpoint": "adapter_epoch_3",
+      "base_sha256": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+      "adapter_sha256": "6449c72f18fb822e58c615b42848e552d28b173dc5f4bf539c657c95fa449a3d",
+      "scoring_stage": "after_all_training_updates",
+      "train": {
+        "n": 140,
+        "accuracy": 0.5714285714285714,
+        "macro_f1": 0.46226677805625177,
+        "per_class": {
+          "specific_musical_observation": {
+            "precision": 0.6741573033707865,
+            "recall": 0.759493670886076,
+            "f1": 0.7142857142857143,
+            "support": 79
+          },
+          "general_opinion": {
+            "precision": 0.4166666666666667,
+            "recall": 0.375,
+            "f1": 0.39473684210526316,
+            "support": 40
+          },
+          "background_other": {
+            "precision": 0.3333333333333333,
+            "recall": 0.23809523809523808,
+            "f1": 0.2777777777777778,
+            "support": 21
+          }
+        },
+        "confusion_matrix": [
+          [
+            60,
+            15,
+            4
+          ],
+          [
+            19,
+            15,
+            6
+          ],
+          [
+            10,
+            6,
+            5
+          ]
+        ],
+        "label_order": [
+          "specific_musical_observation",
+          "general_opinion",
+          "background_other"
+        ],
+        "prediction_counts": {
+          "specific_musical_observation": 89,
+          "general_opinion": 36,
+          "background_other": 15
+        },
+        "exact_top_ties": 3,
+        "unweighted_ce": 1.0121055943625314,
+        "error_count": 60
+      },
+      "validation": {
+        "n": 33,
+        "accuracy": 0.5151515151515151,
+        "macro_f1": 0.423015873015873,
+        "per_class": {
+          "specific_musical_observation": {
+            "precision": 0.5909090909090909,
+            "recall": 0.7222222222222222,
+            "f1": 0.65,
+            "support": 18
+          },
+          "general_opinion": {
+            "precision": 0.4,
+            "recall": 0.2857142857142857,
+            "f1": 0.3333333333333333,
+            "support": 7
+          },
+          "background_other": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857,
+            "support": 8
+          }
+        },
+        "confusion_matrix": [
+          [
+            13,
+            3,
+            2
+          ],
+          [
+            3,
+            2,
+            2
+          ],
+          [
+            6,
+            0,
+            2
+          ]
+        ],
+        "label_order": [
+          "specific_musical_observation",
+          "general_opinion",
+          "background_other"
+        ],
+        "prediction_counts": {
+          "specific_musical_observation": 22,
+          "general_opinion": 5,
+          "background_other": 6
+        },
+        "exact_top_ties": 0,
+        "unweighted_ce": 1.047830874269659,
+        "error_count": 16
+      },
+      "saved_reloaded_validation_agreement": {
+        "status": "PASS",
+        "rows": 33,
+        "all_predicted_labels_identical": true,
+        "largest_probability_difference": 0.0,
+        "probability_atol": 0.002
+      }
+    }
+  ],
+  "selected_epoch": 3,
+  "selected": {
+    "epoch": 3,
+    "checkpoint": "adapter_epoch_3",
+    "base_sha256": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+    "adapter_sha256": "6449c72f18fb822e58c615b42848e552d28b173dc5f4bf539c657c95fa449a3d",
+    "scoring_stage": "after_all_training_updates",
+    "train": {
+      "n": 140,
+      "accuracy": 0.5714285714285714,
+      "macro_f1": 0.46226677805625177,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.6741573033707865,
+          "recall": 0.759493670886076,
+          "f1": 0.7142857142857143,
+          "support": 79
+        },
+        "general_opinion": {
+          "precision": 0.4166666666666667,
+          "recall": 0.375,
+          "f1": 0.39473684210526316,
+          "support": 40
+        },
+        "background_other": {
+          "precision": 0.3333333333333333,
+          "recall": 0.23809523809523808,
+          "f1": 0.2777777777777778,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          60,
+          15,
+          4
+        ],
+        [
+          19,
+          15,
+          6
+        ],
+        [
+          10,
+          6,
+          5
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 89,
+        "general_opinion": 36,
+        "background_other": 15
+      },
+      "exact_top_ties": 3,
+      "unweighted_ce": 1.0121055943625314,
+      "error_count": 60
+    },
+    "validation": {
+      "n": 33,
+      "accuracy": 0.5151515151515151,
+      "macro_f1": 0.423015873015873,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.5909090909090909,
+          "recall": 0.7222222222222222,
+          "f1": 0.65,
+          "support": 18
+        },
+        "general_opinion": {
+          "precision": 0.4,
+          "recall": 0.2857142857142857,
+          "f1": 0.3333333333333333,
+          "support": 7
+        },
+        "background_other": {
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857,
+          "support": 8
+        }
+      },
+      "confusion_matrix": [
+        [
+          13,
+          3,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          6,
+          0,
+          2
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 22,
+        "general_opinion": 5,
+        "background_other": 6
+      },
+      "exact_top_ties": 0,
+      "unweighted_ce": 1.047830874269659,
+      "error_count": 16
+    },
+    "saved_reloaded_validation_agreement": {
+      "status": "PASS",
+      "rows": 33,
+      "all_predicted_labels_identical": true,
+      "largest_probability_difference": 0.0,
+      "probability_atol": 0.002
+    }
+  },
+  "saved_reloaded_selected_adapter_agreement": {
+    "status": "PASS",
+    "rows": 33,
+    "all_predicted_labels_identical": true,
+    "largest_probability_difference": 0.0,
+    "probability_atol": 0.002
+  },
+  "tokenization": {
+    "train": {
+      "n": 140,
+      "truncated_passages": 0
+    },
+    "validation": {
+      "n": 33,
+      "truncated_passages": 0
+    }
+  },
+  "diagnostics_occur_after_training_only": true,
+  "selection_uses_validation_only": true,
+  "independent_human_evaluation": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "training_probe_ids": [
+    "c492dd7d20c783ca9e5e4029",
+    "a0f1a7f4450757d32312a4fa",
+    "c85f1db5dc1da682a27820f5"
+  ],
+  "A_B_C_token_ids": {
+    "A": 32,
+    "B": 33,
+    "C": 34
+  },
+  "target_position": "final non-padding prompt token",
+  "training_inputs_include_answers": false,
+  "largest_logit_difference": 0.03125,
+  "comparison_tolerance": {
+    "atol": 0.02,
+    "rtol": 0.002
+  }
+}

@@ -1,0 +1,774 @@
+{
+  "experiment": "A_unweighted_ABC",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "seed": 1509509,
+  "epochs": 3,
+  "batch_size": 2,
+  "gradient_accumulation": 4,
+  "learning_rate": 0.0002,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "lora_targets": [
+    "q_proj",
+    "v_proj"
+  ],
+  "objective": "A/B/C-only cross entropy at final valid prompt position; no EOS loss",
+  "class_weights_A_B_C": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "weight_source": "unweighted control",
+  "accumulation_normalization": "sum of target class weights over the entire accumulated group",
+  "base_sha256_before": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+  "adapter_initial_sha256": "313da552071077055642df7d36c5d6f08884c1522f4dcbc81d7ac4197c9815bb",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.4",
+    "scikit-learn": "1.6.1"
+  },
+  "gpu": "Tesla T4",
+  "manifest": {
+    "schema": "music-review-train-validation-only-v1",
+    "created_at_utc": "2026-10-18T00:49:00.814544+00:00",
+    "rows": {
+      "train": 140,
+      "validation": 33
+    },
+    "seed": 1509509,
+    "csv_sha256": {
+      "train": "3500dcd7e53b39a09fd5f78cd28eee94e9cb9ebc1d3e5e56d7fa69e784841096",
+      "validation": "61b79776c0471b46039be0367998d71031c62c45eb25a7d93c0ca3adbd0ef088"
+    },
+    "class_counts": {
+      "train": {
+        "general_opinion": 40,
+        "specific_musical_observation": 79,
+        "background_other": 21
+      },
+      "validation": {
+        "specific_musical_observation": 18,
+        "general_opinion": 7,
+        "background_other": 8
+      }
+    },
+    "membership": {
+      "a0f1a7f4450757d32312a4fa": {
+        "group_id": "entity:ef56f1c7-4bd0-332c-b33a-25527d15317b",
+        "split": "train"
+      },
+      "c492dd7d20c783ca9e5e4029": {
+        "group_id": "entity:96011c08-4cc0-3916-b5bb-59b7fae40b6f",
+        "split": "train"
+      },
+      "0f77abd5b7541a9ffaeb1a61": {
+        "group_id": "entity:a722c41a-b5b8-34f1-a347-5dbc184d8f45",
+        "split": "train"
+      },
+      "0cd841d26cefc074072692a7": {
+        "group_id": "entity:50f8710f-3ae6-319b-85a7-afe783f13449",
+        "split": "train"
+      },
+      "7988fa423942a101d40f1427": {
+        "group_id": "entity:c78eba81-721a-3ebc-b1e8-a3fbd682403a",
+        "split": "train"
+      },
+      "c85f1db5dc1da682a27820f5": {
+        "group_id": "entity:3e761708-0121-3929-b2cd-1e0f53e2e499",
+        "split": "train"
+      },
+      "4a0f3870f6266ba564d369e1": {
+        "group_id": "entity:88af527a-d0e8-3cbc-a922-cd561c830fb5",
+        "split": "train"
+      },
+      "9d6563a4bfbc992ac2d3340c": {
+        "group_id": "entity:dc1138d3-cd5b-361a-b5e1-b3d5ec25819c",
+        "split": "train"
+      },
+      "fc4e9ab95d6b396ca39d02ef": {
+        "group_id": "entity:1e1920ee-88a4-3458-a8ec-e6d50fa2c7dc",
+        "split": "train"
+      },
+      "79d8baa3f90f189473254127": {
+        "group_id": "entity:c80c67f2-c4de-340b-ba7e-44607da1146c",
+        "split": "train"
+      },
+      "9676e8d9c762cfecd21b21e1": {
+        "group_id": "entity:71cb9b52-85d1-3a56-9a21-c8eb37ea644d",
+        "split": "train"
+      },
+      "343808bfcaaa8907143216c4": {
+        "group_id": "entity:4d16212c-07b2-35e5-9dc7-7293e0302e33",
+        "split": "train"
+      },
+      "fd0d70971bff87828bfa8496": {
+        "group_id": "entity:53263e41-f66c-3290-af6c-6dbb49a506c7",
+        "split": "train"
+      },
+      "3db73f668901f595c4f341e7": {
+        "group_id": "entity:8241e86b-34f1-3667-9f83-f8034e4037d1",
+        "split": "train"
+      },
+      "b0e2fe283892bcc78bcde882": {
+        "group_id": "entity:3cf45d95-4bf8-3197-8580-4882ae3108e5",
+        "split": "train"
+      },
+      "2cecbb907ac557953275b005": {
+        "group_id": "entity:28752b3b-1cf9-324b-9117-e67175fe621b",
+        "split": "train"
+      },
+      "c33b5d3c3c9c171b119c45db": {
+        "group_id": "entity:c95a5005-4092-39a8-b7d3-354657d3f85c",
+        "split": "train"
+      },
+      "3e04e6dd69cfe3d8381fc12a": {
+        "group_id": "entity:05688b0a-2add-3df9-8b6d-5b9aaba48b38",
+        "split": "train"
+      },
+      "dc48c89c6588e8ba1a474f78": {
+        "group_id": "entity:1aeab5e7-53b3-3d23-8b80-af0df83ee7de",
+        "split": "train"
+      },
+      "57acb096df602d07abd16490": {
+        "group_id": "entity:9d8c3f46-2824-337b-af69-f2bd57ee4748",
+        "split": "train"
+      },
+      "6692a2d70810ee2420bcef08": {
+        "group_id": "entity:c240cb9c-9b94-318f-a087-c9ba3003f243",
+        "split": "train"
+      },
+      "92c8d88f0c1c5a228cc8e592": {
+        "group_id": "entity:7f62956a-fd75-3f94-a66a-151f2c67682e",
+        "split": "train"
+      },
+      "512c16bb50a3df28159f3eb8": {
+        "group_id": "entity:e7ef27c3-1bf3-34bb-927c-ad8b1bf37637",
+        "split": "train"
+      },
+      "c6ccd91fab11e0685f90b0ed": {
+        "group_id": "entity:f36db8f4-0a22-3f10-bd0f-42a453b764d1",
+        "split": "train"
+      },
+      "5ca652f0d39193853830c831": {
+        "group_id": "entity:c425e73f-81a7-3ec4-8722-c764205eabb1",
+        "split": "train"
+      },
+      "7155ff495f73a826fded374c": {
+        "group_id": "entity:0b41a2e5-44aa-3ce3-88c6-edf2da0cc883",
+        "split": "train"
+      },
+      "543fcc2929e0ee6a1a18a000": {
+        "group_id": "entity:02db6e4a-ea1f-3293-8349-8f1846d3d245",
+        "split": "train"
+      },
+      "191c1ab5f21e995091f17243": {
+        "group_id": "entity:2f3a325b-5d7c-3519-b26f-539b48d4c3cb",
+        "split": "train"
+      },
+      "e2e2dddd5f4e7598019bc059": {
+        "group_id": "entity:ce65ae1a-dc31-347f-9310-67e617f5630f",
+        "split": "train"
+      },
+      "070136a4d07fec9bc8a417cd": {
+        "group_id": "entity:45b34a80-f846-37e1-b850-9aafa6a96a86",
+        "split": "train"
+      },
+      "cc14223fbf61746d67cc9281": {
+        "group_id": "entity:b3ca36ea-c674-3bf8-bb1e-a6a4cb6fc192",
+        "split": "train"
+      },
+      "bb0024bb94a8ce66ab74b0ac": {
+        "group_id": "entity:ef867a4e-5207-3236-ab1d-0b3930cfd3ec",
+        "split": "train"
+      },
+      "804b64b69705151beacda9d9": {
+        "group_id": "entity:01975f0c-a288-3ff6-b68c-3abef1c01928",
+        "split": "train"
+      },
+      "ee2f61d6ddc5042ab381292c": {
+        "group_id": "entity:34e8b5d5-e3c1-3f98-9013-4b2846af91aa",
+        "split": "train"
+      },
+      "71174d9f58587badd506d99c": {
+        "group_id": "entity:86e61ead-9bb5-3117-8735-fc9da8fd62b1",
+        "split": "train"
+      },
+      "c1259e4277c1cccd7ecb2f00": {
+        "group_id": "entity:cd3b377c-a461-3fd4-9d1c-59329f2c103f",
+        "split": "train"
+      },
+      "a4ed034a68255cadc2c59762": {
+        "group_id": "entity:77178b6d-1f34-33c9-87e9-185ecb93a1bc",
+        "split": "train"
+      },
+      "a3a710a2ee80c07b2adbd0e4": {
+        "group_id": "entity:d300824c-9114-394d-ade9-0ac5bb487dc8",
+        "split": "train"
+      },
+      "a4819bbdad225c9de2587fa4": {
+        "group_id": "entity:dc8e70a2-d92f-3743-b4fb-ad897f62e1e4",
+        "split": "train"
+      },
+      "f93e5361902d3aa32f963f58": {
+        "group_id": "entity:d8fbe231-37b6-333a-90cd-cbc81db24859",
+        "split": "train"
+      },
+      "610338bae8ebb74c2b6b47f4": {
+        "group_id": "entity:4fb09026-acc7-3de9-a837-1d9784e580af",
+        "split": "train"
+      },
+      "227b0e6e0e98f45cd2738116": {
+        "group_id": "entity:7502736c-23fd-39f8-af78-e65537038586",
+        "split": "train"
+      },
+      "ccd02146e20d664ee546e37f": {
+        "group_id": "entity:d9dbc5fc-57ca-325c-8d27-aa6f6f450cbb",
+        "split": "train"
+      },
+      "85a5679a4a315c2a89340453": {
+        "group_id": "entity:e701a954-0fd7-3789-83cb-03b5a28783b7",
+        "split": "train"
+      },
+      "5500867a7848ef12bcb8476d": {
+        "group_id": "entity:b2413f46-657d-3c4c-86e3-5b2347707bfb",
+        "split": "train"
+      },
+      "684a61bc58a177b7d6c52aa0": {
+        "group_id": "entity:3536fea7-c331-3722-a41b-2126ea68161e",
+        "split": "train"
+      },
+      "d13ef461fe74e3866acca6fc": {
+        "group_id": "entity:b16fa52b-ee0f-34eb-8efd-12a24260effd",
+        "split": "train"
+      },
+      "ac37830d3784d23dd2669869": {
+        "group_id": "entity:0df90fea-35e2-3554-886b-7a806abdcb22",
+        "split": "train"
+      },
+      "0eda759da35e267f228ca965": {
+        "group_id": "entity:6190df7c-f4b3-3a99-a895-53dfe1a3fcf7",
+        "split": "train"
+      },
+      "bbae0e68467cd079bd8551bc": {
+        "group_id": "entity:2edf7951-59d5-3939-9363-6ce92d638e3e",
+        "split": "train"
+      },
+      "a8690aadee4e05ae367e6399": {
+        "group_id": "entity:7cda193a-7284-309a-bc05-df04de833030",
+        "split": "train"
+      },
+      "a6a9619ea6c95064eddccc3e": {
+        "group_id": "entity:43dfe46c-f592-38f0-a577-ba6bcae4e189",
+        "split": "train"
+      },
+      "fdc4f5d594f71721aaa46b01": {
+        "group_id": "entity:0a8d4887-f7b0-3f38-890c-be25573f03f9",
+        "split": "train"
+      },
+      "e78f4ea9fc367247876265b8": {
+        "group_id": "entity:a02e7f84-13a5-3b9e-9b99-bdb8aa5d0ae5",
+        "split": "train"
+      },
+      "169539dc9a4ef85e08035ef7": {
+        "group_id": "entity:62ffd636-a489-3067-b5cb-3e0ae88a904f",
+        "split": "train"
+      },
+      "c5f0cce90563d0ae341c9453": {
+        "group_id": "entity:29fdb17c-0fe5-3df3-9a33-f397d7388e10",
+        "split": "train"
+      },
+      "2076f34445f5d46c79e65177": {
+        "group_id": "entity:8c76bff5-923d-39d5-96ee-a4f47046a179",
+        "split": "train"
+      },
+      "eb9b94366558cbb9255fbb3f": {
+        "group_id": "entity:60a93d63-1e30-3715-8525-5e9adebb8424",
+        "split": "train"
+      },
+      "d3320321460c24a8a36b714f": {
+        "group_id": "entity:5f84e8b9-b8e5-3fbf-b514-0192a62d88b6",
+        "split": "train"
+      },
+      "c92d8a207578c9b98728f4a3": {
+        "group_id": "entity:e5f3322f-feb0-3ada-aa59-65d827ef0cb8",
+        "split": "train"
+      },
+      "38eb3b46f56735b3cd2a9efb": {
+        "group_id": "entity:d8b7ff94-0781-307c-9a9b-04e6a55fc234",
+        "split": "train"
+      },
+      "f14911dc2b54d25440da16da": {
+        "group_id": "entity:9d8f7f6c-163e-347a-a909-970f5fb1431d",
+        "split": "train"
+      },
+      "185d4de97830e84a21b7dfd8": {
+        "group_id": "entity:ee377b52-d425-383e-9cf3-c3a958a190cf",
+        "split": "train"
+      },
+      "cfc26dda3fa319c6b41e99e0": {
+        "group_id": "entity:89051ad2-3fff-32ae-8b0c-cc50cdd048f0",
+        "split": "train"
+      },
+      "963385384304871aab0ea8c7": {
+        "group_id": "entity:9d5fffe9-1d2e-3d0a-99ac-74df99d15a72",
+        "split": "train"
+      },
+      "364fd564e973e8f167d395fb": {
+        "group_id": "entity:fb0f909c-5f0c-319c-b296-358f5e882484",
+        "split": "train"
+      },
+      "dfb71cd736b8a28b4ee7e860": {
+        "group_id": "entity:fe783b2d-90cc-3f9c-8b30-59bed9be4070",
+        "split": "train"
+      },
+      "7083440f3551d7599ab7c02b": {
+        "group_id": "entity:62fb230b-87d8-3208-9d15-03993b6db47e",
+        "split": "train"
+      },
+      "e79fbcb93a6d45d7b0529b89": {
+        "group_id": "entity:fcbc0e5a-6441-375f-ade9-c0ebc0cd4b68",
+        "split": "train"
+      },
+      "d14e4ac0ad5c9f63dc5a5292": {
+        "group_id": "entity:13245165-f9a5-30b6-8d44-1a3c663dd7a6",
+        "split": "train"
+      },
+      "1d0d86895f867e9f8522fe71": {
+        "group_id": "entity:adebd668-6ca8-3157-8e49-d601de379996",
+        "split": "train"
+      },
+      "87f4c0d15cc4517d2ee1b5ed": {
+        "group_id": "entity:ab5faca6-74d9-3c7b-83dd-7776c163fefd",
+        "split": "train"
+      },
+      "e6f605bc601bfe3946006acf": {
+        "group_id": "entity:f2dcb85c-4663-3fb7-b839-feaf7287951e",
+        "split": "train"
+      },
+      "9c297f1d94b983ce846d343e": {
+        "group_id": "entity:f9ab0fb8-d2c8-365e-aa14-462df955c21e",
+        "split": "train"
+      },
+      "b49b18fd62cd446bd40db2d2": {
+        "group_id": "entity:95524ec1-dfa4-3da0-8e45-6ef9d229a2e2",
+        "split": "train"
+      },
+      "16d36b5f32d3198b41139181": {
+        "group_id": "entity:5ab32af4-c62e-3cbf-aa8c-c761581d3b94",
+        "split": "train"
+      },
+      "bd9939745325eb2cba1f3dc9": {
+        "group_id": "entity:e767e7a2-b2c2-3e5c-9967-6ad7c0f93c11",
+        "split": "train"
+      },
+      "f8c551fc22a3302ebcd9644e": {
+        "group_id": "entity:5094d9a0-2452-3c78-90db-a79edaaaafd2",
+        "split": "train"
+      },
+      "cb387ce6ae2250e119df2b15": {
+        "group_id": "entity:bf27245e-c593-3102-b055-ccb8632b0840",
+        "split": "train"
+      },
+      "7dc1770282fa1932c6db3062": {
+        "group_id": "entity:97dd6412-44a8-3bb6-9942-6e38bff16e0a",
+        "split": "train"
+      },
+      "315ed09177cfaebaac36c39a": {
+        "group_id": "entity:25af0a92-1f27-3609-a958-23734e0a0e70",
+        "split": "train"
+      },
+      "7cfefb6deac4de442e85f6e0": {
+        "group_id": "entity:a9f84202-22e0-3dff-8d6c-b5a6ff87af41",
+        "split": "train"
+      },
+      "ec914d047fd6daeb48c114ec": {
+        "group_id": "entity:78d78613-3227-36a9-84f6-261f61788d85",
+        "split": "train"
+      },
+      "7d0dffadbcf8f680c83818b1": {
+        "group_id": "entity:659df9f3-b89b-33a5-b7aa-3b93d6373816",
+        "split": "train"
+      },
+      "719b3e58a14d919204a8d311": {
+        "group_id": "entity:7d0b6e14-bd03-36e1-9855-06d798c82a90",
+        "split": "train"
+      },
+      "c5abe7a5c99ee59a9e0f29c8": {
+        "group_id": "entity:3e9d3da6-e6f7-3358-a015-8215a1b075e5",
+        "split": "train"
+      },
+      "6b0fffa22fafd7b4ba360ff7": {
+        "group_id": "entity:d2bbdd77-4676-39b8-b71b-11055649a221",
+        "split": "train"
+      },
+      "a8107fa733cfa35c0f89c0f2": {
+        "group_id": "entity:ab4a462d-bf33-3bfb-a671-0e7d88e1d536",
+        "split": "train"
+      },
+      "88cf5b0ec7f53c7ce0cea6d7": {
+        "group_id": "entity:c46c1901-420a-331c-b2fa-4bd0501edf4b",
+        "split": "train"
+      },
+      "56eecfb062f711d5ed0aadfb": {
+        "group_id": "entity:46feff2b-8218-3432-8a01-a6082b4c93d4",
+        "split": "train"
+      },
+      "125e493a80b90028acd4d63a": {
+        "group_id": "entity:57f98f31-0345-32a3-9373-3373675c9e27",
+        "split": "train"
+      },
+      "828d5171c95f90140e2aef43": {
+        "group_id": "entity:c15267d5-f6cb-3a32-a225-75b77e342b1f",
+        "split": "train"
+      },
+      "a18215f0dee2ab6f019b0b9b": {
+        "group_id": "entity:14c741a7-441a-34b0-a09d-5860a01b0652",
+        "split": "train"
+      },
+      "373462ea1a57c3dc7f43ef30": {
+        "group_id": "entity:2ed95747-3c9b-3fd5-8ac5-74554a9195bd",
+        "split": "train"
+      },
+      "a38f118ef729d3a52e79563a": {
+        "group_id": "entity:c365c7e5-3eb4-3a3c-806c-97cd1119628a",
+        "split": "train"
+      },
+      "a9188719b3a7045731021ca6": {
+        "group_id": "entity:2095193d-e133-3e0a-9caa-4ff9c7a5bf3c",
+        "split": "train"
+      },
+      "d30b629bb65433f79d3626f7": {
+        "group_id": "entity:ff47cc74-3fce-38a4-9884-ca462b4a354d",
+        "split": "train"
+      },
+      "4693367636f9c2175d62b324": {
+        "group_id": "entity:59a25dfb-406a-3a82-8be9-ada6f48e9686",
+        "split": "train"
+      },
+      "5c9556d67d668f52dc76d7b3": {
+        "group_id": "entity:2b91c49b-01b6-3d7b-b7aa-af7456718808",
+        "split": "train"
+      },
+      "f762db54e2e75e6cf34287c6": {
+        "group_id": "entity:845eb338-fe1f-3b87-a2fb-5f7dd8795554",
+        "split": "train"
+      },
+      "3088cf4affe23e5c0412cbd5": {
+        "group_id": "entity:9ffc3d27-ca88-31dd-b6ee-9b89fca1d32a",
+        "split": "train"
+      },
+      "799ff306521d56e10f719434": {
+        "group_id": "entity:42bb668a-c33b-381a-a492-1b38ac7611e8",
+        "split": "train"
+      },
+      "4c5bc897bd70e47f13a99841": {
+        "group_id": "entity:9f270ccb-89c1-38e8-af6d-b46816f510e8",
+        "split": "train"
+      },
+      "538de025d7c9e601245f1669": {
+        "group_id": "entity:8466b5e6-59a0-366e-aa62-9801c1740ffa",
+        "split": "train"
+      },
+      "cfb4f594d9bf6fadf0167570": {
+        "group_id": "entity:ef77620a-39e5-3e9b-9c1c-f276ae31182c",
+        "split": "train"
+      },
+      "0293721215ba6d3c657a4666": {
+        "group_id": "entity:f23a5e92-db3c-3496-a7f3-ece0e9a6105f",
+        "split": "train"
+      },
+      "94a2845de3d4e90efa715e3b": {
+        "group_id": "entity:29c29d84-1642-3217-b7b0-161d45b01487",
+        "split": "train"
+      },
+      "1365354cc6993cc916cb26df": {
+        "group_id": "entity:a007a216-f61f-3f41-8c11-1803c3c89cfc",
+        "split": "train"
+      },
+      "82fa25652332b6d04fb19980": {
+        "group_id": "entity:1d32e584-8044-34ae-aedc-a414bace8b39",
+        "split": "train"
+      },
+      "7c35ba647fc57300b1d373fa": {
+        "group_id": "entity:74410e0f-728c-34a2-ae3f-9f8c2c6c2a1c",
+        "split": "train"
+      },
+      "96a3e22186a7aa488ec70a9f": {
+        "group_id": "entity:f8a0763f-0ecc-3bc2-968e-a3a501c65abc",
+        "split": "train"
+      },
+      "03ceec486f93c20832374713": {
+        "group_id": "entity:c5af91cc-674a-365a-a6b4-919f0f93c65b",
+        "split": "train"
+      },
+      "1634a48c3a40390dd16dff4e": {
+        "group_id": "entity:05ee39bc-d077-3be9-a48b-9f01c9adbf25",
+        "split": "train"
+      },
+      "b5b440b71876ce6c8fa03471": {
+        "group_id": "entity:47b8b17f-24a3-33d2-9b6f-af9ac04c9361",
+        "split": "train"
+      },
+      "a3b8726df37c07787bc829e6": {
+        "group_id": "entity:56d42e63-7052-325d-a46d-adf95ca55747",
+        "split": "train"
+      },
+      "dc661d9acf0b6b6ddb2086b2": {
+        "group_id": "entity:8b0d4cc1-e7d5-37df-8d57-0b5cfbc48ac1",
+        "split": "train"
+      },
+      "91b0ba9a5378ec06cdeb3ac0": {
+        "group_id": "entity:9bfe63ed-c752-3be1-86e1-c6c5657a1290",
+        "split": "train"
+      },
+      "5b500acb1fec05415c10eb3d": {
+        "group_id": "entity:02d2aeda-d450-3a6b-a515-1ed9f622330a",
+        "split": "train"
+      },
+      "77799de91490b329f7277baa": {
+        "group_id": "entity:4adcb2d6-63ee-34f8-849e-05838264b279",
+        "split": "train"
+      },
+      "44f95a2e4bee35dcb3ddcf25": {
+        "group_id": "entity:60ea3436-97a9-39c1-bdc5-b6c4f426a9f6",
+        "split": "train"
+      },
+      "396a6de435b55cfd5aff77af": {
+        "group_id": "entity:d42052d6-1490-3072-980c-02f191334aee",
+        "split": "train"
+      },
+      "4110b255bb4e7ced6a61dbef": {
+        "group_id": "entity:4fe4db60-7562-35c4-a180-b26aac3b3def",
+        "split": "train"
+      },
+      "18b551698e4835fedf6638c7": {
+        "group_id": "entity:78c0ebd0-ad3f-36fb-9664-6e3dc7240099",
+        "split": "train"
+      },
+      "d48ecd075b6127560fc40cf6": {
+        "group_id": "entity:2667a613-08f8-3748-ae46-4e3ed6b7b6b6",
+        "split": "train"
+      },
+      "c6282309d4edf0d8c77988e6": {
+        "group_id": "entity:68d9477d-292c-3dbf-9fe0-fa829c449910",
+        "split": "train"
+      },
+      "68c8695cc2266faa01b8c3e4": {
+        "group_id": "entity:794f8637-d57a-3f64-8c5e-d7a79cc9f555",
+        "split": "train"
+      },
+      "e125aa65322f3e975665c9c7": {
+        "group_id": "entity:cd4c2cc6-fb5f-35db-8a48-2215edf499f7",
+        "split": "train"
+      },
+      "1028c23e76e535f8b53d4f58": {
+        "group_id": "entity:6aacc444-afee-3188-974b-df1fb1d12418",
+        "split": "train"
+      },
+      "fe44f5c4ca01cac93289128a": {
+        "group_id": "entity:fe84c444-2d95-3dfc-99ad-beac75605935",
+        "split": "train"
+      },
+      "10194932877403352640decb": {
+        "group_id": "entity:7067b31b-ab43-394d-a115-28a8d5492341",
+        "split": "train"
+      },
+      "03950858cefa94a51c07781c": {
+        "group_id": "entity:66b953f5-88a9-3c8f-89fa-e6c3618e03c4",
+        "split": "train"
+      },
+      "4fcf38d7171fa5f081a4a8c0": {
+        "group_id": "entity:5e12e4ce-aa12-3e70-b6a5-3c6ae9bdea08",
+        "split": "train"
+      },
+      "a4d1c7f0d2d67645e6c30db0": {
+        "group_id": "entity:4779a159-0e90-3fbc-829f-f7aa5863e59c",
+        "split": "train"
+      },
+      "8b8880ffea36b0612775f91a": {
+        "group_id": "entity:79d70d59-7d12-3e5c-86d7-dd7e30d6ec0d",
+        "split": "train"
+      },
+      "25d389f8622df9421899d319": {
+        "group_id": "entity:fe5c6618-338b-3a41-a150-c292dcc9edbd",
+        "split": "train"
+      },
+      "8303478931f9d78984cc0ec3": {
+        "group_id": "entity:e2ef172b-be05-32b2-abc9-e4d782cc63af",
+        "split": "train"
+      },
+      "cddf846758c43101b7b9f122": {
+        "group_id": "entity:7c787fee-3a70-3c71-b15d-e65a90587ad5",
+        "split": "train"
+      },
+      "9278e0dffcc033c22508cb28": {
+        "group_id": "entity:6e7fea20-d920-3106-ac1e-c9d9b53a6420",
+        "split": "train"
+      },
+      "5cb68273066b2d6a986dc52f": {
+        "group_id": "entity:b162cc5a-e4bb-3c65-b321-09245aea3e7a",
+        "split": "train"
+      },
+      "a2815828f4aa6b649bdabf95": {
+        "group_id": "entity:856ecc04-3ffb-3c09-b354-4f588cff4396",
+        "split": "train"
+      },
+      "809f439f509461e25f3e4be4": {
+        "group_id": "entity:fb0f43cc-b169-32e0-a60c-4ca6448c8a7e",
+        "split": "validation"
+      },
+      "93e42b235e847ba283aa54f3": {
+        "group_id": "entity:d763d74d-56e5-38a6-ba89-c0d6bdce2f51",
+        "split": "validation"
+      },
+      "e8d365243bff209b99424dd2": {
+        "group_id": "entity:152c57e4-ba4c-33c2-a790-8baace4a0e6e",
+        "split": "validation"
+      },
+      "b96af15a520a1919586c16ac": {
+        "group_id": "entity:1bdfdbc6-f350-352e-afa7-627c62e98c39",
+        "split": "validation"
+      },
+      "7dc34737d3eacdc14e991690": {
+        "group_id": "entity:7b7e2fef-ff57-3593-bd2f-135838414225",
+        "split": "validation"
+      },
+      "d34fce5f5566682993f676c4": {
+        "group_id": "entity:7f0f02b4-ee27-3384-9e2f-6781d7abc7ff",
+        "split": "validation"
+      },
+      "1369097bc02852daf847044b": {
+        "group_id": "entity:1bc78730-eb94-311e-ab40-969c29619ef1",
+        "split": "validation"
+      },
+      "c5462ca9de5c7b335a90522b": {
+        "group_id": "entity:65218ace-5627-3299-a1fb-5f33e582f704",
+        "split": "validation"
+      },
+      "3893430a8c381728b61f1a15": {
+        "group_id": "entity:633dc8b4-d421-337f-bead-db27698bfc23",
+        "split": "validation"
+      },
+      "1b6ff5ddee862ff12734e257": {
+        "group_id": "entity:bc288c21-653c-3421-881e-37a62f402021",
+        "split": "validation"
+      },
+      "7cdf798e95f59102e1d828e2": {
+        "group_id": "entity:5e26318d-973f-3e02-8697-4224fcbea189",
+        "split": "validation"
+      },
+      "d3f5001febe003a5e5255766": {
+        "group_id": "entity:43ec9157-f695-31c1-b652-3ba60834c1f8",
+        "split": "validation"
+      },
+      "a9debc1cbf7071c8c1f34a04": {
+        "group_id": "entity:314e5a96-0783-4fc2-b465-94e9c4a615cf",
+        "split": "validation"
+      },
+      "f02f06c39b914f90633dfded": {
+        "group_id": "entity:1b8fd83f-16a4-3bbc-884b-9de38f083213",
+        "split": "validation"
+      },
+      "e0bd8c4938787746e559ff1f": {
+        "group_id": "entity:8a93f150-032b-3a3d-bc0a-cfa795b51b58",
+        "split": "validation"
+      },
+      "65975e109104ac9cdd96cab1": {
+        "group_id": "entity:4537cad3-12ad-3a18-b8f5-b6082d4d25a5",
+        "split": "validation"
+      },
+      "52746eab93d553eba63cacdd": {
+        "group_id": "entity:ce62bf7c-0397-3704-9b48-e417e2448156",
+        "split": "validation"
+      },
+      "7218ae575c4e2d53ef56693a": {
+        "group_id": "entity:2e37a800-c30a-372c-878e-e028287231b9",
+        "split": "validation"
+      },
+      "90b5a6bb99708b8221fff138": {
+        "group_id": "entity:a727e951-a474-3ae4-8909-b748e61fe761",
+        "split": "validation"
+      },
+      "382c53843447f585c311fd7c": {
+        "group_id": "entity:e2a8e2cf-313b-3409-ac1f-2e65c989b8bb",
+        "split": "validation"
+      },
+      "107c21e0f3853c752006574c": {
+        "group_id": "entity:271faeb3-fdd1-3ebb-80aa-97b3116e9341",
+        "split": "validation"
+      },
+      "be7d297865a98cb125b3a398": {
+        "group_id": "entity:c4c05867-a68e-39c1-976d-54eeb1639489",
+        "split": "validation"
+      },
+      "519a4b93de14a28e99fb442b": {
+        "group_id": "entity:a11fe3f2-ac26-3de7-b2e9-96cd73da3272",
+        "split": "validation"
+      },
+      "f957297040176eb279ff5b0f": {
+        "group_id": "entity:fa79c7e7-ea0b-349e-ba04-0cff8e47983a",
+        "split": "validation"
+      },
+      "5bcc2c5e9523058602540117": {
+        "group_id": "entity:cd312f51-cdd2-37f1-bec6-d907c64e4f82",
+        "split": "validation"
+      },
+      "5a2497fa131978a7649196fb": {
+        "group_id": "entity:5a8b9ff2-6686-362b-9bf5-c99bfcd7ee67",
+        "split": "validation"
+      },
+      "7f0218156e806096aaf1fcd5": {
+        "group_id": "entity:d57e7582-e982-36af-87d2-99c65591e312",
+        "split": "validation"
+      },
+      "fa9b486b62950c790fbf0f28": {
+        "group_id": "entity:8a92e4ee-9934-355d-b305-e263b344f879",
+        "split": "validation"
+      },
+      "81358e8b97b7196ee5a0b85c": {
+        "group_id": "entity:46e86c38-9600-3fb8-9e9a-ccea84b8cd36",
+        "split": "validation"
+      },
+      "963c5bffc8c66dd55e705799": {
+        "group_id": "entity:1c5c2618-2af1-3bb4-9bad-d326bd7c479e",
+        "split": "validation"
+      },
+      "6949ba8ba950ac2843f75b81": {
+        "group_id": "entity:d746aead-28aa-3ec1-8ca9-6db450ec15d5",
+        "split": "validation"
+      },
+      "a17540cfa93e0015626629f7": {
+        "group_id": "entity:12f00157-a6dc-35ba-ac8e-40fa3fa26674",
+        "split": "validation"
+      },
+      "60b3dfc1080dde92d8296424": {
+        "group_id": "entity:6e931ed9-19f7-3230-85fc-b8ea9ddd2e6d",
+        "split": "validation"
+      }
+    },
+    "source_frozen_manifest_sha256": "bbc61298a605cc151cc5fe418779b75831e83b5dfa0de43b0e04d9db70d89877",
+    "source_audit_manifest_sha256": "80292047e3857b7150e438dbc01922750dcbc6dbca779b25689b0c5251ec65f3",
+    "original_executed_notebook_sha256": "bc5d2b40f428736bb556e5dcfcbad68509050f3b00666dce56538444b7219b86",
+    "original_validation_macro_f1": 0.30536659108087677,
+    "independent_human_evaluation": false,
+    "original_test_already_viewed": true,
+    "labeling_method": "AI-assisted labels after original human review; NOT independent human gold.",
+    "grouping": "Exactly the original training and validation membership; no re-splitting.",
+    "exclusion": "No held-out test rows, test files, or test metrics are included.",
+    "experiment_scope": [
+      "A_unweighted_ABC",
+      "B_train_weighted_ABC"
+    ]
+  },
+  "original_validation_macro_f1": 0.30536659108087677,
+  "independent_human_evaluation": false,
+  "status": "configured_not_completed"
+}

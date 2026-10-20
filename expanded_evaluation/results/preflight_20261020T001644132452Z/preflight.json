@@ -1,0 +1,54 @@
+{
+  "schema": "music-expanded-preflight-v1",
+  "status": "passed",
+  "freeze_sha256": "8332b6ad842b1608fe760af1aaf9f13beae9de9ed6ebddadd1cf9aadaff342a5",
+  "selection_receipt_sha256": "f3c0e481b046de0c0263d185f3b4ac08d7a08455221cf62030a9b17c09a6354e",
+  "tokenizer_signature": {
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "vocab_sha256": "54a4e00eec5a8c5f40d137afdde38da75f4c46ffa802b509cb5fb2157b5a5b0d",
+    "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+    "special_tokens_map": {
+      "eos_token": "<|im_end|>",
+      "pad_token": "<|endoftext|>",
+      "additional_special_tokens": [
+        "<|im_start|>",
+        "<|im_end|>",
+        "<|object_ref_start|>",
+        "<|object_ref_end|>",
+        "<|box_start|>",
+        "<|box_end|>",
+        "<|quad_start|>",
+        "<|quad_end|>",
+        "<|vision_start|>",
+        "<|vision_end|>",
+        "<|vision_pad|>",
+        "<|image_pad|>",
+        "<|video_pad|>"
+      ]
+    },
+    "pad_token_id": 151643,
+    "eos_token_id": 151645,
+    "bos_token_id": null,
+    "padding_side": "right",
+    "truncation_side": "right"
+  },
+  "encoding_sha256": {
+    "train": "a6a3f5f07dcb77c9457a973164d82d6ccb01e4e2af74a3b3a3f9a767a56bf4e6",
+    "validation": "2b4aa74ecb2ab4b215f116aea73f8bbf6dccc9f081382f32e648f9a83179a67d"
+  },
+  "base_sha256": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+  "adapter_sha256": "4d4224a479aa1caba53eb2514dd8c0a3a42b5bf729a840d618bfb04c6ecefcab",
+  "unadapted_validation_agreement": true,
+  "adapted_validation_agreement": true,
+  "test_data_opened": false,
+  "rows_encoded": {
+    "train": 400,
+    "validation": 200
+  },
+  "validation_rows_compared_per_model": 200,
+  "prediction_agreement": "exact labels/metrics; score and CE tolerance abs .005, rel .002",
+  "prediction_files": {
+    "adapted_validation_predictions.csv": "c595aad38a0ee2a98ee77aef0bd8a6cda814cf7b0d14d46ccd889e1716404ed4",
+    "unadapted_validation_predictions.csv": "ef8f7c05dc07e0905b44634e9db1f9b9515fe83fd57856e878db7ed46cda41ae"
+  }
+}

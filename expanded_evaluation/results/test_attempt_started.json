@@ -1,0 +1,14 @@
+{
+  "schema": "music-expanded-test-attempt-v1",
+  "started_at_utc": "2026-10-20T00:20:01.667560+00:00",
+  "freeze_sha256": "8332b6ad842b1608fe760af1aaf9f13beae9de9ed6ebddadd1cf9aadaff342a5",
+  "selected_checkpoint": "adapter_epoch_3",
+  "selection_receipt_sha256": "f3c0e481b046de0c0263d185f3b4ac08d7a08455221cf62030a9b17c09a6354e",
+  "preflight_sha256": "5e0428c32a4c4d85aca6bd3bb6d7ddd65a7a3d7eaf83b6a47846c40f0637d569",
+  "comparisons": [
+    "unadapted_pinned_base",
+    "selected_fresh_B_adapter"
+  ],
+  "selection_after_test_allowed": false,
+  "status": "attempt_started_not_completed"
+}

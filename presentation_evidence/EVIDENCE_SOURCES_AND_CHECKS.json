@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "images": [
+    {
+      "file": "01_EDA_7664_passages_lengths_and_term_frequencies.png",
+      "size_pixels": [
+        2064,
+        626
+      ],
+      "mode": "RGBA",
+      "decodes": true
+    },
+    {
+      "file": "02_VADER_140_training_passages_sentiment.png",
+      "size_pixels": [
+        2600,
+        1120
+      ],
+      "mode": "RGBA",
+      "decodes": true
+    },
+    {
+      "file": "03_A_to_D_33_validation_passages_accuracy_and_macroF1.png",
+      "size_pixels": [
+        989,
+        396
+      ],
+      "mode": "RGBA",
+      "decodes": true
+    },
+    {
+      "file": "04_B_33_validation_passages_confusion_matrix.png",
+      "size_pixels": [
+        642,
+        490
+      ],
+      "mode": "RGBA",
+      "decodes": true
+    },
+    {
+      "file": "05_B_saved_validation_errors_two_examples.png",
+      "size_pixels": [
+        2400,
+        1350
+      ],
+      "mode": "RGBA",
+      "decodes": true
+    }
+  ],
+  "sources": [
+    {
+      "file": "01_EDA_7664_passages_lengths_and_term_frequencies.png",
+      "kind": "existing actual plot, not a screenshot",
+      "source_path": "original-project/music_review_runs/2026-10-15_music_insight_v1/charts/01_lengths_and_frequencies.png",
+      "source_sha256": "438bc1e4a920473698857486c400f8c17e2f248cafd5700c666fb6702b10bbd1",
+      "copy_byte_identical": true
+    },
+    {
+      "file": "02_VADER_140_training_passages_sentiment.png",
+      "kind": "existing actual plot, not a screenshot",
+      "source_path": "original-project/09_training_sentiment_EDA_VADER/results/training_vader_sentiment.png",
+      "source_sha256": "b576796ea46b4f1c0c6a6ca03b9f4cd7dd5bd60e3b48e26119c59d0d5515f182",
+      "copy_byte_identical": true
+    },
+    {
+      "file": "03_A_to_D_33_validation_passages_accuracy_and_macroF1.png",
+      "kind": "existing actual plot, not a screenshot",
+      "source_path": "original-project/readable_copy/figures/validation_comparison.png",
+      "source_sha256": "5ccdee3eb853938d09d090c3521ee1b703a39fad707084683b342d8d010e3b6e",
+      "copy_byte_identical": true
+    },
+    {
+      "file": "04_B_33_validation_passages_confusion_matrix.png",
+      "kind": "existing actual plot, not a screenshot",
+      "source_path": "original-project/readable_copy/figures/B_validation_confusion_matrix.png",
+      "source_sha256": "2bbd8e1649e74c661cecc6dccd522822f220a23d544ad0f837ed884dd39df381",
+      "copy_byte_identical": true
+    },
+    {
+      "file": "05_B_saved_validation_errors_two_examples.png",
+      "kind": "new rendering of actual saved output, not a raw screenshot",
+      "source_archive": "local-downloads/music_validation_only_AB_results.zip",
+      "archive_sha256": "3e50a9019965ae6b82e231af255343fbf9fcfbabb71fed05142b13ee510f00b5",
+      "entry": "B_train_weighted_ABC/validation_predictions_epoch_2.csv",
+      "entry_sha256": "bd1f247baadc0b052476ff025797a2108c3a5cb24f5691177075967edcb1ddd8",
+      "passage_ids": [
+        "90b5a6bb99708b8221fff138",
+        "1369097bc02852daf847044b"
+      ],
+      "model_inference_performed": false
+    }
+  ],
+  "disclosure_correction": {
+    "02_data_preparation_readable.ipynb": {
+      "before_sha256": "d6d5ea9c8dd7974adad2c1631ea8fb21239404d1a1d3e92855a14b17dedc6246",
+      "code_cells_and_outputs_identical": true,
+      "all_remaining_cells_identical": true,
+      "removed_cells": 1,
+      "removed_type": "duplicated standalone disclosure Markdown only",
+      "after_sha256": "d482c86030e1ee3cc2f9ba770c4001f4a3aa9854817af5973379ad189b6b92bf"
+    },
+    "09_vader_sentiment_readable.ipynb": {
+      "before_sha256": "ba6a6812b60d1645b16d3b53af5801a02ad7579007de90b6679467b4a94811d0",
+      "code_cells_and_outputs_identical": true,
+      "all_remaining_cells_identical": true,
+      "removed_cells": 1,
+      "removed_type": "duplicated standalone disclosure Markdown only",
+      "after_sha256": "8c15a78d7de705dddb4e19903f12125830126131fb08b20d7d7bac71b2ed15a2"
+    },
+    "10_saved_results_review_readable.ipynb": {
+      "unchanged_sha256": "0ce06a2275a4fa1be678290c49d3c43dbb4fbb1d9443bedd62abc610235d48b3"
+    }
+  },
+  "protected_original_files": 94,
+  "protected_original_sha256": {
+    "original-project/LABELING_GUIDE.md": "ccea8d50be8e83b5fe52424434144beab4b01572de7bfb8990467f76d170827c",
+    "original-project/music_review_training.py": "840f89155cb0527bd9a54824556a208d04670b4b81de07ec5bfcf693053589ce",
+    "original-project/SOURCE_REFERENCES.md": "62d71ba0f2ba2fa091c12e17315ab4e80500433f01187deddd978794913a27b6",
+    "original-project/01_collect_music_reviews.ipynb": "4f6044908ac22779c79f7bd59a6740afa3f429aef04ceea1b90900abd4f2e00e",
+    "original-project/requirements_local.txt": "459c0a963dc7d02d79770045812d95691627bd84033ce310151fbdcf167a4723",
+    "original-project/music_review_pipeline.py": "fa96fea62b6a8109f07d1785061853dd1c2385e9f239526d3dfd0b28f5cfb94d",
+    "original-project/README_MUSIC_REVIEW_PIPELINE.md": "caed7e1e417a34c22aa9b4c801c29b9b3d90697d8eb70023ba759e9c065903b2",
+    "original-project/labeling_server_v1.py": "88ea59510516a00e03070a74603583b215521c3d93d83fc96c00c96dcd3cbd96",
+    "original-project/03_music_review_lora_COLAB.ipynb": "1c80acb3d03f43b54f081b768574db25238867d02b4b8be6b4b88a18ca931100",
+    "original-project/05_music_review_lora_ASSISTED_PILOT_COLAB.ipynb": "3dee9e3ad5169af2157c37a34961149d599a8020ba14fa746c3fbcd68a909cd2",
+    "original-project/test_music_review_pipeline.py": "7102049eb5f134a2f45d9bcf14080778bac0ba54b400d1c58f22d08de9eca495",
+    "original-project/README_ASSISTED_LABELING_V1.md": "9faaa805c6f3ef030797a34faaaf2adfe54fb997ef4204ecc842223ff219f56c",
+    "original-project/04_assisted_labeling_workflow_LOCAL.ipynb": "d35da89ef81923c1ae61d4bbab3768b892da122f6c0a5a45637dfea600a42442",
+    "original-project/test_music_review_training.py": "6da0c246de59f905cf8439866dec3d3bc0f749b4aae67368bd063b836cd0a156",
+    "original-project/02_music_review_pipeline_LOCAL.ipynb": "67539ec903ff1904c4ef579d831ef6d830ed0d60ce570c6e24514f8ba9e6127b",
+    "original-project/requirements_colab.txt": "1b09dfb51d15721c51659552a9c9f9b24bbe5568c0cf3419455655106a1ca893",
+    "original-project/VALIDATION_REPORT.md": "4acd851edf9270ff280f4ce9ee27a6c8951c48f8403c2a3117dbe98faa34239d",
+    "original-project/02_music_review_pipeline_LOCAL_student_version.ipynb": "7730003410e02aecae3e3b8d7119a5ed5a104a4f03eda9b40f626a3f112fc2b4",
+    "original-project/03_music_review_lora_COLAB_student_version.ipynb": "975610e30a1543587e217bf60f9dec4d147a991341b3d1af92d08aaa7c0fdcc3",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/passages.json": "54f987c3c9303145062f01230fc58d51009aebed87306bc9cfe179422e45b0cb",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/reviews.csv": "e875a1f0d7e9ee214949469357767b6541c15b648acae331baab24a839d3f65c",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/collection_config.json": "5ad1a5f3e3365b6706e6c2caa0f894be02a49412d6b7190a4fc4dc0292ad1fa2",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/annotation.csv": "75cfcf61513b99adccc3f7803d8fab5a07de6d527ae3b58d988546444a3312dd",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/passages.csv": "93af2239d141177edc1e9e319f448bdb374d7525a9357471860081cd213cdba5",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/cleaning_audit.json": "be66d4d171606334fa6cfc19fcb6e6ef9f45db27f8e602b72edb484e93f8e8f0",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/word_count_summary.json": "9aa1102228ac340db6e41eea89938fe329c93885b6b8fc3a27cf4304bacb20e6",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/annotation_reference.json": "1ea51e1e135e8571a7cded9e1b830dec05bfa88acb8b3d7e16427204be65371a",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/collection_audit.json": "5c4f09d73fb46cb979458cd1479056f3a86349d1c200f135806dbf3a511857f3",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000150.json": "5453e50e47501563f305fc40bcdd90a4a047f19187169e15fe0f4dff225ac208",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000500.json": "24906b53eac5447b466630ddc0651910817c522feadff6947a1fe10430fc8c1c",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000900.json": "ae5397276fc65752e3533f167cf1836138b495a572b9d89237bfe0f99b9a77e1",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000350.json": "5ef882da6d157b45ab3e0b8f51e6c487b2fd74c1325e78c5efe24ce95e684536",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000700.json": "b38df0f6266b81a27d9810c74c671eae4e693c96b420ddacd80aa0bd9b97b6f3",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000750.json": "c2fbd5042c10526ecadc96edca5c113611ddb6ee3a0ddb870b2556f314d8cdc7",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000300.json": "dd5b84d3c33b137bc121674176c8bf51f7dc0a490230ef5121285c60e060c863",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000950.json": "334ac2096b3193c76f101634548d027042895280db211ad9ec762da542ec9d2f",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000550.json": "077830628fbeacf82e4eaf88b2959ecb3c59b396ead2928986ed437c92dc5564",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000100.json": "0bd955e921d32cbfb26f2abb3a1d977b17c9631b6933f1ceeb88d68486f175fc",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000050.json": "1e49e33cba052659665378b9360b1602a53c8c0bb79d0ef3fd8458f14617eb40",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000400.json": "9eef1d0229808568e1c30064307dcb4748646c224cf75175ba97d3d2e32f4ca6",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000800.json": "981aa169f78a4f001c18d60033e1684781288789940f0e7a60adb691ce8d4cc1",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000250.json": "96aec1ebda39c781ad21f7f6ed81ead8b4b0848afb13ca4d1b4968088fcdde94",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000600.json": "87024005a93bbe679f7230d63a757b0cb41b437230459cb1c177fade0b04862b",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000650.json": "06cd3e53f7298bc2ac9479971d0a2ee6452102f64513a2668441e3582cf4e587",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000200.json": "78e6681b849c0960b65345d028fd54fc6c6333da7b44daad5569d07a0292365d",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000850.json": "34293a4243d940e675a619b65806a5f5b1fb03716157866966fd250734bc9f01",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000450.json": "e7238d653457fb71ecaeec79760b3a251b919f0e06a29705c777e62aeb11d8e0",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000000.json": "5976bba4778777879ee95a2ead64443082041489b4862c3be3bbd98c82bec785",
+    "original-project/music_review_runs/2026-10-15_music_insight_v1/charts/01_lengths_and_frequencies.png": "438bc1e4a920473698857486c400f8c17e2f248cafd5700c666fb6702b10bbd1",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/AUDIT_README.txt": "86a4f3d0b47f75989cb8e855feec38868423ef4be23bc8775b1509764e802c0c",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/label_changes.csv": "6197f9ce024b444db759b0372a4ef84f8627b28f304ec0386be94dc698a0a741",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/audited_annotations.csv": "a91c6bfb01b07cad24d04771ef6bf5fe413da484d1f9047dbc78652e2d8d5c16",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/audit_manifest.json": "80292047e3857b7150e438dbc01922750dcbc6dbca779b25689b0c5251ec65f3",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/audit_verification.json": "0366ad78bb23ee56c78e6e9d9b22e49cc46bff21f3bca7b341f7d753e4687a9b",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/artifact_sha256.json": "5f1f700c54ce48e938e5bd99b26fade9951b403edafdc9d0ef9d5145d2c20508",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/label_audit_report.html": "379bfd8438fd319eaa08417abf347fa5047704be2b4da6f6d408d9f61739510e",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/audited_splits/ai_audited_validation.csv": "61b79776c0471b46039be0367998d71031c62c45eb25a7d93c0ca3adbd0ef088",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/audited_splits/ai_audited_test.csv": "ae12699a2fae86a521125a2f825694a81df14db44486f1a108f0c4a27c58c760",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/audited_splits/ai_audited_train.csv": "3500dcd7e53b39a09fd5f78cd28eee94e9cb9ebc1d3e5e56d7fa69e784841096",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/source_snapshot/session_manifest_original.json": "bbc61298a605cc151cc5fe418779b75831e83b5dfa0de43b0e04d9db70d89877",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/source_snapshot/labeling_guide_original.md": "ccea8d50be8e83b5fe52424434144beab4b01572de7bfb8990467f76d170827c",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/source_snapshot/reference_original.json": "0b4226d5308f821acff60c38f5d359d63c2fcc819c210346b5269fbf664c377c",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/source_snapshot/state_original.json": "f21eff967fd269ee215b4ae682d703aab9e205f49e2fc44825332ea06e026fdf",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/source_snapshot/audit_decisions.tsv": "120fe269aefa68b0d56d7999f6a18c426024d03faa03e4e643677cc0dce0c848",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/source_snapshot/selected_rows_original.json": "8947801458c6184c03201ef2ebdab1d0cb1fc7666e115035bee40b4d73a9b6da",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/source_snapshot/human_annotations_original.csv": "c88692869ead2375e8a88d8d10c499043928209d53f2cb1409c2e7927984dcfe",
+    "original-project/music_review_runs/2026-10-16_music_insight_AI_audit_v1/source_snapshot/original_project_file_hashes.json": "aad0759087fc914bc3c00cc58d60119fdad5cc2f87e4fca31d7ebd1abfe76089",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/training_suggestions.json": "ecf8d831fd16d3ae62e6afaa673cf6bff7a24c62ff38cfb72c65bfa9f61e0b9f",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/state.json": "f21eff967fd269ee215b4ae682d703aab9e205f49e2fc44825332ea06e026fdf",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/human_annotations.csv": "c88692869ead2375e8a88d8d10c499043928209d53f2cb1409c2e7927984dcfe",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/session_manifest.json": "bbc61298a605cc151cc5fe418779b75831e83b5dfa0de43b0e04d9db70d89877",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/latest_export.json": "cad816e94358c8c44f304269a80dd8b9cdbb2c2114fcb9818b85ca756b48a4a6",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/reference.json": "0b4226d5308f821acff60c38f5d359d63c2fcc819c210346b5269fbf664c377c",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/source_annotation_snapshot.csv": "75cfcf61513b99adccc3f7803d8fab5a07de6d527ae3b58d988546444a3312dd",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/exports/export_20261015T213803_bfbcd2/annotation_provenance.json": "955a69a5c853912f2bd5930558c1b7f8d94cd132d10617826f4a29cc63ca90a8",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/exports/export_20261015T213803_bfbcd2/training_bundle.zip": "232016b9fa07c4125be53faacdfed502c7b91767c5ee1b4ebd81e8d4d015e1c5",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/exports/export_20261015T213803_bfbcd2/splits/validation.csv": "598d431f10afecdeb1e80d6176c82144b87f8c8f6f6b592f7789366b179452f2",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/exports/export_20261015T213803_bfbcd2/splits/test.csv": "c974ab25085cf070f121b96664fecf4815cdd4925f4fd3f3589db0272558a413",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/exports/export_20261015T213803_bfbcd2/splits/manifest.json": "11446667c27698c1e0a99e0dd0e3d0617a2b99ed994e70f52e3579a4b320315e",
+    "original-project/music_review_runs/2026-10-15_music_insight_assisted_v1/exports/export_20261015T213803_bfbcd2/splits/train.csv": "e979d4c08e403cd5cc614c58665e99702d70b30cd0de1e1458b9d0a5e511dd0e",
+    "original-project/09_training_sentiment_EDA_VADER/analyze_training_vader.py": "139d79d331be102b30022d05451cc7d65c11481ebc4f9b31ead767a5450781df",
+    "original-project/09_training_sentiment_EDA_VADER/results/sentiment_summary.json": "7643028c5cdcbbb938ac272e68cc360365194c15b04c1e17639db38859b17861",
+    "original-project/09_training_sentiment_EDA_VADER/results/training_vader_sentiment.png": "b576796ea46b4f1c0c6a6ca03b9f4cd7dd5bd60e3b48e26119c59d0d5515f182",
+    "original-project/09_training_sentiment_EDA_VADER/results/INTERPRETATION_AND_REPRODUCTION.md": "2171d7eccf48b3676c6cbcfb9062f237225514a01a8a8a3374145162fb8f0e7f",
+    "original-project/09_training_sentiment_EDA_VADER/results/training_vader_sentiment.svg": "0ec26aa9b69d463310b5069099b27821160a6f1d78a3a0318b00ab8401b6288f",
+    "original-project/09_training_sentiment_EDA_VADER/results/ARTIFACT_SHA256.json": "cbea4c45c7161c3272aca2f5028505ccee25c85ea4b47b6413c127be9ace2818",
+    "original-project/09_training_sentiment_EDA_VADER/results/training_vader_scores.csv": "211fbaf29667637d5b1a7babe5b85d03061ff360ab053755a7e758db4fcd41a9",
+    "local-downloads/06_music_review_lora_AI_AUDITED_COLAB.ipynb": "bc5d2b40f428736bb556e5dcfcbad68509050f3b00666dce56538444b7219b86",
+    "local-downloads/07_music_review_VALIDATION_ONLY_AB_COLAB-2.ipynb": "59a9313da9661c0f43b58e0ce9c43a0fd933ea933d43c5c1ba60f32e47bf1bc4",
+    "local-downloads/08_music_review_C_LOWER_LR_COLAB.ipynb": "7adb16e014e3820139874643e6c0101351f6539010a48d7e5cac1d6a93a22581",
+    "local-downloads/08_music_review_C_LOWER_LR_COLAB-5.ipynb": "0e695935853c168233cb31b3a9a3b7db463eddc8bf7305191e18634a2cb99c40",
+    "local-downloads/music_validation_only_AB_results.zip": "3e50a9019965ae6b82e231af255343fbf9fcfbabb71fed05142b13ee510f00b5",
+    "local-downloads/music_validation_only_C_lr1e4_COMPLETE_results.zip": "4e4ae43b796d0d32370fe20e8207ed04ce7514b8e0c1e37047ebf6db94ad4c3d",
+    "local-downloads/music_validation_only_D_five_epoch_COMPLETE_results.zip": "a3ee8a9f37ccf417fbb5c2ebf7ec66a90d58c6172ea48afed16cc64c5b7bc16e"
+  },
+  "new_model_runs": 0,
+  "old_test_rows_read_or_scored": 0,
+  "saved_B_validation_rows_read": 33,
+  "selected_error_rows": 2,
+  "final_notebook10_unchanged_sha256": "0ce06a2275a4fa1be678290c49d3c43dbb4fbb1d9443bedd62abc610235d48b3",
+  "public_publication_performed": false,
+  "visual_qa": "All five PNGs visually inspected; readable values, labels, quotes and IDs; no clipping.",
+  "zip_crc_validation": "Verified separately after archive creation; all nine entries also match source SHA256."
+}

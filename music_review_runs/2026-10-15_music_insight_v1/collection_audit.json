@@ -1,0 +1,8 @@
+{
+  "kept": 500,
+  "rejected": {
+    "missing_or_duplicate_id": 465
+  },
+  "sampling": "Oldest-first bounded API sample; not representative of all music listeners.",
+  "stopped_at_page_limit": false
+}

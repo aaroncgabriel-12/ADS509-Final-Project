@@ -1,0 +1,705 @@
+[
+  {
+    "passage_id": "2842cecb629dfedb1f5cd402",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Very vague and ambiguous, not referring to anything specific.",
+    "reviewed_at_utc": "2026-10-19T23:03:31.362226+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "2842cecb629dfedb1f5cd402",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The fragment ends at the band name, leaving classic ambiguous between praise and an unfinished stylistic description."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "e7edfab5acd4f550de539531",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous.",
+    "reviewed_at_utc": "2026-10-19T23:03:51.551656+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "e7edfab5acd4f550de539531",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The sentence breaks off after the band name before explaining what was easier to obtain."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "0e7f2e874ae4636ba51dd885",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Random phrase without specifying or referencing anything.",
+    "reviewed_at_utc": "2026-10-19T23:05:11.703940+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "0e7f2e874ae4636ba51dd885",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The isolated phrase does not identify what is becalmed or closing, making its musical meaning uncertain."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "bc6d27ba0959c1b2434481b1",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Seemingly random lyric without any expression of opinion or any other statement of information.",
+    "reviewed_at_utc": "2026-10-19T23:06:02.311915+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "bc6d27ba0959c1b2434481b1",
+      "draft_label": "specific_musical_observation",
+      "draft_status": "proposed_label",
+      "uncertainty": "medium",
+      "rationale": "Provides quoted lyrical content about stealing a collection and receiving punishment."
+    },
+    "decision_kind": "human_correction"
+  },
+  {
+    "passage_id": "165d0ded02c1bbaa70b52e34",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Random phrase.",
+    "reviewed_at_utc": "2026-10-19T23:06:12.485401+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "165d0ded02c1bbaa70b52e34",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The isolated comparative phrase lacks its subject and the quality being compared."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "23ebca6b1b07f10c0a8c6421",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Incomplete sentence.",
+    "reviewed_at_utc": "2026-10-19T23:06:50.683807+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "23ebca6b1b07f10c0a8c6421",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The sentence stops mid-name before completing its claim about the collaboration."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "324abdf6a9766870e9daaf83",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Random phrase.",
+    "reviewed_at_utc": "2026-10-19T23:07:03.900654+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "324abdf6a9766870e9daaf83",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "References disagreement with an absent opinion, so the actual claim cannot be recovered."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "ff4cf7681b2dcda5ba3dd4e5",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:07:14.666419+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "ff4cf7681b2dcda5ba3dd4e5",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "A title and question mark alone do not establish a claim or evaluative intent."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "20c9a44cc679befa0d3e5e5b",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Random.",
+    "reviewed_at_utc": "2026-10-19T23:07:24.849165+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "20c9a44cc679befa0d3e5e5b",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The truncated title fragment supplies no resolvable observation or opinion."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "c2a467ca5737d234e18fd123",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:16:38.275952+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "c2a467ca5737d234e18fd123",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The positive judgment depends entirely on an absent referent for that."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "0752ca6f1ae01c61cdb2da3b",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:18:18.107489+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "0752ca6f1ae01c61cdb2da3b",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The fragment gives no referent or substantive claim without the preceding context."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "7ba36b20be5c2d9978c4ee04",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Not specific enough.",
+    "reviewed_at_utc": "2026-10-19T23:19:20.803206+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "7ba36b20be5c2d9978c4ee04",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "Similar level depends on an absent comparison and does not reveal what is being assessed."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "95f22cc35b3b767be5bfd291",
+    "split": "train",
+    "status": "skip",
+    "label": null,
+    "note": "Not enough info",
+    "reviewed_at_utc": "2026-10-19T23:20:26.317508+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "95f22cc35b3b767be5bfd291",
+      "draft_label": "background_other",
+      "draft_status": "proposed_label",
+      "uncertainty": "medium",
+      "rationale": "Emphasizes McCartney's identity and stature without a musical observation or explicit evaluation of a recording."
+    },
+    "decision_kind": "human_correction"
+  },
+  {
+    "passage_id": "efc3d7c05b3d4d3240dcaf76",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Too ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:25:34.596897+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "efc3d7c05b3d4d3240dcaf76",
+      "draft_label": "general_opinion",
+      "draft_status": "proposed_label",
+      "uncertainty": "medium",
+      "rationale": "The repeated 'magnificent' expresses general praise despite the fragmentary wording."
+    },
+    "decision_kind": "human_correction"
+  },
+  {
+    "passage_id": "219a3cfea01b855c379c008b",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Random statement.",
+    "reviewed_at_utc": "2026-10-19T23:26:18.832758+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "219a3cfea01b855c379c008b",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The isolated Slovakian-number remark does not reveal whether it is a rating, joke, or contextual statement."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "6c0494c1e57e9bde5831e792",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:27:05.441706+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "6c0494c1e57e9bde5831e792",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The reference to 'what I'm talking about' supplies no recoverable observation or evaluation within this passage."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "78cfe6c75f1c1cf7b73ef766",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:28:23.187917+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "78cfe6c75f1c1cf7b73ef766",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The isolated footnote fragment lacks a subject and enough context to determine its meaning."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "93b7875c13e1eea169c80c37",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:28:54.106370+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "93b7875c13e1eea169c80c37",
+      "draft_label": "general_opinion",
+      "draft_status": "proposed_label",
+      "uncertainty": "medium",
+      "rationale": "Discusses divided judgments about the film's portrayal of Parker rather than describing musical elements."
+    },
+    "decision_kind": "human_correction"
+  },
+  {
+    "passage_id": "e082466dba4e89e3f064cab4",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "random",
+    "reviewed_at_utc": "2026-10-19T23:29:11.747146+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "e082466dba4e89e3f064cab4",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The isolated statement has no recoverable referent or musical context."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "9919a0d3342245a7ac33447d",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "random",
+    "reviewed_at_utc": "2026-10-19T23:29:17.412814+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "9919a0d3342245a7ac33447d",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The unfinished dedication could be stage speech or quoted lyrics; its context and function are missing."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "bc8aafca486207579f3721d6",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Too ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:30:05.949739+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "bc8aafca486207579f3721d6",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The unnamed comparisons cannot be identified without the missing preceding context."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "27a7197bd78f7dc301cfee0e",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:30:43.772248+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "27a7197bd78f7dc301cfee0e",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "This is true refers to an absent claim; the song names do not resolve its content."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "e9e20ea006acda9a7da73d00",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:30:54.747447+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "e9e20ea006acda9a7da73d00",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The conditional fragment lacks the referent needed to determine what is brutal, defensive, or worth negotiating."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "3d34187106da9d5a3354ed5c",
+    "split": "validation",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:31:31.590133+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "3d34187106da9d5a3354ed5c",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The brief claim that every step is worthwhile lacks the activity or musical referent needed for interpretation."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "42ea2f17c5c586372a2d471d",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:34:27.618736+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "42ea2f17c5c586372a2d471d",
+      "draft_label": "background_other",
+      "draft_status": "proposed_label",
+      "uncertainty": "medium",
+      "rationale": "The fragment clearly states guitarist and songwriter roles without describing playing or songwriting qualities."
+    },
+    "decision_kind": "human_correction"
+  },
+  {
+    "passage_id": "f96997e2e1e6698af9b4e960",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:37:34.434739+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "f96997e2e1e6698af9b4e960",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The phrase one of those times depends entirely on missing preceding context."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "c9c1bda9a6880af5accadd13",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:37:46.842260+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "c9c1bda9a6880af5accadd13",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The crab-like accumulation of sentences lacks context establishing whether it describes lyrics, music, or unrelated prose."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "6d58dfd397c8b492fc3a419f",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:38:00.272992+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "6d58dfd397c8b492fc3a419f",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The Hidden Cities metaphor depends on an omitted comparison and does not establish a clear sonic or evaluative observation."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "f8c1d7861709aa0b2cb1b67d",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:38:11.968755+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "f8c1d7861709aa0b2cb1b67d",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The fragment names Jenkinson's recent work but supplies no complete observation or contextual claim."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "a7f21ce05947d5499f844d7c",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:39:12.851186+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "a7f21ce05947d5499f844d7c",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The welcome business fragment omits what is being evaluated and cannot reliably be assigned to music or surrounding context."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "79783f591a32af9d281bad84",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:40:15.427991+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "79783f591a32af9d281bad84",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The first motivation is unspecified, preventing interpretation of the criticism."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "bae42f6ae492d2dfef7fdeb3",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:41:18.203785+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "bae42f6ae492d2dfef7fdeb3",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The thing the writer never noticed is absent, so the musical or contextual claim cannot be resolved."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "c5b9262924609c0674b3dc01",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:41:28.023016+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "c5b9262924609c0674b3dc01",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The isolated title pun does not establish a clear musical observation, evaluation, or contextual statement."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "a90f01c02f95e7594cbf10b5",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "incomplete phrase",
+    "reviewed_at_utc": "2026-10-19T23:42:28.069690+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "a90f01c02f95e7594cbf10b5",
+      "draft_label": null,
+      "draft_status": "proposed_skip",
+      "uncertainty": "high",
+      "rationale": "The fragment lacks the subject and object needed to understand what the musicians create."
+    },
+    "decision_kind": "accepted_ai_proposal"
+  },
+  {
+    "passage_id": "f1bb4feb925704cc043a490f",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:43:30.671487+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "f1bb4feb925704cc043a490f",
+      "draft_label": "general_opinion",
+      "draft_status": "proposed_label",
+      "uncertainty": "medium",
+      "rationale": "Expresses an endorsement by wishing their crusade to continue, without specifying musical content."
+    },
+    "decision_kind": "human_correction"
+  },
+  {
+    "passage_id": "14d5510ff191eec678fae436",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Ambiguous",
+    "reviewed_at_utc": "2026-10-19T23:45:14.657438+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "14d5510ff191eec678fae436",
+      "draft_label": "background_other",
+      "draft_status": "proposed_label",
+      "uncertainty": "low",
+      "rationale": "Comments on Nu Jazz's prevalence rather than describing particular music."
+    },
+    "decision_kind": "human_correction"
+  },
+  {
+    "passage_id": "1b1aa0952558680f98be0108",
+    "split": "test",
+    "status": "skip",
+    "label": null,
+    "note": "Random",
+    "reviewed_at_utc": "2026-10-19T23:45:24.138437+00:00",
+    "reviewer": "Aaron via local review UI",
+    "label_provenance": "AI proposal followed by human review",
+    "independently_human_labeled": false,
+    "ai_proposal_at_review": {
+      "passage_id": "1b1aa0952558680f98be0108",
+      "draft_label": "general_opinion",
+      "draft_status": "proposed_label",
+      "uncertainty": "medium",
+      "rationale": "Explicitly recommends three recordings through the instruction Try These, without musical description."
+    },
+    "decision_kind": "human_correction"
+  }
+]

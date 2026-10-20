@@ -1,0 +1,25 @@
+{
+  "experiments": [
+    "A_unweighted_ABC",
+    "B_train_weighted_ABC"
+  ],
+  "original_validation_macro_f1": 0.30536659108087677,
+  "bundle_sha256": "19309e7694de6b51027b6bbf03e1f8a8a50c66c1f5f533ea56db71f7290ac2b8",
+  "seed": 1509509,
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.4",
+    "scikit-learn": "1.6.1"
+  },
+  "selection": "validation macro-F1, then lower unweighted validation CE, then earlier epoch",
+  "independent_human_evaluation": false,
+  "original_test_already_viewed": true,
+  "scope": "Exactly two three-epoch development runs; no held-out final evaluation"
+}

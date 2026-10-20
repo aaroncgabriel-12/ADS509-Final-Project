@@ -1,0 +1,62 @@
+{
+  "epoch": 1,
+  "training_weighted_ce": 1.2112776053803307,
+  "training_unweighted_ce": 1.2112776053803307,
+  "validation_unweighted_ce": 1.036647213227821,
+  "validation": {
+    "n": 33,
+    "accuracy": 0.5454545454545454,
+    "macro_f1": 0.30536659108087677,
+    "per_class": {
+      "specific_musical_observation": {
+        "precision": 0.5483870967741935,
+        "recall": 0.9444444444444444,
+        "f1": 0.6938775510204082,
+        "support": 18
+      },
+      "general_opinion": {
+        "precision": 0.5,
+        "recall": 0.14285714285714285,
+        "f1": 0.2222222222222222,
+        "support": 7
+      },
+      "background_other": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      }
+    },
+    "confusion_matrix": [
+      [
+        17,
+        1,
+        0
+      ],
+      [
+        6,
+        1,
+        0
+      ],
+      [
+        8,
+        0,
+        0
+      ]
+    ],
+    "label_order": [
+      "specific_musical_observation",
+      "general_opinion",
+      "background_other"
+    ],
+    "prediction_counts": {
+      "specific_musical_observation": 31,
+      "general_opinion": 2,
+      "background_other": 0
+    },
+    "exact_top_ties": 0
+  },
+  "successful_optimizer_steps": 16,
+  "skipped_optimizer_steps": 2,
+  "checkpoint": "adapter_epoch_1"
+}

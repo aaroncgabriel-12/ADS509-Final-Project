@@ -1,0 +1,56 @@
+{
+  "metrics": {
+    "n": 200,
+    "accuracy": 0.345,
+    "macro_f1": 0.24450081885617034,
+    "per_class": {
+      "specific_musical_observation": {
+        "precision": 0.5813953488372093,
+        "recall": 0.4065040650406504,
+        "f1": 0.4784688995215311,
+        "support": 123
+      },
+      "general_opinion": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 42
+      },
+      "background_other": {
+        "precision": 0.16666666666666666,
+        "recall": 0.5428571428571428,
+        "f1": 0.2550335570469799,
+        "support": 35
+      }
+    },
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        73
+      ],
+      [
+        20,
+        0,
+        22
+      ],
+      [
+        16,
+        0,
+        19
+      ]
+    ],
+    "label_order": [
+      "specific_musical_observation",
+      "general_opinion",
+      "background_other"
+    ],
+    "prediction_counts": {
+      "specific_musical_observation": 86,
+      "general_opinion": 0,
+      "background_other": 114
+    },
+    "exact_top_ties": 0
+  },
+  "unweighted_ce": 1.202689238935709
+}

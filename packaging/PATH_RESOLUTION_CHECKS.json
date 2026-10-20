@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "notebook": "02_data_preparation_readable.ipynb",
+      "working_directory": ".",
+      "resolved_repository_root": true
+    },
+    {
+      "notebook": "09_vader_sentiment_readable.ipynb",
+      "working_directory": ".",
+      "resolved_repository_root": true
+    },
+    {
+      "notebook": "10_saved_results_review_readable.ipynb",
+      "working_directory": ".",
+      "resolved_repository_root": true
+    },
+    {
+      "notebook": "02_data_preparation_readable.ipynb",
+      "working_directory": "notebooks",
+      "resolved_repository_root": true
+    },
+    {
+      "notebook": "09_vader_sentiment_readable.ipynb",
+      "working_directory": "notebooks",
+      "resolved_repository_root": true
+    },
+    {
+      "notebook": "10_saved_results_review_readable.ipynb",
+      "working_directory": "notebooks",
+      "resolved_repository_root": true
+    }
+  ],
+  "analysis_cells_executed": false
+}

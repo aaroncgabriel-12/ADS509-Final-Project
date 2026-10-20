@@ -1,0 +1,26 @@
+{
+  "experiment": "C_train_weighted_ABC_lr1e4",
+  "learning_rate": 0.0001,
+  "only_training_setting_changed_from_B": "learning_rate: 2e-4 -> 1e-4",
+  "bundle_sha256": "b0b4805c88fd236a05529cc304fa4f2aa011bd18e2e3100f5702ff80a1718772",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.4",
+    "scikit-learn": "1.6.1"
+  },
+  "input_sha256": {
+    "train": "3500dcd7e53b39a09fd5f78cd28eee94e9cb9ebc1d3e5e56d7fa69e784841096",
+    "validation": "61b79776c0471b46039be0367998d71031c62c45eb25a7d93c0ca3adbd0ef088"
+  },
+  "b_reference_supplied": true,
+  "diagnostics": "post-training checkpoint reload/scoring only",
+  "selection": "validation macro-F1, lower unweighted validation CE, earlier epoch",
+  "independent_human_evaluation": false,
+  "confirmatory_final_comparison_performed": false
+}

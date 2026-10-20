@@ -1,0 +1,80 @@
+{
+  "experiment": "A_unweighted_ABC",
+  "status": "completed_validation_only",
+  "selected": {
+    "epoch": 1,
+    "training_weighted_ce": 1.2112776053803307,
+    "training_unweighted_ce": 1.2112776053803307,
+    "validation_unweighted_ce": 1.036647213227821,
+    "validation": {
+      "n": 33,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.30536659108087677,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.5483870967741935,
+          "recall": 0.9444444444444444,
+          "f1": 0.6938775510204082,
+          "support": 18
+        },
+        "general_opinion": {
+          "precision": 0.5,
+          "recall": 0.14285714285714285,
+          "f1": 0.2222222222222222,
+          "support": 7
+        },
+        "background_other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        }
+      },
+      "confusion_matrix": [
+        [
+          17,
+          1,
+          0
+        ],
+        [
+          6,
+          1,
+          0
+        ],
+        [
+          8,
+          0,
+          0
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 31,
+        "general_opinion": 2,
+        "background_other": 0
+      },
+      "exact_top_ties": 0
+    },
+    "successful_optimizer_steps": 16,
+    "skipped_optimizer_steps": 2,
+    "checkpoint": "adapter_epoch_1"
+  },
+  "original_validation_macro_f1": 0.30536659108087677,
+  "delta_vs_original_validation": 0.0,
+  "attempted_optimizer_steps": 54,
+  "successful_optimizer_steps": 52,
+  "skipped_optimizer_steps": 2,
+  "successful_nonzero_learning_rate_steps": 51,
+  "planned_optimizer_steps": 54,
+  "base_sha256_before": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+  "base_sha256_after": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+  "adapter_initial_sha256": "313da552071077055642df7d36c5d6f08884c1522f4dcbc81d7ac4197c9815bb",
+  "adapter_final_sha256": "2c10f21a73992f362e4a3878d7eec6aefadee8c2d79b3fb7139903c5a090ea2e",
+  "frozen_base_verified": true,
+  "independent_human_evaluation": false,
+  "scope": "training and validation only; no confirmatory final comparison"
+}

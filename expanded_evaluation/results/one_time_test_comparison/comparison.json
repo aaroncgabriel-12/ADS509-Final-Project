@@ -1,0 +1,128 @@
+{
+  "status": "completed_one_time_test_comparison",
+  "freeze_sha256": "8332b6ad842b1608fe760af1aaf9f13beae9de9ed6ebddadd1cf9aadaff342a5",
+  "test_csv_sha256": "4dbe8630a603edea8de34cf019b7e9fc5ff777a3b949f492e956968588561564",
+  "selected_checkpoint": "adapter_epoch_3",
+  "selection_receipt_sha256": "f3c0e481b046de0c0263d185f3b4ac08d7a08455221cf62030a9b17c09a6354e",
+  "preflight_sha256": "5e0428c32a4c4d85aca6bd3bb6d7ddd65a7a3d7eaf83b6a47846c40f0637d569",
+  "unadapted_path": "Same fresh pinned base with adapters disabled; validated against pretraining validation predictions before test access",
+  "selection_rule": "validation macro-F1, lower unweighted CE, earlier epoch",
+  "test_used_for_selection": false,
+  "unadapted": {
+    "metrics": {
+      "n": 200,
+      "accuracy": 0.315,
+      "macro_f1": 0.2389626991736292,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.4819277108433735,
+          "recall": 0.35398230088495575,
+          "f1": 0.40816326530612246,
+          "support": 113
+        },
+        "general_opinion": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 54
+        },
+        "background_other": {
+          "precision": 0.19827586206896552,
+          "recall": 0.696969696969697,
+          "f1": 0.3087248322147651,
+          "support": 33
+        }
+      },
+      "confusion_matrix": [
+        [
+          40,
+          1,
+          72
+        ],
+        [
+          33,
+          0,
+          21
+        ],
+        [
+          10,
+          0,
+          23
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 83,
+        "general_opinion": 1,
+        "background_other": 116
+      },
+      "exact_top_ties": 0
+    },
+    "unweighted_ce": 1.300172535777092
+  },
+  "adapted": {
+    "metrics": {
+      "n": 200,
+      "accuracy": 0.71,
+      "macro_f1": 0.6629586396067372,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.8181818181818182,
+          "recall": 0.7964601769911505,
+          "f1": 0.8071748878923767,
+          "support": 113
+        },
+        "general_opinion": {
+          "precision": 0.627906976744186,
+          "recall": 0.5,
+          "f1": 0.5567010309278351,
+          "support": 54
+        },
+        "background_other": {
+          "precision": 0.5319148936170213,
+          "recall": 0.7575757575757576,
+          "f1": 0.625,
+          "support": 33
+        }
+      },
+      "confusion_matrix": [
+        [
+          90,
+          12,
+          11
+        ],
+        [
+          16,
+          27,
+          11
+        ],
+        [
+          4,
+          4,
+          25
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 110,
+        "general_opinion": 43,
+        "background_other": 47
+      },
+      "exact_top_ties": 1
+    },
+    "unweighted_ce": 0.7798775304853917
+  },
+  "adapted_minus_unadapted_macro_f1": 0.42399594043310795,
+  "label_provenance": "AI-assisted labels with human review; not independent human gold",
+  "independent_human_evaluation": false,
+  "test_groups": 99,
+  "limits": "Passages are clustered by review/release; no tuning or checkpoint reselection after this comparison. Restricted A/B/C softmax scores are not calibrated confidence."
+}

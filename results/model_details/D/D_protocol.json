@@ -1,0 +1,32 @@
+{
+  "experiment": "D_train_weighted_ABC_lr1e4_5epochs",
+  "start": "fresh pretrained base and fresh adapter; not a resume",
+  "learning_rate": 0.0001,
+  "epochs": 5,
+  "planned_optimizer_steps": 90,
+  "warmup_steps": 9,
+  "schedule": "linear warmup and decay; advance only on successful updates",
+  "changes_from_C": {
+    "epoch_budget": "3 -> 5",
+    "planned_steps": "54 -> 90",
+    "warmup_steps": "5 -> 9",
+    "decay_horizon": "54 -> 90"
+  },
+  "unchanged": "model/revision, seed, inputs/splits/labels, prompt, training-only weights, LoRA, batch, accumulation, optimizer, dropout, selection criterion",
+  "source_hashes": {
+    "c_training.py": "b4c3ba63af0926ff337fa7acfdc21a5e7126f903b47d96c41bdf91e5dfb1d284",
+    "c_diagnostics.py": "b15fb3ff12726611bcd8f7ab8067cc354283a6b98dbe35039512b79960352a44",
+    "c_protocol.py": "484bd6562e63afed59bb98d3d3246e8419354598cb651cf47f9bc55c2d3c1db2",
+    "c_contract.py": "e663fc148bee844f085cc5e644cf5a1f01ab3e6c66d208f19b2a96afa0ee76cb"
+  },
+  "input_sha256": {
+    "train": "3500dcd7e53b39a09fd5f78cd28eee94e9cb9ebc1d3e5e56d7fa69e784841096",
+    "validation": "61b79776c0471b46039be0367998d71031c62c45eb25a7d93c0ca3adbd0ef088"
+  },
+  "private_namespace_only": true,
+  "C_helpers_modified": false,
+  "old_test_accessed": false,
+  "selection": "validation macro-F1, then lower unweighted validation CE, then earlier epoch",
+  "independent_human_evaluation": false,
+  "confirmatory_final_comparison_performed": false
+}

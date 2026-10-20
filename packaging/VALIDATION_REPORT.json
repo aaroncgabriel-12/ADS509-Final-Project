@@ -1,0 +1,228 @@
+{
+  "status": "STATIC_CHECKS_PASS_PROVENANCE_REVIEW_PENDING",
+  "verified_at_utc": "2026-10-20T06:39:50.261819+00:00",
+  "checks": {
+    "verify_submission.py": {
+      "model_training": false,
+      "network_calls": false,
+      "old_test_evaluation": false,
+      "file_hashes_verified": 187,
+      "notebooks_valid": [
+        "notebooks/02_data_preparation_readable.ipynb",
+        "notebooks/09_vader_sentiment_readable.ipynb",
+        "notebooks/10_saved_results_review_readable.ipynb",
+        "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+        "notebooks/training/06_music_review_lora_AI_AUDITED_COLAB.ipynb",
+        "notebooks/training/07_music_review_VALIDATION_ONLY_AB_COLAB-2.ipynb",
+        "notebooks/training/08_music_review_C_LOWER_LR_COLAB-5.ipynb"
+      ],
+      "prototype_final_readable_disclosure_preserved": true,
+      "python_files_parse": 28,
+      "immutable_bundles_verified": 3,
+      "prototype_notebooks_match_current_integrity_records_and_bundle_pairing_verified": true,
+      "attributed_reviews": 500,
+      "training_validation_metadata_checked": [
+        140,
+        33
+      ],
+      "saved_metric_consistency": true,
+      "offline_cache_collection": "PASS: exact 500-review CSV, zero network calls",
+      "offline_passage_preparation": "PASS: exact 7,664-passage CSV and exclusion counts",
+      "status": "PASS"
+    },
+    "verify_expanded_evaluation.py": {
+      "status": "PASS",
+      "network_calls": false,
+      "model_rerun": false,
+      "prototype_notebooks_match_current_integrity_records": 6,
+      "expanded_notebook_schema_and_execution_record": "PASS: seven code cells, counts 1\u20137, no error outputs",
+      "input_archives_and_helper_hashes": 2,
+      "split_passages": {
+        "train": 400,
+        "validation": 200,
+        "test": 200
+      },
+      "split_groups": {
+        "train": 180,
+        "validation": 99,
+        "test": 99
+      },
+      "original_training_rows_preserved": 140,
+      "saved_test_metrics": {
+        "unadapted": {
+          "accuracy": 0.315,
+          "macro_f1": 0.2389626991736292
+        },
+        "adapted": {
+          "accuracy": 0.71,
+          "macro_f1": 0.6629586396067372
+        }
+      },
+      "evidence_hashes_verified": 14,
+      "relative_links_checked": 36
+    }
+  },
+  "phases": [
+    "prototype: 140/33/35 historical",
+    "expanded evaluation: 400/200/200"
+  ],
+  "prototype_notebooks_byte_identical_to_preintegration": 4,
+  "all_relative_markdown_links_checked": 40,
+  "expanded_source_copy_files_verified": 47,
+  "portable_figure_renderer": "PASS: all three PNGs match original approved evidence byte-for-byte",
+  "model_rerun": false,
+  "training": false,
+  "network_calls": false,
+  "publication_or_upload": false,
+  "prior_packaging_reports": "Pre-update copies backed up in the sibling LOCAL_ARCHIVE_DO_NOT_UPLOAD integration backup; historical source records retained in packaging.",
+  "limits": [
+    "The labels are AI-assisted with human review, not independent human gold.",
+    "Prototype and expanded scores use different splits; differences do not isolate the effect of data volume.",
+    "GPU reproduction was not run; actual executed records and frozen input/hash pairing were checked.",
+    "Checkpoints and complete expanded result ZIP remain in the sibling local archive.",
+    "Slides, narration, recording, video URL, GitHub publication/access and Canvas submission remain pending."
+  ],
+  "size_scope": "Upload payload excludes .git, .DS_Store and runtime caches; FILE_SHA256.json excludes itself.",
+  "repository_payload_files": 188,
+  "repository_payload_bytes": 17525766,
+  "largest_payload_file": {
+    "file": "music_review_runs/2026-10-15_music_insight_v1/passages.csv",
+    "bytes": 4434266
+  },
+  "notebook11_academic_markdown_revision": {
+    "scope": "Only six Markdown source fields changed in notebook 11; associated current integrity entries refreshed.",
+    "verified_at_utc": "2026-10-20T00:59:59.885274+00:00",
+    "notebook": "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+    "backup": "/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_GitHub_submission_2026-10-19/LOCAL_ARCHIVE_DO_NOT_UPLOAD/notebook11_academic_markdown_backup_20261020T005959Z",
+    "before_sha256": "9b2fb5a8a5a06074db9297f686c0b458a528bee00dc994ce2bebea36762ad29f",
+    "after_sha256": "5c6232955020cc6628baa91d2eeac19a5b461cd654dc6297e83e18aab16d2877",
+    "markdown_cells_changed": [
+      0,
+      1,
+      4,
+      6,
+      8,
+      11
+    ],
+    "code_cells_unchanged": 7,
+    "code_cell_objects_before_sha256": "ad70dad3e071f45b26a7d96f85b58278e74e5e6d407a3760d55f0fe0e3976a83",
+    "code_cell_objects_after_sha256": "ad70dad3e071f45b26a7d96f85b58278e74e5e6d407a3760d55f0fe0e3976a83",
+    "outputs_execution_counts_ids_metadata_unchanged": true,
+    "all_notebook_top_level_metadata_unchanged": true,
+    "no_unsaved_editor_changes": "VS Code tab had Close button; closing showed no save prompt.",
+    "model_or_code_execution": false
+  },
+  "final_bounded_readiness": {
+    "notebooks_schema_and_code_syntax_valid": 7,
+    "python_files_parse": 28,
+    "relative_markdown_links_checked": 40,
+    "immutable_input_archives_verified": 5,
+    "expanded_result_files_matching_full_archive": 23,
+    "notebook11_user_markdown_preserved": true,
+    "high_confidence_secret_findings": 0,
+    "notebook_cells_or_models_executed": false,
+    "runtime_reproduction_tested": false,
+    "provenance_review_required": [
+      {
+        "file": "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+        "cell": 4,
+        "issue": "Independently validated labels wording needs clarification: saved provenance establishes human review of AI proposals, not independent human gold."
+      },
+      {
+        "file": "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+        "cell": 11,
+        "issue": "Aaron wrote the original code wording needs its scope reconciled with recorded Codex code preparation assistance."
+      }
+    ],
+    "machine_paths": "Historical local paths remain in six text files and two members of the immutable prototype input archive; no credentials detected.",
+    "source_attribution": "500 reviews retain source and CC BY-NC-SA 3.0 metadata; no blanket redistribution clearance claimed.",
+    "presentation_and_script_quality": "Excluded from this pass.",
+    "notebook06_cell_provenance_resolved": true,
+    "notebook06_all_13_code_cells_match_executed_original": true
+  },
+  "authorized_notebook06_correction": {
+    "file": "notebooks/training/06_music_review_lora_AI_AUDITED_COLAB.ipynb",
+    "before_sha256": "d59e0d2d80da338be2f59e6a12c37079d79dc503b759ca7a395c4576ae8b39a6",
+    "after_sha256": "558e9f3e896d845769a09278860793b281602b1497031a63fb04593b5eecce65",
+    "downloaded_original_sha256": "bc5d2b40f428736bb556e5dcfcbad68509050f3b00666dce56538444b7219b86",
+    "original_baseline_preserved": true,
+    "restored_code_cell_zero_based": 23,
+    "restored_execution_count": 10,
+    "inserted_markdown_cell_zero_based": 24,
+    "all_13_code_cell_objects_match_executed_original": true,
+    "saved_outputs_metadata_match_original": true,
+    "unrelated_existing_cells_preserved": 27,
+    "revised_interpretation_preserved_verbatim": true,
+    "interpretation_sha256": "54a7224fe8000d2c2a9b5920e5f59ab7dba1d741e86cd82b5e9e2f4d094a4f4c",
+    "no_notebook_execution": true,
+    "figure_correction": "Decoded PNG bytes matched the original; earlier apparent figure difference was base64 formatting."
+  },
+  "scope_of_final_pass": "Static parsing, archived output comparison, frozen inputs, saved metrics, links, size, attribution and secret-pattern checks. No notebook cells, model training or GPU reproduction executed. Presentation/script quality excluded.",
+  "remaining_academic_blockers": [
+    {
+      "file": "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+      "cell": 4,
+      "issue": "Independently validated labels wording needs clarification: saved provenance establishes human review of AI proposals, not independent human gold."
+    },
+    {
+      "file": "notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+      "cell": 11,
+      "issue": "Aaron wrote the original code wording needs its scope reconciled with recorded Codex code preparation assistance."
+    }
+  ],
+  "final_integrity_after_notebook06": {
+    "notebooks_unchanged": 7,
+    "relative_markdown_links": 40,
+    "input_archive_count": 5,
+    "compact_expanded_results_match_full_archive": 23,
+    "high_confidence_secrets": [],
+    "weights_in_upload": [],
+    "backup_files_in_upload": [],
+    "files_at_or_over_25MiB": [],
+    "payload_files": 188,
+    "largest_file": {
+      "file": "music_review_runs/2026-10-15_music_insight_v1/passages.csv",
+      "bytes": 4434266
+    },
+    "dependencies_and_README_navigation": "present and consistent",
+    "GPU_runtime_retested": false,
+    "notebook_cells_executed": false,
+    "assignment_deliverables": "Code repository URL and accessible 10\u201315 minute video with 2\u20133 minute GenAI reflection, then Canvas submission; presentation/script quality excluded.",
+    "source_data_sharing": "500 attributed reviews, CC BY-NC-SA 3.0 notices retained; no blanket public redistribution clearance established."
+  },
+  "upload_file_integrity": "PASS",
+  "academic_submission_ready": false,
+  "notebook06_markdown_deduplication": {
+    "file": "notebooks/training/06_music_review_lora_AI_AUDITED_COLAB.ipynb",
+    "removed_one_based_cell": 25,
+    "removed_zero_based_index": 24,
+    "removed_cell_id": "b80b4de6",
+    "retained_formatted_cell_id": "adca1300",
+    "retained_formatted_cell_now_one_based": 25,
+    "before_sha256": "558e9f3e896d845769a09278860793b281602b1497031a63fb04593b5eecce65",
+    "after_sha256": "b6c17d371c97b2dc932118dc87ab091062f9bed6e8ea0aead2256c67258bf376",
+    "all_other_cells_exactly_preserved": true,
+    "all_13_code_cells_and_outputs_unchanged": true,
+    "notebook_metadata_unchanged": true,
+    "all_AI_assistance_text_unchanged": true,
+    "notebook_execution": false
+  },
+  "disclosure_placement_clarification": "Main consolidated disclosure remains the final cell of notebook 10. Existing historical and expanded-phase assistance passages are preserved and are not a failure merely because they mention AI.",
+  "notebook10_disclosure_sentence_revision": {
+    "after": "Generative AI assisted with pipeline and notebook code.",
+    "file": "notebooks/10_saved_results_review_readable.ipynb",
+    "cell_one_based": 15,
+    "cell_id": "6325752a",
+    "before_sha256": "e239beb333de5791a8352a1671e75f3165a39d54e313c1e765b4f7c80accc4a2",
+    "after_sha256": "b580db01d17227a89452b8816f11fb92bb5f830179cc8f8177039afa738d6d6d",
+    "remaining_disclosure_text_and_final_position_unchanged": true,
+    "all_code_outputs_and_notebook_metadata_unchanged": true,
+    "change_description": "Authorized code-assistance wording normalization. Exact prior record retained in the recoverable local-only backup; remaining disclosure and its position were preserved."
+  },
+  "README_recording_status_correction": {
+    "before": "Video recording is complete. Finished slides, narration, video upload/link, GitHub URL/instructor access and Canvas submission remain pending. The required presentation length is 10\u201315 minutes, including a 2\u20133 minute GenAI reflection.",
+    "after": "Video recording is complete. Video upload/link, GitHub URL/instructor access, and Canvas submission remain pending. The required presentation length is 10\u201315 minutes, including a 2\u20133 minute GenAI reflection.",
+    "duration_verified": false
+  },
+  "final_public_wording_check": "Neutral code-assistance wording; original history records preserved in local-only backup. Scientific artifacts and all notebook wording unchanged."
+}

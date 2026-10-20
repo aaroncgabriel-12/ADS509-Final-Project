@@ -1,0 +1,55 @@
+EXPANDED TEST PRESENTATION EVIDENCE — verified saved outputs only
+
+All figures describe the same 200 test passages from 99 review/release groups.
+Labels were AI-assisted with recorded Aaron review, not independent human gold.
+Epoch 3 was selected using validation, before test scoring. No test-driven tuning.
+The baseline uses the same fresh pinned base with adapters disabled; development
+preflight verified its predictions against the saved unadapted validation reference.
+No model was rerun and no labels or historical charts were changed to build evidence.
+
+01_same_test_accuracy_macro_f1.png/.svg
+Caption: On the same 200-passage test, adaptation increased accuracy from 31.5% to 71.0%
+and macro-F1 from 0.238963 to 0.662959. Macro-F1 difference +0.423996; accuracy difference
++39.5 percentage points. This is a paired dataset comparison, not a business impact test.
+
+02_adapted_confusion_matrix_counts.png/.svg
+Caption: Adapted epoch 3 confusion matrix. Rows are actual categories; columns are
+predicted categories, both ordered specific musical observation / general opinion /
+background-other. Counts are unnormalized. Matrix [[90,12,11],[16,27,11],[4,4,25]].
+Supports 113/54/33; adapted prediction counts 110/43/47; correct 142 of 200.
+
+03_adapted_class_metrics_prediction_counts.png/.svg
+Caption: Adapted precision/recall/F1 with true support and both prediction counts.
+Unadapted predictions 83/1/116; adapted 110/43/47. General-opinion recall remained 0.500.
+Scores in images are rounded for readability; CSV/JSON retain full saved precision.
+
+The JSON and CSV files are the editable data behind these figures. Use all 3 figures
+with their sample/provenance footer visible. Passages are clustered by source group;
+label subjectivity and possible pretraining overlap limit generalization. These
+results do not establish business time savings or independent-human evaluation.
+
+SOURCE FILES / SHA-256
+comparison_json
+/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/one_time_test_comparison/comparison.json
+SHA-256 7fa6d0804fa53d99366a74292d07a300b1620d95eaef974e729f754699f0ec9f
+
+verified_summary_json
+/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/VERIFIED_RESULTS_SUMMARY.json
+SHA-256 2b94d747eef1e01bcefa5e92f6125740a10da18313136e2c1ff2ec783fb5883d
+
+adapted_predictions_csv
+/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/one_time_test_comparison/adapted_test_predictions.csv
+SHA-256 bea123ef3eb541aa177fbb61c7b03b79294ae0efc3b37397d85efb11ca83a9f6
+
+unadapted_predictions_csv
+/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/one_time_test_comparison/unadapted_test_predictions.csv
+SHA-256 a5ce35666daf1e61e2c8cb2d35ccb78c3fa7d376c20d5ed20ba9486bbe3df71d
+
+frozen_test_csv
+/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/reviewed_export_20261019T234617178637Z/test.csv
+SHA-256 4dbe8630a603edea8de34cf019b7e9fc5ff777a3b949f492e956968588561564
+
+selection_receipt_json
+/Users/aarongabriel/Documents/MS-ADS /ADS 509/music-review-insight-finder_expansion_400_200_200_2026-10-19/authorized_execution_20261019/results/expanded_B_20261019T234617178637Z/runtime_results/B_expanded_weighted_ABC/selection_receipt.json
+SHA-256 f3c0e481b046de0c0263d185f3b4ac08d7a08455221cf62030a9b17c09a6354e
+

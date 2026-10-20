@@ -1,0 +1,192 @@
+{
+  "created": "2026-10-19",
+  "scope": "Separate readability copies; original training notebooks unchanged; no training/test reruns.",
+  "authors_and_assistance": {
+    "assistant": [
+      "pipeline and notebook code preparation assistance",
+      "label audit assistance",
+      "experiment guidance",
+      "debugging",
+      "this readability cleanup"
+    ],
+    "aaron": [
+      "ran saved experiments",
+      "reviewed outputs"
+    ],
+    "independent_authorship_claim": false,
+    "mostly_independent_before_experimentation_claim": false
+  },
+  "label_provenance": {
+    "final_labels": "AI-assisted, nonblinded audit across splits",
+    "independent_human_gold": false
+  },
+  "evaluation": {
+    "A_D": "same 33-row validation set",
+    "historical_test_already_exposed": true,
+    "independent_confirmation": false
+  },
+  "original_01": {
+    "path": "original-project/01_collect_music_reviews.ipynb",
+    "status": "single empty code cell; no recovered unsaved session inspected; no content fabricated or duplicate placeholder created"
+  },
+  "preparation_notebook": {
+    "source": "original-project/02_music_review_pipeline_LOCAL.ipynb",
+    "cosmetic_edits_only": true,
+    "checks": [
+      {
+        "original_cell": 2,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      },
+      {
+        "original_cell": 6,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      },
+      {
+        "original_cell": 8,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      },
+      {
+        "original_cell": 9,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      },
+      {
+        "original_cell": 12,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      },
+      {
+        "original_cell": 14,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      },
+      {
+        "original_cell": 17,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      },
+      {
+        "original_cell": 20,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      },
+      {
+        "original_cell": 22,
+        "ast_equal": true,
+        "noncomment_tokens_equal": true,
+        "outputs_and_execution_count_equal": true
+      }
+    ],
+    "rerun": false
+  },
+  "new_notebooks": {
+    "09_vader_sentiment_readable.ipynb": "Executed locally: all 140 compound scores match saved CSV exactly; summary/histogram checks pass.",
+    "10_saved_results_review_readable.ipynb": "Executed locally: new tables/plots from byte-identical aggregate JSON only; no training/test scoring."
+  },
+  "archival_training_notebooks": [
+    "local-downloads/06_music_review_lora_AI_AUDITED_COLAB.ipynb",
+    "local-downloads/07_music_review_VALIDATION_ONLY_AB_COLAB-2.ipynb",
+    "local-downloads/08_music_review_C_LOWER_LR_COLAB.ipynb",
+    "local-downloads/08_music_review_C_LOWER_LR_COLAB-5.ipynb"
+  ],
+  "evidence": [
+    {
+      "file": "evidence/A_summary.json",
+      "archive": "local-downloads/music_validation_only_AB_results.zip",
+      "archive_sha256": "3e50a9019965ae6b82e231af255343fbf9fcfbabb71fed05142b13ee510f00b5",
+      "entry": "A_unweighted_ABC/experiment_summary.json",
+      "sha256": "f118fac3fbf0bdcf8af641419869ec70b622debf593b47677c61314d8614ff16",
+      "byte_identical_to_source": true
+    },
+    {
+      "file": "evidence/B_summary.json",
+      "archive": "local-downloads/music_validation_only_AB_results.zip",
+      "archive_sha256": "3e50a9019965ae6b82e231af255343fbf9fcfbabb71fed05142b13ee510f00b5",
+      "entry": "B_train_weighted_ABC/experiment_summary.json",
+      "sha256": "78d97fc2d59c36b3c01262e84298c5f9076371221b2e103bd57667602f9ae9b2",
+      "byte_identical_to_source": true
+    },
+    {
+      "file": "evidence/C_summary.json",
+      "archive": "local-downloads/music_validation_only_C_lr1e4_COMPLETE_results.zip",
+      "archive_sha256": "4e4ae43b796d0d32370fe20e8207ed04ce7514b8e0c1e37047ebf6db94ad4c3d",
+      "entry": "C_completed_summary.json",
+      "sha256": "68cf7839cabfadd21d4a9e738a3bd9c91e76fc777c96e5295f3daa5a3eca87cc",
+      "byte_identical_to_source": true
+    },
+    {
+      "file": "evidence/D_summary.json",
+      "archive": "local-downloads/music_validation_only_D_five_epoch_COMPLETE_results.zip",
+      "archive_sha256": "a3ee8a9f37ccf417fbb5c2ebf7ec66a90d58c6172ea48afed16cc64c5b7bc16e",
+      "entry": "D_completed_summary.json",
+      "sha256": "cd0252ea315905aa604c240e68c6f0d1d9a06340f89ad4416bf042be68e7adc1",
+      "byte_identical_to_source": true
+    },
+    {
+      "file": "evidence/AB_comparison.json",
+      "archive": "local-downloads/music_validation_only_AB_results.zip",
+      "archive_sha256": "3e50a9019965ae6b82e231af255343fbf9fcfbabb71fed05142b13ee510f00b5",
+      "entry": "validation_comparison.json",
+      "sha256": "c4796f369f4bba712f0b59bb7d1e383c87bd2d007df8607732eb7e6c85962701",
+      "byte_identical_to_source": true
+    },
+    {
+      "file": "evidence/D_completion.json",
+      "archive": "local-downloads/music_validation_only_D_five_epoch_COMPLETE_results.zip",
+      "archive_sha256": "a3ee8a9f37ccf417fbb5c2ebf7ec66a90d58c6172ea48afed16cc64c5b7bc16e",
+      "entry": "completion.json",
+      "sha256": "9b76c984307964698f0a3d3bb619412ef82765e51e5557647fdbc63bb474b023",
+      "byte_identical_to_source": true
+    },
+    {
+      "file": "evidence/sentiment_summary.json",
+      "source": "original-project/09_training_sentiment_EDA_VADER/results/sentiment_summary.json",
+      "sha256": "7643028c5cdcbbb938ac272e68cc360365194c15b04c1e17639db38859b17861",
+      "byte_identical_to_source": true
+    },
+    {
+      "file": "evidence/word_count_summary.json",
+      "source": "original-project/music_review_runs/2026-10-15_music_insight_v1/word_count_summary.json",
+      "sha256": "9aa1102228ac340db6e41eea89938fe329c93885b6b8fc3a27cf4304bacb20e6",
+      "byte_identical_to_source": true
+    },
+    {
+      "file": "evidence/cleaning_audit.json",
+      "source": "original-project/music_review_runs/2026-10-15_music_insight_v1/cleaning_audit.json",
+      "sha256": "be66d4d171606334fa6cfc19fcb6e6ef9f45db27f8e602b72edb484e93f8e8f0",
+      "byte_identical_to_source": true
+    }
+  ],
+  "protected_original_file_count": 94,
+  "disclosure_location": "Final Code assistance and responsibility section of 10_saved_results_review_readable.ipynb only.",
+  "disclosure_correction": {
+    "02_data_preparation_readable.ipynb": {
+      "before_sha256": "d6d5ea9c8dd7974adad2c1631ea8fb21239404d1a1d3e92855a14b17dedc6246",
+      "code_cells_and_outputs_identical": true,
+      "all_remaining_cells_identical": true,
+      "removed_cells": 1,
+      "removed_type": "duplicated standalone disclosure Markdown only"
+    },
+    "09_vader_sentiment_readable.ipynb": {
+      "before_sha256": "ba6a6812b60d1645b16d3b53af5801a02ad7579007de90b6679467b4a94811d0",
+      "code_cells_and_outputs_identical": true,
+      "all_remaining_cells_identical": true,
+      "removed_cells": 1,
+      "removed_type": "duplicated standalone disclosure Markdown only"
+    },
+    "10_saved_results_review_readable.ipynb": {
+      "unchanged_sha256": "0ce06a2275a4fa1be678290c49d3c43dbb4fbb1d9443bedd62abc610235d48b3"
+    }
+  }
+}

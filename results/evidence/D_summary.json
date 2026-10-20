@@ -1,0 +1,90 @@
+{
+  "experiment": "D_train_weighted_ABC_lr1e4_5epochs",
+  "status": "completed_validation_only",
+  "selected": {
+    "epoch": 5,
+    "training_weighted_ce": 0.994532970899175,
+    "training_unweighted_ce": 0.938836064508983,
+    "validation_unweighted_ce": 0.9794693453745409,
+    "validation": {
+      "n": 33,
+      "accuracy": 0.5757575757575758,
+      "macro_f1": 0.4618714618714619,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143,
+          "support": 18
+        },
+        "general_opinion": {
+          "precision": 0.5,
+          "recall": 0.2857142857142857,
+          "f1": 0.36363636363636365,
+          "support": 7
+        },
+        "background_other": {
+          "precision": 0.4,
+          "recall": 0.25,
+          "f1": 0.3076923076923077,
+          "support": 8
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          6,
+          0,
+          2
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 24,
+        "general_opinion": 4,
+        "background_other": 5
+      },
+      "exact_top_ties": 1
+    },
+    "successful_optimizer_steps": 18,
+    "skipped_optimizer_steps": 0,
+    "checkpoint": "adapter_epoch_5"
+  },
+  "original_validation_macro_f1": 0.30536659108087677,
+  "delta_vs_original_validation": 0.15650487079058512,
+  "attempted_optimizer_steps": 90,
+  "successful_optimizer_steps": 87,
+  "skipped_optimizer_steps": 3,
+  "successful_nonzero_learning_rate_steps": 86,
+  "planned_optimizer_steps": 90,
+  "base_sha256_before": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+  "base_sha256_after": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+  "adapter_initial_sha256": "313da552071077055642df7d36c5d6f08884c1522f4dcbc81d7ac4197c9815bb",
+  "adapter_final_sha256": "f15fd432740c91e394984270589f4d8322145969900b0724f4d82ba7701efe31",
+  "frozen_base_verified": true,
+  "independent_human_evaluation": false,
+  "scope": "training and validation only; no confirmatory final comparison",
+  "learning_rate": 0.0001,
+  "b_initialization_verified": true,
+  "post_training_diagnostics_complete": true,
+  "saved_reloaded_selected_adapter_agreement": {
+    "status": "PASS",
+    "rows": 33,
+    "all_predicted_labels_identical": true,
+    "largest_probability_difference": 0.0,
+    "probability_atol": 0.002
+  }
+}

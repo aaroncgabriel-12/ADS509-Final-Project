@@ -1,0 +1,16 @@
+{
+  "01_same_test_accuracy_macro_f1.png": "822d66216718c4a726a374dc91d17f99370885234395208252784a0bbbb6bbaa",
+  "01_same_test_accuracy_macro_f1.svg": "877caf3b2181d765e7a67226a66f6b258531eeabae929fc18170475c087b1e77",
+  "02_adapted_confusion_matrix_counts.png": "340cc0a011a242d840c15ff91b3914518860a3636ad883f870adf99e03244d78",
+  "02_adapted_confusion_matrix_counts.svg": "ff7044d0fa5778f74e7697770f7abdb76d747695aabc607b58bbc4ad6218b7bc",
+  "03_adapted_class_metrics_prediction_counts.png": "d9a33332eb2eb706adfd65cced9961b2a6494420df6155f2c03fc126a3ee06d4",
+  "03_adapted_class_metrics_prediction_counts.svg": "a430616fced5ac94bbaa9741ebd1b295576b6c6272eeb5b10f6def1d6fde2f8a",
+  "PROVENANCE_AND_CAPTIONS.txt": "83a0f54efdd277dac05164c4a7b96810f1b33e0432cf1be87c9c99d79ad68ba0",
+  "VISUAL_QA.json": "04353de463ec5e48d189c4c59daed49aa2758a902058205890fa9de3d517e690",
+  "adapted_confusion_matrix_counts.csv": "5a34b9fd6acdfa2ec70cf493ddafdbd2cd5adc9366b1e2d057f4f5d6e53f3ae4",
+  "build_expansion_presentation_evidence.py": "e296c882daa62b6c7f82c1626da70dfcadb3fd717b194f7a8a4e824c3793eba6",
+  "per_class_metrics_and_prediction_counts.csv": "e03064fd491999b66fc27433a137d06c88893232fd091f84e4b646139e1dc704",
+  "presentation_metrics_and_provenance.json": "9e48edacbd0f49efc02bffe6ae4984a743608fcda2e2d8c4e09c4177b10a9d41",
+  "same_test_comparison.csv": "2524c1182ca4889b3e625e09555201555d37d5d6c75c6444dcdf39c17557280d",
+  "unadapted_confusion_matrix_counts.csv": "12e180b3fb702b9f2391596b788538a7a670d029224f232978c17e117870b4d8"
+}

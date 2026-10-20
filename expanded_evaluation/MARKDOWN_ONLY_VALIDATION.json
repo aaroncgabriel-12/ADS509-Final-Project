@@ -1,0 +1,19 @@
+{
+  "original": "11_music_review_EXPANDED_B_EXECUTED_ORIGINAL.ipynb",
+  "readable": "11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb",
+  "original_sha256": "baf8258edd6a6d4d25f3ea4a1d393f02915c78e64f3ff9b2f5b57bf0bf1866f8",
+  "readable_sha256": "9b2fb5a8a5a06074db9297f686c0b458a528bee00dc994ce2bebea36762ad29f",
+  "markdown_cells_rewritten": [
+    0,
+    1,
+    4,
+    6,
+    8,
+    11
+  ],
+  "code_cells_identical": 7,
+  "outputs_execution_counts_cell_ids_metadata_preserved": true,
+  "original_unchanged": true,
+  "new_model_execution": false,
+  "AI_disclosure_location": "final Markdown section"
+}

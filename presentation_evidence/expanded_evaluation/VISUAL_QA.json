@@ -1,0 +1,6 @@
+{
+  "visual_review": "Passed: all three exported PNGs inspected; no clipping, named categories and sample/provenance footers legible.",
+  "data_verification": "Confusion matrices/supports/prediction counts independently reconstructed from both saved prediction CSVs; exact match.",
+  "source_outputs_changed": false,
+  "model_rerun": false
+}

@@ -1,0 +1,74 @@
+{
+  "excluded_from_upload": [
+    {
+      "item": "Empty notebook 01",
+      "reason": "One empty code cell; real collection is in music_review_pipeline.py."
+    },
+    {
+      "item": "Earlier 03/05 training drafts and notebook 07/08 failure/unrun backups",
+      "reason": "Completed executed 06/07-2/08-5 retained instead; originals remain in original project/Downloads."
+    },
+    {
+      "item": "Three large A/B/C/D result ZIPs with adapters",
+      "reason": "Copied to sibling LOCAL_ARCHIVE_DO_NOT_UPLOAD; unnecessary for aggregate review/default C reference."
+    },
+    {
+      "item": "Base model and tokenizer cache",
+      "reason": "Not bundled; acquire recorded Qwen revision through Hugging Face in the GPU environment."
+    },
+    {
+      "item": "External VADER lexicon ZIP",
+      "reason": "Not vendored without its own notices; acquire through NLTK, compare recorded hash."
+    },
+    {
+      "item": "One-off chat audit builders, old snapshots and backups",
+      "reason": "Remain in original local workspace/project; immutable frozen inputs contain the consumed final data and decision provenance."
+    },
+    {
+      "item": ".DS_Store, __pycache__, notebook checkpoints, environments, credentials, runtime caches",
+      "reason": "Excluded/ignored."
+    },
+    {
+      "item": "Older local outline v0",
+      "reason": "Current Library v1 included instead."
+    },
+    {
+      "item": "Standalone presentation_evidence.zip",
+      "reason": "Its five PNGs and guide are included unpacked; original ZIP remains in original project."
+    },
+    {
+      "item": "Expanded full results ZIP and adapter/tokenizer checkpoints",
+      "reason": "Preserved in sibling LOCAL_ARCHIVE_DO_NOT_UPLOAD/expanded_evaluation; compact records included in expanded_evaluation/results."
+    }
+  ],
+  "pending_deliverables": [
+    "finished slides",
+    "full narration/script",
+    "10\u201315 minute recording including 2\u20133 minute GenAI reflection",
+    "video URL",
+    "GitHub URL and instructor access",
+    "Canvas submission"
+  ],
+  "included_data": {
+    "normalized_reviews": 500,
+    "prepared_passages": 7664,
+    "train_csv": 140,
+    "validation_csv": 33,
+    "historical_test": "35 rows retained only inside immutable run06 input bundle; not loaded for new evaluation.",
+    "prototype_counts": {
+      "train": 140,
+      "validation": 33,
+      "historical_test": 35
+    },
+    "expanded_counts": {
+      "train": 400,
+      "validation": 200,
+      "test": 200
+    },
+    "expanded_groups": {
+      "train": 180,
+      "validation": 99,
+      "test": 99
+    }
+  }
+}

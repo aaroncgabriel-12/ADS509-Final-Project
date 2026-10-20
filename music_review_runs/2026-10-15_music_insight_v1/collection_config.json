@@ -1,0 +1,11 @@
+{
+  "api_url": "https://critiquebrainz.org/ws/1/review/",
+  "entity_type": "release_group",
+  "language": "en",
+  "max_pages": 30,
+  "max_reviews": 500,
+  "page_size": 50,
+  "review_type": "review",
+  "sort": "published_on",
+  "sort_order": "asc"
+}

@@ -1,0 +1,90 @@
+{
+  "experiment": "B_expanded_weighted_ABC",
+  "status": "completed_train_validation",
+  "selected": {
+    "epoch": 3,
+    "training_weighted_ce": 0.8736896863220487,
+    "training_unweighted_ce": 0.8723137176036835,
+    "validation_unweighted_ce": 0.7814640101790428,
+    "validation": {
+      "n": 200,
+      "accuracy": 0.645,
+      "macro_f1": 0.5629897528631705,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.8070175438596491,
+          "recall": 0.7479674796747967,
+          "f1": 0.7763713080168776,
+          "support": 123
+        },
+        "general_opinion": {
+          "precision": 0.38095238095238093,
+          "recall": 0.38095238095238093,
+          "f1": 0.38095238095238093,
+          "support": 42
+        },
+        "background_other": {
+          "precision": 0.4772727272727273,
+          "recall": 0.6,
+          "f1": 0.5316455696202531,
+          "support": 35
+        }
+      },
+      "confusion_matrix": [
+        [
+          92,
+          19,
+          12
+        ],
+        [
+          15,
+          16,
+          11
+        ],
+        [
+          7,
+          7,
+          21
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 114,
+        "general_opinion": 42,
+        "background_other": 44
+      },
+      "exact_top_ties": 0
+    },
+    "successful_optimizer_steps": 50,
+    "skipped_optimizer_steps": 0,
+    "checkpoint": "adapter_epoch_3",
+    "adapter_sha256": "4d4224a479aa1caba53eb2514dd8c0a3a42b5bf729a840d618bfb04c6ecefcab"
+  },
+  "freeze_sha256": "8332b6ad842b1608fe760af1aaf9f13beae9de9ed6ebddadd1cf9aadaff342a5",
+  "seed": 1509509,
+  "schedule": {
+    "batch_size": 2,
+    "gradient_accumulation": 4,
+    "epochs": 3,
+    "microbatches_per_epoch": 200,
+    "steps_per_epoch": 50,
+    "planned_optimizer_steps": 150,
+    "warmup_steps": 15
+  },
+  "attempted_optimizer_steps": 150,
+  "successful_optimizer_steps": 148,
+  "skipped_optimizer_steps": 2,
+  "successful_nonzero_learning_rate_steps": 147,
+  "planned_optimizer_steps": 150,
+  "base_sha256_before": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+  "base_sha256_after": "df2f7e6da17455af8749b7a25b5bae79564cf7862c44bb9396fb4e008290c701",
+  "adapter_initial_sha256": "313da552071077055642df7d36c5d6f08884c1522f4dcbc81d7ac4197c9815bb",
+  "adapter_final_sha256": "4d4224a479aa1caba53eb2514dd8c0a3a42b5bf729a840d618bfb04c6ecefcab",
+  "frozen_base_verified": true,
+  "independent_human_evaluation": false,
+  "scope": "Training and validation only. Test not loaded or scored; labels AI-assisted with human review."
+}

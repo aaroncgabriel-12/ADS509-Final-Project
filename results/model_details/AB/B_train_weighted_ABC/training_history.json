@@ -1,0 +1,188 @@
+[
+  {
+    "epoch": 1,
+    "training_weighted_ce": 1.2968538752891858,
+    "training_unweighted_ce": 1.2173950357096537,
+    "validation_unweighted_ce": 1.1621272744554463,
+    "validation": {
+      "n": 33,
+      "accuracy": 0.30303030303030304,
+      "macro_f1": 0.2976190476190476,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.6666666666666666,
+          "recall": 0.1111111111111111,
+          "f1": 0.19047619047619047,
+          "support": 18
+        },
+        "general_opinion": {
+          "precision": 0.21428571428571427,
+          "recall": 0.42857142857142855,
+          "f1": 0.2857142857142857,
+          "support": 7
+        },
+        "background_other": {
+          "precision": 0.3125,
+          "recall": 0.625,
+          "f1": 0.4166666666666667,
+          "support": 8
+        }
+      },
+      "confusion_matrix": [
+        [
+          2,
+          9,
+          7
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 3,
+        "general_opinion": 14,
+        "background_other": 16
+      },
+      "exact_top_ties": 1
+    },
+    "successful_optimizer_steps": 16,
+    "skipped_optimizer_steps": 2,
+    "checkpoint": "adapter_epoch_1"
+  },
+  {
+    "epoch": 2,
+    "training_weighted_ce": 1.103986343193182,
+    "training_unweighted_ce": 1.101618140084403,
+    "validation_unweighted_ce": 1.0052247047424316,
+    "validation": {
+      "n": 33,
+      "accuracy": 0.5757575757575758,
+      "macro_f1": 0.464881371858116,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.6,
+          "recall": 0.8333333333333334,
+          "f1": 0.6976744186046512,
+          "support": 18
+        },
+        "general_opinion": {
+          "precision": 0.5,
+          "recall": 0.2857142857142857,
+          "f1": 0.36363636363636365,
+          "support": 7
+        },
+        "background_other": {
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333,
+          "support": 8
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          2,
+          1
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          6,
+          0,
+          2
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 25,
+        "general_opinion": 4,
+        "background_other": 4
+      },
+      "exact_top_ties": 0
+    },
+    "successful_optimizer_steps": 18,
+    "skipped_optimizer_steps": 0,
+    "checkpoint": "adapter_epoch_2"
+  },
+  {
+    "epoch": 3,
+    "training_weighted_ce": 1.0371375212426588,
+    "training_unweighted_ce": 0.9733339846134186,
+    "validation_unweighted_ce": 1.0643394300431916,
+    "validation": {
+      "n": 33,
+      "accuracy": 0.42424242424242425,
+      "macro_f1": 0.3853021978021978,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.6428571428571429,
+          "recall": 0.5,
+          "f1": 0.5625,
+          "support": 18
+        },
+        "general_opinion": {
+          "precision": 0.21428571428571427,
+          "recall": 0.42857142857142855,
+          "f1": 0.2857142857142857,
+          "support": 7
+        },
+        "background_other": {
+          "precision": 0.4,
+          "recall": 0.25,
+          "f1": 0.3076923076923077,
+          "support": 8
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          8,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          3,
+          2
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 14,
+        "general_opinion": 14,
+        "background_other": 5
+      },
+      "exact_top_ties": 3
+    },
+    "successful_optimizer_steps": 18,
+    "skipped_optimizer_steps": 0,
+    "checkpoint": "adapter_epoch_3"
+  }
+]

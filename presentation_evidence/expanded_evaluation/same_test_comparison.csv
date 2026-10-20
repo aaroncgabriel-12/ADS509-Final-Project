@@ -1,0 +1,3 @@
+model,n_passages,n_groups,accuracy,macro_f1,selected_epoch
+unadapted,200,99,0.315,0.2389626991736292,
+adapted,200,99,0.71,0.6629586396067372,3

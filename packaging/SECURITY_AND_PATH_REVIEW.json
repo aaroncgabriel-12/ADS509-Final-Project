@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "utf8_items_scanned_including_archives": 164,
+  "high_confidence_secret_findings": [],
+  "nonsecret_absolute_path_locations": [
+    "inputs/music_insight_AI_AUDITED_training_bundle.zip!audit_manifest.json",
+    "inputs/music_insight_AI_AUDITED_training_bundle.zip!provenance/frozen_session_manifest.json"
+  ],
+  "email_pattern_locations_for_review": [
+    "music_review_runs/2026-10-15_music_insight_v1/passages.csv",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000400.json",
+    "music_review_runs/2026-10-15_music_insight_v1/raw_pages/offset_000700.json",
+    "music_review_runs/2026-10-15_music_insight_v1/reviews.csv"
+  ],
+  "privacy_notes": [
+    "Immutable input bundles retain original local provenance paths to preserve exact notebook hash checks.",
+    "Public source author names, review/release UUIDs and attribution URLs are intentionally retained.",
+    "No raw user profiles, auth/session state, hidden settings or environment files were included.",
+    "Pattern scanning is not a guarantee of absence of secrets."
+  ],
+  "email_pattern_review": {
+    "status": "REVIEWED: source text, not a private account",
+    "finding": "One public business-contact address appears in the body of an attributed BBC source review; repeated by exact passages/cache copies.",
+    "source_review_id": "3dabba70-105f-4a92-a724-37e04d13e0b3",
+    "source_url": "http://www.bbc.co.uk/music/reviews/vzw6",
+    "retained_reason": "Preserve the exact normalized dataset/cache used in the collection; no Aaron account identifiers or credentials."
+  },
+  "nonsecret_source_path_note": "Historical source-home paths remain only in two run-06 bundle provenance manifests; not executed by readable reviews."
+}

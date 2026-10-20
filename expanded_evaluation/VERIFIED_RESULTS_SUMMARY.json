@@ -1,0 +1,519 @@
+{
+  "verified_at_utc": "2026-10-20T00:24:14.474175+00:00",
+  "scope": "Verification of saved artifacts and predictions only; no model rerun or new test inference",
+  "source_downloads": {
+    "archive": "/Users/aarongabriel/Downloads/music_expanded_B_actual_results.zip",
+    "notebook": "/Users/aarongabriel/Downloads/11_music_review_EXPANDED_B_AUTHORIZED_COLAB.ipynb"
+  },
+  "archive_sha256": "29a2d7b9db04a040d9519f109774b04076dc3263cae8443e5ca65487d55c04f6",
+  "archive_bytes": 18281303,
+  "archive_crc": "PASS",
+  "zip_members": 59,
+  "original_executed_notebook_sha256": "baf8258edd6a6d4d25f3ea4a1d393f02915c78e64f3ff9b2f5b57bf0bf1866f8",
+  "original_download_byte_identical": true,
+  "notebook_code_cells": 7,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "notebook_errors": 0,
+  "freeze_sha256": "8332b6ad842b1608fe760af1aaf9f13beae9de9ed6ebddadd1cf9aadaff342a5",
+  "selected_epoch": 3,
+  "validation": {
+    "n": 200,
+    "accuracy": 0.645,
+    "macro_f1": 0.5629897528631705,
+    "per_class": {
+      "specific_musical_observation": {
+        "precision": 0.8070175438596491,
+        "recall": 0.7479674796747967,
+        "f1": 0.7763713080168776,
+        "support": 123
+      },
+      "general_opinion": {
+        "precision": 0.38095238095238093,
+        "recall": 0.38095238095238093,
+        "f1": 0.38095238095238093,
+        "support": 42
+      },
+      "background_other": {
+        "precision": 0.4772727272727273,
+        "recall": 0.6,
+        "f1": 0.5316455696202531,
+        "support": 35
+      }
+    },
+    "confusion_matrix": [
+      [
+        92,
+        19,
+        12
+      ],
+      [
+        15,
+        16,
+        11
+      ],
+      [
+        7,
+        7,
+        21
+      ]
+    ],
+    "label_order": [
+      "specific_musical_observation",
+      "general_opinion",
+      "background_other"
+    ],
+    "prediction_counts": {
+      "specific_musical_observation": 114,
+      "general_opinion": 42,
+      "background_other": 44
+    },
+    "exact_top_ties": 0
+  },
+  "validation_ce": 0.7814640101790428,
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "validation_macro_f1": 0.3321138795337132,
+      "validation_accuracy": 0.62,
+      "unweighted_validation_ce": 0.9691296941041947,
+      "successful_updates": 48,
+      "skipped_updates": 2
+    },
+    {
+      "epoch": 2,
+      "validation_macro_f1": 0.4802897615055936,
+      "validation_accuracy": 0.625,
+      "unweighted_validation_ce": 0.8526808115839958,
+      "successful_updates": 50,
+      "skipped_updates": 0
+    },
+    {
+      "epoch": 3,
+      "validation_macro_f1": 0.5629897528631705,
+      "validation_accuracy": 0.645,
+      "unweighted_validation_ce": 0.7814640101790428,
+      "successful_updates": 50,
+      "skipped_updates": 0
+    }
+  ],
+  "optimizer": {
+    "planned_optimizer_steps": 150,
+    "attempted_optimizer_steps": 150,
+    "successful_optimizer_steps": 148,
+    "skipped_optimizer_steps": 2,
+    "successful_nonzero_learning_rate_steps": 147
+  },
+  "nonfinite_gradient_skips": [
+    1,
+    2
+  ],
+  "frozen_base_hashes_match": true,
+  "selected_checkpoint_and_training_file_hashes": "PASS",
+  "preflight_status": "passed",
+  "preflight_fingerprints_and_prediction_agreement": "PASS",
+  "single_test_attempt_record": "PASS",
+  "test_metrics_recomputed_from_saved_predictions": {
+    "unadapted": {
+      "n": 200,
+      "accuracy": 0.315,
+      "macro_f1": 0.2389626991736292,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.4819277108433735,
+          "recall": 0.35398230088495575,
+          "f1": 0.40816326530612246,
+          "support": 113
+        },
+        "general_opinion": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 54
+        },
+        "background_other": {
+          "precision": 0.19827586206896552,
+          "recall": 0.696969696969697,
+          "f1": 0.3087248322147651,
+          "support": 33
+        }
+      },
+      "confusion_matrix": [
+        [
+          40,
+          1,
+          72
+        ],
+        [
+          33,
+          0,
+          21
+        ],
+        [
+          10,
+          0,
+          23
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 83,
+        "general_opinion": 1,
+        "background_other": 116
+      }
+    },
+    "adapted": {
+      "n": 200,
+      "accuracy": 0.71,
+      "macro_f1": 0.6629586396067372,
+      "per_class": {
+        "specific_musical_observation": {
+          "precision": 0.8181818181818182,
+          "recall": 0.7964601769911505,
+          "f1": 0.8071748878923767,
+          "support": 113
+        },
+        "general_opinion": {
+          "precision": 0.627906976744186,
+          "recall": 0.5,
+          "f1": 0.5567010309278351,
+          "support": 54
+        },
+        "background_other": {
+          "precision": 0.5319148936170213,
+          "recall": 0.7575757575757576,
+          "f1": 0.625,
+          "support": 33
+        }
+      },
+      "confusion_matrix": [
+        [
+          90,
+          12,
+          11
+        ],
+        [
+          16,
+          27,
+          11
+        ],
+        [
+          4,
+          4,
+          25
+        ]
+      ],
+      "label_order": [
+        "specific_musical_observation",
+        "general_opinion",
+        "background_other"
+      ],
+      "prediction_counts": {
+        "specific_musical_observation": 110,
+        "general_opinion": 43,
+        "background_other": 47
+      }
+    }
+  },
+  "comparison": {
+    "status": "completed_one_time_test_comparison",
+    "freeze_sha256": "8332b6ad842b1608fe760af1aaf9f13beae9de9ed6ebddadd1cf9aadaff342a5",
+    "test_csv_sha256": "4dbe8630a603edea8de34cf019b7e9fc5ff777a3b949f492e956968588561564",
+    "selected_checkpoint": "adapter_epoch_3",
+    "selection_receipt_sha256": "f3c0e481b046de0c0263d185f3b4ac08d7a08455221cf62030a9b17c09a6354e",
+    "preflight_sha256": "5e0428c32a4c4d85aca6bd3bb6d7ddd65a7a3d7eaf83b6a47846c40f0637d569",
+    "unadapted_path": "Same fresh pinned base with adapters disabled; validated against pretraining validation predictions before test access",
+    "selection_rule": "validation macro-F1, lower unweighted CE, earlier epoch",
+    "test_used_for_selection": false,
+    "unadapted": {
+      "metrics": {
+        "n": 200,
+        "accuracy": 0.315,
+        "macro_f1": 0.2389626991736292,
+        "per_class": {
+          "specific_musical_observation": {
+            "precision": 0.4819277108433735,
+            "recall": 0.35398230088495575,
+            "f1": 0.40816326530612246,
+            "support": 113
+          },
+          "general_opinion": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 54
+          },
+          "background_other": {
+            "precision": 0.19827586206896552,
+            "recall": 0.696969696969697,
+            "f1": 0.3087248322147651,
+            "support": 33
+          }
+        },
+        "confusion_matrix": [
+          [
+            40,
+            1,
+            72
+          ],
+          [
+            33,
+            0,
+            21
+          ],
+          [
+            10,
+            0,
+            23
+          ]
+        ],
+        "label_order": [
+          "specific_musical_observation",
+          "general_opinion",
+          "background_other"
+        ],
+        "prediction_counts": {
+          "specific_musical_observation": 83,
+          "general_opinion": 1,
+          "background_other": 116
+        },
+        "exact_top_ties": 0
+      },
+      "unweighted_ce": 1.300172535777092
+    },
+    "adapted": {
+      "metrics": {
+        "n": 200,
+        "accuracy": 0.71,
+        "macro_f1": 0.6629586396067372,
+        "per_class": {
+          "specific_musical_observation": {
+            "precision": 0.8181818181818182,
+            "recall": 0.7964601769911505,
+            "f1": 0.8071748878923767,
+            "support": 113
+          },
+          "general_opinion": {
+            "precision": 0.627906976744186,
+            "recall": 0.5,
+            "f1": 0.5567010309278351,
+            "support": 54
+          },
+          "background_other": {
+            "precision": 0.5319148936170213,
+            "recall": 0.7575757575757576,
+            "f1": 0.625,
+            "support": 33
+          }
+        },
+        "confusion_matrix": [
+          [
+            90,
+            12,
+            11
+          ],
+          [
+            16,
+            27,
+            11
+          ],
+          [
+            4,
+            4,
+            25
+          ]
+        ],
+        "label_order": [
+          "specific_musical_observation",
+          "general_opinion",
+          "background_other"
+        ],
+        "prediction_counts": {
+          "specific_musical_observation": 110,
+          "general_opinion": 43,
+          "background_other": 47
+        },
+        "exact_top_ties": 1
+      },
+      "unweighted_ce": 0.7798775304853917
+    },
+    "adapted_minus_unadapted_macro_f1": 0.42399594043310795,
+    "label_provenance": "AI-assisted labels with human review; not independent human gold",
+    "independent_human_evaluation": false,
+    "test_groups": 99,
+    "limits": "Passages are clustered by review/release; no tuning or checkpoint reselection after this comparison. Restricted A/B/C softmax scores are not calibrated confidence."
+  },
+  "gpu": "Tesla T4",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.4",
+    "scikit-learn": "1.6.1"
+  },
+  "training_only_class_counts": {
+    "general_opinion": 115,
+    "specific_musical_observation": 218,
+    "background_other": 67
+  },
+  "training_only_class_weights_A_B_C": [
+    0.6116207951070336,
+    1.1594202898550725,
+    1.9900497512437811
+  ],
+  "labels": "AI-assisted with recorded human review; not independent human gold",
+  "groups": {
+    "train": 180,
+    "validation": 99,
+    "test": 99
+  },
+  "preparation_metadata_execution_status": "not_run",
+  "code_cell_execution_metadata": [
+    {
+      "colab": {
+        "base_uri": "https://localhost:8080/"
+      },
+      "id": "expanded-b-2",
+      "outputId": "904ea5d1-122a-4d6c-d680-4d11d9853828"
+    },
+    {
+      "colab": {
+        "base_uri": "https://localhost:8080/"
+      },
+      "id": "expanded-b-3",
+      "outputId": "5ef3fcd7-4319-44f1-889b-05c34b479c6b"
+    },
+    {
+      "colab": {
+        "base_uri": "https://localhost:8080/",
+        "height": 157
+      },
+      "id": "expanded-b-5",
+      "outputId": "3801e5d0-873d-4370-e3b4-407c0a52a31d"
+    },
+    {
+      "colab": {
+        "base_uri": "https://localhost:8080/",
+        "height": 482,
+        "referenced_widgets": [
+          "b3568c2265f64744b2dfc512a8d324e3",
+          "36b83d2cf8994a1a99bb8156b2e9010c",
+          "ce41241f233c4c409347777263c3afad",
+          "4432439fc0054c9cb2954ea3f36d5e00",
+          "e68fdb2ded9048169ab14e86e9311269",
+          "5860d2131ab643bbae3ab1c8697a76e3",
+          "79990b8249e74fe9b277f801075fa65e",
+          "60f8119c2f0c4d4e94a6d142bc540d37",
+          "3faefe0c2ef54883ad75cc9892ec66b4",
+          "bfa89242bb95474e91cca8bdbbee3e57",
+          "baab240f82de46f9a0e2ce0a75f7fa9c",
+          "94418658ddca4c418f2fb36b0da6d525",
+          "53182443420a47e6b36417064206cf04",
+          "455335d1f5b2462bb5892e718d2d90df",
+          "91771c8f7a0f46548dab75ec52bd8cfd",
+          "3998963bfdff41d5b4f1e18e25f64f8e",
+          "d00243b315a8441f999311cd25bd0024",
+          "0c7c8aa756394d15ad382f1ddf08ebb7",
+          "dde4a71c188e4bcfad0f092d40b7a810",
+          "dde0605e4f8f4d50b4f31eb5502e8fd3",
+          "dfc3e194f1fe4d469d81773741b8a94d",
+          "5e3a2ed737c944db8e67c8a5996df97f",
+          "8cfb50272c244862af1f7016497e1ee7",
+          "5d75c381a222485caaa2d4a1cf49e20d",
+          "f56630508e974ad68c357971e87abfa9",
+          "acc9f830427d4dd5a374cebaf9c9ee66",
+          "249bf0fec3af40e9a8ca96b1b3bc9092",
+          "26722580abf34430b419e95eb22c87d6",
+          "4e86bde568b242939614f34204bbc8e3",
+          "ceceac7db426459082a11da6152473c5",
+          "88710ff3b70245298e373317470b4eee",
+          "c5fd368b59904b7fba6fe3e61c9679e4",
+          "13aa80ee7cfc4558a1095d3f1221bc3a",
+          "cc1676dcbd1a4d4cb61e4c7453c8c442",
+          "c095a11dfd654a94a7f72f53c7e6fc3d",
+          "14b6058a2ee64338b244e84a09cf8a15",
+          "f70a22f6c8704632aae7a93327d813a2",
+          "bc3c43ee44a045ffa7e834fe532af6f9",
+          "cca423bdc2164d0dbb69602bcfbb428b",
+          "a264a7a64b53441292d12e99a7857eef",
+          "1072be70a67a43849b510280ba5af840",
+          "91feff776bbe4cd4a4e751588584429c",
+          "fed9524cf79f4066a702974ec3c32852",
+          "71ad72fd5932440b91fa91f62a57ce5e",
+          "e98503428328460aaeeada62c19d65d1",
+          "a332ce78f11c469cad1af79ff4a5d970",
+          "796c86930bef4263bcbc60a4aa649aff",
+          "e6bb1bd204944038ad237bcaf2419eda",
+          "aadfda9c982042bb86ed0b35661dbf09",
+          "ed85f8dea88247148f0443f6b216164a",
+          "df6a1e74320747f3bced93fc26154792",
+          "eac195614fcf411eb084ea8180348db9",
+          "0582a89810db46389e39906d964fbc05",
+          "fcfdff44c06a4b3cb979d8e836ab77f0",
+          "7af15086ba8948ef8ef96d07d978a43c",
+          "3fdd23c7ac6745d78c0e22d7ce27e19e",
+          "382251a84bb340649136d1a8e8e2570e",
+          "b91fe2c40b3048b1829f726f914a7302",
+          "8add4af2f31b44038137cb46a335df8a",
+          "2ab97c5ae5324dbfb4b9cc3f012d83a2",
+          "5396da92623944cf9879b5dbb5799905",
+          "f9526ac824a24b9f850c93020bf07b3f",
+          "5b6a3f331dba445ab1c764ad2cc2f01e",
+          "e3d51ec8262a43c5b5a839cedce91972",
+          "ae5e1f15ad9740c8ae19e37d6b94daaf",
+          "713d9448ca8c4081b21f804ccba4bcb2",
+          "719b3434227a4c969b1734a115d3c65c",
+          "46b780b0496c40f68fb453b6d756a9df",
+          "07a8a4d3ec8e4b059458e0ac10ccd27a",
+          "516cbe452fd04194ae929e9faf476680",
+          "54aab00dca2d44bcae6f35a2da337a0c",
+          "308788ced3e8462cae7d6e11aa1993f7",
+          "fcf7c869e1cc4cc38c88c48cbce382b6",
+          "7745b9f5444b4535af50468a38ad7ce4",
+          "adef22de282445228dc9d8432b91509c",
+          "4482a793f6f744599fe1c5ca654a952b",
+          "06c87bc9a05c43a8aff0e1cc545afbe0"
+        ]
+      },
+      "id": "expanded-b-7",
+      "outputId": "f0cd4f0b-aa83-4ef1-83bd-a362af957e23"
+    },
+    {
+      "colab": {
+        "base_uri": "https://localhost:8080/"
+      },
+      "id": "expanded-b-9",
+      "outputId": "807de46b-4937-4ed7-a486-9266f5312bce"
+    },
+    {
+      "colab": {
+        "base_uri": "https://localhost:8080/",
+        "height": 137
+      },
+      "id": "expanded-b-10",
+      "outputId": "05d4795e-be3e-424f-82ab-b09edcafea14"
+    },
+    {
+      "colab": {
+        "base_uri": "https://localhost:8080/"
+      },
+      "id": "expanded-b-12",
+      "outputId": "2883f298-c75d-40df-da67-04e95324e48d"
+    }
+  ]
+}

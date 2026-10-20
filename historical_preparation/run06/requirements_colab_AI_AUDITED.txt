@@ -1,0 +1,10 @@
+# Dedicated Python 3.10+ Linux/CUDA runtime, not Aaron's Mac tf_env.
+# Use the Colab-provided compatible CUDA PyTorch build (torch >= 2.2).
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.10.1
+safetensors==0.6.2
+numpy==1.26.4
+pandas==2.2.3
+matplotlib==3.9.4
+scikit-learn==1.6.1
