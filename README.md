@@ -4,10 +4,18 @@ This ADS 509 Option 1 project adapted a small language model to classify music-r
 
 The project has two phases. The prototype established the pipeline and explored training settings. The expanded evaluation then retained that work and tested a fresh adaptation with more reviewed examples.
 
+## Result at a glance
+
+On the same **200 held-out passages from 99 review/release groups**, adaptation improved accuracy from **31.5% to 71.0%** and macro-F1 from **0.2390 to 0.6630**. Labels were AI-assisted with human review; this is not an independent human-gold benchmark.
+
+![Unadapted and adapted model accuracy and macro-F1 on the same test set](presentation_evidence/expanded_evaluation/01_same_test_accuracy_macro_f1.png)
+
+The practical goal is to help readers find concrete discussion of musical details within longer reviews. The project demonstrates collection, passage preparation, model adaptation, and evaluation as an inspectable workflow. It has not measured reader time savings or deployed a production search tool.
+
 ## Start here
 
-1. Read [notebook 10](notebooks/10_saved_results_review_readable.ipynb) for the prototype experiments and their saved results.
-2. Continue with [notebook 11](notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb) for the expanded dataset, training record and final test comparison. Its saved code and outputs are preserved.
+1. Read [notebook 11](notebooks/11_music_review_EXPANDED_B_RESULTS_READABLE.ipynb) for the expanded dataset, training record and final test comparison. Its saved code and outputs are preserved.
+2. Read [notebook 10](notebooks/10_saved_results_review_readable.ipynb) for the earlier prototype experiments and their saved results.
 3. Open the [expanded evidence guide](expanded_evaluation/README.md) for the frozen data, helpers, prediction files and figures.
 4. Read [data preparation](notebooks/02_data_preparation_readable.ipynb) and [training-only VADER EDA](notebooks/09_vader_sentiment_readable.ipynb) for the earlier collection and analysis.
 
@@ -15,7 +23,7 @@ The training notebooks document completed GPU runs. Read their saved outputs bef
 
 ## Phase 1: prototype
 
-The CritiqueBrainz API collection contained 500 English release-group reviews. Preparation produced 7,664 passages after 217 short-passage exclusions and 20 exact duplicates. The bounded oldest-first sample and source attribution are retained.
+The [CritiqueBrainz API](https://critiquebrainz.org/ws/1/review/) collection contained 500 English release-group reviews. Preparation produced 7,664 passages after 217 short-passage exclusions and 20 exact duplicates. The bounded oldest-first sample and source attribution are retained in [ATTRIBUTION.csv](data/ATTRIBUTION.csv). Source reviews retain their CC BY-NC-SA 3.0 notices; see [third-party notices](THIRD_PARTY_NOTICES.md) before reuse.
 
 The prototype used 140 training passages, 33 validation passages and 35 historical test passages. Its final labels received a nonblinded AI audit after the original human review. They are not independent human gold; the saved `human_accepted_audit` flag is false.
 
@@ -70,7 +78,21 @@ The passages are clustered by source group. Subjective labels, passage boundarie
 | [docs](docs/) | Reproduction, upload guidance and the historical presentation outline. |
 | [scripts](scripts/), [tests](tests/), [packaging](packaging/) | Offline checks, figure renderer, tests, hashes and integration history. |
 
-Local review uses Python 3.9.19 and the versions in [requirements-local.txt](requirements-local.txt). Use a separate compatible environment. No model, GPU or network access is needed for these checks:
+### Set up local review
+
+Clone this repository and run the following from its root with a Python 3.9 interpreter. The recorded analysis environment used **Python 3.9.19** and the versions in [requirements-local.txt](requirements-local.txt). Installation requires network access; the evidence checks below run without a model, GPU, or network calls.
+
+```bash
+git clone https://github.com/aaroncgabriel-12/ADS509-Final-Project.git
+cd ADS509-Final-Project
+python3.9 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-local.txt
+```
+
+On Windows, activate with `.venv\Scripts\activate` instead. GitHub displays the saved notebooks directly, so local execution is optional for reviewing the findings.
+
+### Check saved evidence
 
 ```bash
 python scripts/verify_submission.py
@@ -83,12 +105,12 @@ To regenerate figures from saved predictions and metrics:
 python scripts/render_expanded_evidence.py --output outputs/expanded_presentation_evidence
 ```
 
-The VADER notebook requires the separately acquired NLTK lexicon. GPU reproduction uses the pinned Colab environment and exact archives described in [REPRODUCTION.md](docs/REPRODUCTION.md). Checkpoints and full result archives are kept in the sibling local archive rather than this upload folder.
+The VADER notebook requires the separately acquired NLTK lexicon. GPU reproduction uses the pinned Colab environment and exact archives described in [REPRODUCTION.md](docs/REPRODUCTION.md) and the [expanded guide](expanded_evaluation/README.md). Checkpoints and full result archives are not distributed here; the saved notebooks, inputs, helpers, and predictions document the recorded runs. This documentation update did not retrain or reevaluate a model.
 
-## AI assistance and submission status
+## AI assistance
 
-Codex assisted with code, proposed labels, assisted the approved browser execution, and helped verify and explain results. Aaron reviewed the 660 new labels and approved the frozen data and run. Notebook 10 describes prototype assistance; notebook 11 records expanded-run assistance. Personal presentation reflections should describe Aaron's actual experience.
+Codex assisted with code, proposed labels, assisted the approved browser execution, and helped verify and explain results. Aaron reviewed the 660 new labels and approved the frozen data and run. Notebook 10 describes prototype assistance; notebook 11 records expanded-run assistance. Codex also assisted with this portfolio documentation update. These records do not establish a separate personal attestation that Aaron reviewed and understands all final code.
 
-This folder is the upload candidate. Use its contents as the repository root and keep `LOCAL_ARCHIVE_DO_NOT_UPLOAD` separate. No commit, publication, upload or Canvas submission was performed during integration. Review the source-data notices before sharing.
+## Repository and coursework status
 
-Video recording is complete. Video upload/link, GitHub URL/instructor access, and Canvas submission remain pending. The required presentation length is 10–15 minutes, including a 2–3 minute GenAI reflection. The included outline is historical planning material. A separate written report was not explicitly listed in the supplied deliverables.
+This is the published portfolio repository. Older packaging manifests and planning material record preparation-time state. They are retained as provenance and do not describe current publication or coursework completion. The historical outline is not a finished presentation. Video delivery, instructor access, and Canvas submission are separate activities whose completion is not established by this repository.
