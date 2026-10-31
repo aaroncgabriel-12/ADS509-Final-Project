@@ -22,7 +22,7 @@ No new output is claimed merely by supplying these commands.
 
 ## Collection and preparation
 
-`music_review_pipeline.py` is the actual collector, not the empty notebook 01.
+`music_review_pipeline.py` is the collection implementation.
 It normalizes API responses to source/license/author/text fields, caches pages,
 rejects duplicate IDs and checks metadata. Twenty included normalized cache pages
 allow the original 500-review collection to be checked offline. Full hidden/draft
@@ -77,7 +77,7 @@ bundles contain training and validation only. The package verifier does not pars
 or score old-test rows; whole-archive hashes/CRC scans do not evaluate a model.
 
 No model weights, adapter checkpoints, or bulk C/D diagnostic prediction tables
-are included in the upload folder. Three complete result ZIPs are preserved in
+are included in this repository. Three complete result ZIPs were preserved in
 the sibling local archive and mapped in its manifest. Restoring/reading their
 checkpoints requires the recorded model/runtime. No claim is made that an initial
 run-06 result ZIP was found; its executed notebook remains the available evidence.
@@ -92,9 +92,10 @@ by the later nonblinded audit, whose provenance remains in final CSVs/manifests.
 One-off chat audit/preparation backups remain in the original local workspace;
 the stable frozen decisions/labels consumed by the GPU runs are in the bundles.
 
-## Planning and remaining deliverables
+## Historical planning material
 
-`presentation_outline_PLANNING_v1.docx` is the current Library version 1,
-materialized October 19, including completed VADER coverage. It is an outline,
-not completed slides or a finished script. No video, hosting URL, GitHub URL,
-instructor access confirmation or Canvas submission exists in this package.
+`presentation_outline_PLANNING_v1.docx` was materialized from Library version 1
+on October 19, including completed VADER coverage. It is an outline, not completed
+slides or a finished script. This project is published on GitHub; the repository
+does not establish completion of video delivery, instructor access, or Canvas
+submission. Historical manifests describe preparation-time state.

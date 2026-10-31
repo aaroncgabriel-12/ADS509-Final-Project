@@ -1,28 +1,29 @@
-# Efficient upload
+# Publication and maintenance
 
-Use only the sibling `github_upload` folder as the repository root. A local Git
-repository on branch `main` is initialized, with no commits and no remote URL.
-No GitHub account or online repository was created.
+The project is published at
+[aaroncgabriel-12/ADS509-Final-Project](https://github.com/aaroncgabriel-12/ADS509-Final-Project).
+The earlier first-upload instructions are superseded by the published repository.
 
-1. In GitHub Desktop, choose **File > Add Local Repository**, then select
-   `github_upload`. Do not select the submission parent or local archive.
-2. Review the file list and included source data/notices. The large result ZIPs,
-   weights, runtime caches and environment files should not be in the changes.
-3. When satisfied, enter a first-commit message such as “Add final project code,
-   saved results and evidence” and commit to main.
-4. Choose Publish repository when you are ready and select the intended access.
-   The course allows a private repository with instructor access. Public reuse
-   requires reviewing the included data/license/provenance notices first.
-5. Verify the GitHub page displays the root README, notebooks, inputs, results,
-   evidence and docs. Arrange instructor access if private and copy its URL.
+Before publishing later changes:
 
-The file count exceeds GitHub's 100-file browser batch, so Desktop/Git is simpler
-than several browser uploads. Individual payload files are all below the browser
-25 MiB limit and Git's 100 MiB threshold; Git LFS is not needed for this package.
-See the exact measured sizes in `../packaging/VALIDATION_REPORT.json`.
-[Official GitHub upload guidance](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
+1. Review the diff and the included source-data, model, license, and provenance
+   notices. Keep credentials, local environments, weights, runtime caches, and
+   private archives outside tracked content.
+2. Preserve executed notebooks, frozen data, staged input archives, and saved
+   predictions during documentation updates. Historical integrity records
+   continue to describe those original artifacts.
+3. Update `packaging/FILE_SHA256.json` for intentionally changed tracked files.
+   This manifest covers the current package; preparation-time reports remain
+   historical evidence and should not imply a new experiment.
+4. Run `python scripts/verify_submission.py` and
+   `python scripts/verify_expanded_evaluation.py` from the repository root.
+   These inspect saved evidence without model training or network calls.
+5. Publish the reviewed change, then verify the rendered README, notebook links,
+   and figure links on GitHub.
 
-The recorded presentation/video and Canvas submission are still pending. A local
-folder, local Git initialization or an outline does not complete those steps.
+The small prototype and expanded input ZIPs preserve the exact recorded
+experiments. Full model checkpoints and bulk result archives are not distributed
+here. Original preparation reports record measured package sizes at that time.
 
-The expanded phase is included in `expanded_evaluation/` and notebook 11. Its two small input ZIPs belong in the upload package. The full expanded result ZIP and original executed notebook remain in the sibling local archive. Current hashes cover both project phases.
+Publication is separate from video delivery, instructor access, and Canvas
+submission. Those activities are not completed by a documentation update.
